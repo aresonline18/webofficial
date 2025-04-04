@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shadowpages.netlify.app/sitemap.xml
