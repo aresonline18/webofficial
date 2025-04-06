@@ -160,7 +160,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   margin-top: 40px;
   max-width: 250px;
   border-radius: 8px;
-  filter: drop-shadow(0 0 35px rgba(255, 255, 255, 0.6));
+  
 }
 
 /* Feature List */
@@ -214,21 +214,31 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   background: transparent;
 }
 
-/* Mobile */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
+  .hero {
+    margin: 20px auto 40px;
+    padding: 40px 20px;
+  }
+
   .hero-content {
     flex-direction: column;
     text-align: center;
     padding-left: 0;
   }
 
-  .hero-left,
-  .hero-right {
+  .hero-left, .hero-right {
     flex: 1 1 100%;
   }
 
   .hero h1 {
-    font-size: 32px;
+    font-size: 28px;
+    line-height: 1.4;
+    margin: 24px 0 20px;
+    word-break: break-word;
+  }
+
+  .cssbuttons-io-button {
+    margin-bottom: 20px;
   }
 
   .glow-image {
@@ -237,6 +247,12 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 
   .feature-list {
     justify-content: center;
+    padding-left: 0;
+    margin: 20px auto;
+  }
+
+  .feature-list li {
+    justify-content: left;
   }
 
   .hero-photo {
@@ -486,7 +502,12 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   .team-heading h2 {
     font-size: 26px;
   }
+
+  .team-photo {
+    display: none;
+  }
 }
+
 
 
 
@@ -562,23 +583,21 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 }
 
 @media (max-width: 768px) {
-  .feature-pill-container {
-    flex-direction: column;
-    align-items: stretch;
+  .feature-pill-section {
+    display: none;
   }
 
-  .pill-feature {
-    width: 100%;
-    justify-content: flex-start;
-    padding: 8px 0;
+  .feature-pill-container {
+    display: none;
   }
 }
+
 
 .review-section {
   background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #050b24 25%);
 
   margin: 40px auto 60px;
-  padding: 60px 30px;
+  padding: 30px 30px;
   border-radius: 50px;
   max-width: 1300px;
   width: 90%;
@@ -661,12 +680,26 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 }
 
 @media (max-width: 768px) {
+  .review-section {
+    margin: 20px auto 40px; /* reduce space above & below */
+    padding: 20px 20px; /* reduce internal padding */
+  }
+
+  .review-header {
+    margin-bottom: 30px; /* tighten header spacing */
+  }
+
   .review-header h2 {
     font-size: 28px;
+    margin-bottom: 6px;
+  }
+
+  .review-header p {
+    font-size: 14px;
   }
 
   .review-card {
-    padding: 20px;
+    padding: 18px;
   }
 
   .review-card h3 {
@@ -674,7 +707,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   }
 
   .review-card p {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -900,33 +933,62 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 }
 
 @media (max-width: 768px) {
-  .testimonial-carousel {
-    flex-direction: column;
+  .testimonials-section {
+    padding: 40px 16px;
   }
 
-  .testimonial-video,
+  .testimonial-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-carousel {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .testimonial-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(56, 93, 198, 0.15);
+  }
+
   .testimonial-content {
-    flex: 1 1 100%;
+    margin-top: 20px;
+    padding: 0 10px;
     width: 100%;
   }
 
-  .testimonial-content {
-    margin-top: 30px;
+  .testimonial-text {
+    max-width: 100%;
     padding: 0;
   }
 
   .testimonial-text h3 {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
   }
 
   .stars-icon {
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    opacity: 0.4;
+    top: -10px;
+    width: 50px;
+    opacity: 0.3;
+  }
+
+  .testimonial-nav {
+    margin-top: 16px;
+    gap: 12px;
+  }
+
+  .nav-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
   }
 }
+
 /* === Scroll Animation Keyframes === */
 @keyframes fadeInUp {
   0% { opacity: 0; transform: translateY(40px); }
@@ -987,7 +1049,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   padding: 60px 20px 120px;
   text-align: center;
   border-radius: 50px;
-  box-shadow: 0 10px 80px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 80px rgba(45, 0, 206, 0.05);
   max-width: 1300px;
   width: 90%;
   margin: 60px auto;
@@ -1070,7 +1132,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   padding: 26px 38px;
   min-width: 240px;
   backdrop-filter: blur(18px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 40px rgba(1, 0, 22, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1087,7 +1149,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 
 .stats-card p {
   margin-top: 6px;
-  font-size: 14px;
+  font-size: 14px;  
   color: #ddd;
 }
 
@@ -1095,43 +1157,43 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   color: #385dc6;
 }
 
-@media (max-width: 768px) {
-  .stats-section {
-    padding: 40px 12px 60px;
-  }
+  @media (max-width: 768px) {
+    .stats-section {
+      padding: 40px 12px 60px;
+    }
 
-  .stats-map-img {
-    max-width: 100%;
-    opacity: 0.35;
-  }
+    .stats-map-img {
+      max-width: 100%;
+      opacity: 0.35;
+    }
 
-  .stats-cards {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    padding: 0 10px;
-  }
+    .stats-cards {
+      position: absolute;
+      top: 53%;
+      left: 50%;
+      transform: translate(-50%, -10%);
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+      padding: 0 10px;
+    }
 
-  .stats-card {
-    width: 80%;
-    max-width: 260px;
-    padding: 14px 16px;
-    border-radius: 14px;
-    font-size: 13px;
-  }
+    .stats-card {
+      width: 80%;
+      max-width: 260px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      font-size: 13px;
+    }
 
-  .stats-card h3 {
-    font-size: 20px;
-    margin: 0;
-  }
+    .stats-card h3 {
+      font-size: 20px;
+      margin: 0;
+    }
 
-  .stats-card p {
-    font-size: 12px;
-    margin-top: 6px;
+    .stats-card p {
+      font-size: 12px;
+      margin-top: 6px;
+    }
   }
-}
