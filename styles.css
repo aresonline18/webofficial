@@ -215,7 +215,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
   .hero-content {
     flex-direction: column;
     text-align: center;
@@ -238,7 +238,12 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   .feature-list {
     justify-content: center;
   }
+
+  .hero-photo {
+    display: none;
+  }
 }
+
 /* === Neumorphic Shadow Pages Section === */
 .neumorphic-section {
   background: #000;
@@ -359,34 +364,20 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .neumorphic-container {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .neumorphic-left {
-    text-align: center;
-    padding: 0;
-    margin-bottom: 30px;
-  }
-
-  .neumorphic-grid {
-    width: 100%;
-    padding: 0;
-  }
-}
+ 
 
 @media (max-width: 480px) {
   .neumorphic-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .neumorphic-cta {
     padding: 8px 16px;
     font-size: 14px;
   }
 }
+
 .team-section {
   background: #000;
   padding: 60px 20px;
@@ -485,7 +476,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 @media (max-width: 768px) {
   .team-container {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
   }
 
   .team-left, .team-right {
@@ -516,26 +507,6 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   box-shadow: 0 0 8px #385dc6 ;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .benefits-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .benefits-image,
-  .benefits-content {
-    flex: 1 1 100%;
-  }
-
-  .benefits-photo {
-    max-width: 90%;
-  }
-
-  .benefits-content h2 {
-    font-size: 26px;
-  }
-}
 .feature-pill-section {
   background: #000000;
   padding: 24px 16px;
@@ -590,7 +561,6 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   box-shadow: 0 0 6px rgba(13, 16, 204, 0.25);
 }
 
-/* Fully Responsive */
 @media (max-width: 768px) {
   .feature-pill-container {
     flex-direction: column;
@@ -603,14 +573,16 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
     padding: 8px 0;
   }
 }
+
 .review-section {
-background: #000;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #050b24 25%);
+
   margin: 40px auto 60px;
   padding: 60px 30px;
   border-radius: 50px;
   max-width: 1300px;
   width: 90%;
-  box-shadow: 0 10px 80px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 80px rgba(38, 0, 255, 0.05);
   color: white;
   font-family: 'Inter', sans-serif;
   position: relative;
@@ -823,7 +795,7 @@ background: #000;
 .testimonials-section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 20px;
+  padding: 20px 20px;
   background: #000;
   color: white;
   font-family: 'Sora', sans-serif;
