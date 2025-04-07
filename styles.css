@@ -129,6 +129,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 .hero-left {
   flex: 1 1 50%;
   min-width: 300px;
+  
 }
 
 .hero-right {
@@ -234,6 +235,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 
   .hero h1 {
     font-size: 22px;
+    padding: 30px;
     line-height: 1.4;
     margin: 16px 0 16px;
     word-break: break-word;
@@ -243,6 +245,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
     text-overflow: unset;
     -webkit-line-clamp: unset;
     -webkit-box-orient: unset;
+    
   }
 
   .cssbuttons-io-button {
@@ -408,6 +411,26 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
     margin-bottom: 14px;
   }
 }
+@media (max-width: 768px) {
+  .neumorphic-left h2 {
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: 'inter', sans-serif;
+    
+    /* Clamp to 3 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+
+  .neumorphic-left h2 br {
+    display: none;
+  }
+}
 
   
   
@@ -510,7 +533,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 /* Responsive */
 @media (max-width: 768px) {
   .team-section {
-    padding: 40px 16px 40px; /* reduce vertical padding */
+    padding: 40px 16px 20px; /* ↓ reduced bottom padding from 40px to 20px */
     margin: 0 auto;          /* ensure no outer spacing */
   }
 
@@ -1126,12 +1149,14 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 }
 
 .stats-header h2 {
-  font-family: 'inter', sans-serif;
-
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 1.4;
-  margin-bottom: 16px;
+  margin: 20px 0;
+  font-family: 'Inter', sans-serif;
+  color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: black;
 }
 
 .stats-header .highlight {
@@ -1199,6 +1224,16 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
+.stats-header p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6); /* black glow */
+}
+
+
 
 .stats-card p {
   margin-top: 6px;
@@ -1222,15 +1257,18 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 
   .stats-header h2 {
     font-family: 'inter', sans-serif;
-    font-size: 24px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 1.2;
     margin-bottom: 6px;
-  }
+  } 
 
   .stats-header p {
-    font-size: 14px;
+    padding: 20px 0 0 0 ;
+    font-size: 17px;
     margin-bottom: 6px;
     line-height: 1.4;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6); /* black glow */
+
   }
 
   .stats-map-container {
