@@ -407,7 +407,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   }
 
   .neumorphic-left h2 {
-    font-size: 30px;
+    font-size: 28x;
     line-height: 1.4;
     margin-bottom: 14px;
   }
@@ -1019,8 +1019,8 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   }
 
   .nav-btn {
-      width: 44px;        /* slightly larger */
-      height: 44px;       /* slightly larger */
+      width: 50px;        /* slightly larger */
+      height: 50px;       /* slightly larger */
       font-size: 18px;    /* improve visibility */
   
 }
