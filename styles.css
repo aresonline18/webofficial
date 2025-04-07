@@ -40,7 +40,7 @@ header {
 }
 
 .logo-img {
-  height: 80px;
+  height:70px;
   width: auto;
   transform: scale(0.6); /* scale it down visually */
   transform-origin: left center;
@@ -1195,17 +1195,17 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 .stats-card h3 {
   font-size: 26px;
   font-weight: 700;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .stats-card p {
   margin-top: 6px;
   font-size: 14px;  
-  color: #000000;
+  color: #ffffff;
 }
 
 .plus {
-  color: #385dc6;
+  color: #0437c2;
 }
 @media (max-width: 768px) {
   .stats-section {
