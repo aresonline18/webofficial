@@ -40,7 +40,7 @@ header {
 }
 
 .logo-img {
-  height:60px;
+  height:50px;
   width: auto;
   transform: scale(0.6); /* scale it down visually */
   transform-origin: left center;
@@ -218,16 +218,14 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 
 @media (max-width: 768px) {
   .hero {
-    margin: 20px auto 40px;
-    padding: 40px 20px;
-    font-size: x-large;
+    margin: 0 auto 32px;
+    padding: 32px 16px;
   }
 
   .hero-content {
     flex-direction: column;
     text-align: center;
     padding-left: 0;
-
   }
 
   .hero-left, .hero-right {
@@ -235,45 +233,41 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   }
 
   .hero h1 {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.4;
-    margin: 24px 0 20px;
+    margin: 16px 0 16px;
     word-break: break-word;
-    width: auto;
     font-family: 'Sora', sans-serif;
-  
-    /* Allow full 3 lines without cutting off */
     display: block;
     overflow: visible;
     text-overflow: unset;
     -webkit-line-clamp: unset;
     -webkit-box-orient: unset;
   }
-  
-  
 
   .cssbuttons-io-button {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .glow-image {
-    margin: 30px auto 0;
+    margin: 24px auto 0;
   }
 
   .feature-list {
     justify-content: center;
     padding-left: 0;
-    margin: 20px auto;
+    margin: 16px auto;
   }
 
   .feature-list li {
-    justify-content: left;
+    justify-content: flex-start;
   }
 
   .hero-photo {
     display: none;
   }
 }
+
 
 /* === Neumorphic Shadow Pages Section === */
 .neumorphic-section {
