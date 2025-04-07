@@ -1027,6 +1027,11 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   
 }
 
+.nav-btn svg {
+  width: 40x;
+  height: 40px;
+}
+
 /* === Scroll Animation Keyframes === */
 @keyframes fadeInUp {
   0% { opacity: 0; transform: translateY(40px); }
@@ -1083,17 +1088,21 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 }}
 .stats-section {
   position: relative;
-  background: #000;
+  background: radial-gradient(circle at top left, #d9e6ff 0%, transparent 60%),
+              radial-gradient(circle at bottom right, #4a7fe7 10%, transparent 70%),
+              linear-gradient(180deg, #ffffff 0%, #3e4d6b 100%);
   padding: 60px 20px 120px;
   text-align: center;
   border-radius: 50px;
-  box-shadow: 0 10px 80px rgba(45, 0, 206, 0.05);
+  box-shadow: 0 20px 80px rgba(56, 93, 198, 0.18),
+              inset 0 0 40px rgba(56, 93, 198, 0.06);
   max-width: 1300px;
   width: 90%;
   margin: 60px auto;
   overflow: hidden;
-  color: white;
+  color: #111;
 }
+
 
 .stats-overlay-glow {
   position: absolute;
@@ -1115,7 +1124,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   margin: 0 auto 10px;
   position: relative;
   z-index: 2;
-  color: #eaeaea;
+  color: #000000;
 }
 
 .stats-header h2 {
@@ -1134,7 +1143,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 .stats-header p {
   font-size: 16px;
   line-height: 1.6;
-  color: #ccc;
+  color: #000000;
 }
 
 .stats-map-container {
@@ -1165,30 +1174,34 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 }
 
 .stats-card {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(44, 43, 43, 0.15);           /* translucent white */
+  border: 1px solid rgba(255, 255, 255, 0.2);       /* soft border */
   border-radius: 18px;
   padding: 26px 38px;
   min-width: 240px;
-  backdrop-filter: blur(18px);
-  box-shadow: 0 10px 40px rgba(1, 0, 22, 0.3);
+  backdrop-filter: blur(20px) saturate(180%);      /* glass effect */
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.1),
+              inset 0 0 20px rgba(255, 255, 255, 0.03); /* ambient glow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stats-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 50px rgba(56, 93, 198, 0.4);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(56, 93, 198, 0.5),
+              inset 0 0 16px rgba(255, 255, 255, 0.08);
 }
 
 .stats-card h3 {
   font-size: 26px;
   font-weight: 700;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .stats-card p {
   margin-top: 6px;
   font-size: 14px;  
-  color: #ddd;
+  color: #000000;
 }
 
 .plus {
