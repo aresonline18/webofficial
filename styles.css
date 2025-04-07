@@ -142,6 +142,8 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   line-height: 1.3;
   margin: 30px 0;
   font-weight: 600;
+  font-family: 'Sora', sans-serif;
+
 }
 
 .hero h1 .highlight {
@@ -218,12 +220,14 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   .hero {
     margin: 20px auto 40px;
     padding: 40px 20px;
+    font-size: x-large;
   }
 
   .hero-content {
     flex-direction: column;
     text-align: center;
     padding-left: 0;
+
   }
 
   .hero-left, .hero-right {
@@ -235,7 +239,16 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
     line-height: 1.4;
     margin: 24px 0 20px;
     word-break: break-word;
+    width: auto;
+    font-family: 'Sora', sans-serif;
+  
+    display: -webkit-box;
+    -webkit-line-clamp: 3;     /* 👈 max 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
+  
 
   .cssbuttons-io-button {
     margin-bottom: 20px;
@@ -383,7 +396,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 
  
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .neumorphic-grid {
     grid-template-columns: 1fr;
   }
@@ -392,7 +405,17 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
     padding: 8px 16px;
     font-size: 14px;
   }
+
+  .neumorphic-left h2 {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 14px;
+  }
 }
+
+  
+  
+
 
 .team-section {
   background: #000;
@@ -490,9 +513,15 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 
 /* Responsive */
 @media (max-width: 768px) {
+  .team-section {
+    padding: 40px 16px 40px; /* reduce vertical padding */
+    margin: 0 auto;          /* ensure no outer spacing */
+  }
+
   .team-container {
     flex-direction: column;
     text-align: left;
+    gap: 40px; /* reduce gap between text & elements */
   }
 
   .team-left, .team-right {
@@ -501,12 +530,18 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 
   .team-heading h2 {
     font-size: 26px;
+    margin: 16px 0;
+  }
+
+  .team-left p {
+    margin-bottom: 20px;
   }
 
   .team-photo {
     display: none;
   }
 }
+
 
 
 
@@ -681,12 +716,12 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 
 @media (max-width: 768px) {
   .review-section {
-    margin: 20px auto 40px; /* reduce space above & below */
-    padding: 20px 20px; /* reduce internal padding */
+    margin: 12px auto 12px; /* ⬅ tighter spacing above & below */
+    padding: 16px 16px;      /* ⬅ also reduces inner space */
   }
 
   .review-header {
-    margin-bottom: 30px; /* tighten header spacing */
+    margin-bottom: 20px;
   }
 
   .review-header h2 {
@@ -699,7 +734,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   }
 
   .review-card {
-    padding: 18px;
+    padding: 16px;
   }
 
   .review-card h3 {
@@ -710,6 +745,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
     font-size: 13px;
   }
 }
+
 
 
 .footer-hero {
@@ -983,10 +1019,10 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   }
 
   .nav-btn {
-    width: 36px;
-    height: 36px;
-    font-size: 16px;
-  }
+      width: 44px;        /* slightly larger */
+      height: 44px;       /* slightly larger */
+      font-size: 18px;    /* improve visibility */
+  
 }
 
 /* === Scroll Animation Keyframes === */
@@ -1156,44 +1192,80 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 .plus {
   color: #385dc6;
 }
-
-  @media (max-width: 768px) {
-    .stats-section {
-      padding: 40px 12px 60px;
-    }
-
-    .stats-map-img {
-      max-width: 100%;
-      opacity: 0.35;
-    }
-
-    .stats-cards {
-      position: absolute;
-      top: 53%;
-      left: 50%;
-      transform: translate(-50%, -10%);
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-      width: 100%;
-      padding: 0 10px;
-    }
-
-    .stats-card {
-      width: 80%;
-      max-width: 260px;
-      padding: 14px 16px;
-      border-radius: 14px;
-      font-size: 13px;
-    }
-
-    .stats-card h3 {
-      font-size: 20px;
-      margin: 0;
-    }
-
-    .stats-card p {
-      font-size: 12px;
-      margin-top: 6px;
-    }
+@media (max-width: 768px) {
+  .stats-section {
+    padding: 24px 16px 40px;
+    margin: 10px auto;
+    overflow-x: hidden; /* CRUCIAL: prevent scroll */
   }
+
+  .stats-header {
+    margin-bottom: 0;
+  }
+
+  .stats-header h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+
+  .stats-header p {
+    font-size: 14px;
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+
+  .stats-map-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .stats-map-img {
+    opacity: 0.15;          /* still visible but subtle */
+    margin-top: 0;          /* removed unwanted gap */
+    height: 100px;          /* constrain height */
+    object-fit: contain;    /* preserve aspect ratio */
+  }
+  
+
+  .stats-cards {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+    width: 100%;
+    max-width: 100%; /* fixes overflow */
+    box-sizing: border-box;
+  }
+
+  .stats-card {
+    width: 90%;
+    max-width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .stats-card h3 {
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.3;
+    word-break: break-word;
+  }
+
+  .stats-card p {
+    font-size: 12px;
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+}
+}
