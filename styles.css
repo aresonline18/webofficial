@@ -1019,8 +1019,8 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   }
 
   .nav-btn {
-      width: 50px;        /* slightly larger */
-      height: 50px;       /* slightly larger */
+      width: 60px;        /* slightly larger */
+      height: 60px;       /* slightly larger */
       font-size: 18px;    /* improve visibility */
   
 }
@@ -1078,7 +1078,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 
 .testimonial-text.animate {
   animation: slideText 0.6s ease-out;
-}
+}}
 .stats-section {
   position: relative;
   background: #000;
@@ -1267,5 +1267,4 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
     margin-top: 4px;
     line-height: 1.4;
   }
-}
 }
