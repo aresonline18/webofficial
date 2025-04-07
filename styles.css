@@ -1227,10 +1227,10 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 .stats-header p {
   font-size: 18px;
   line-height: 1.6;
-  color: #ccc;
-  max-width: 700px;
+  color: #000000;
+  font-weight: 500;
+  max-width: 500px;
   margin: 0 auto;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6); /* black glow */
 }
 
 
