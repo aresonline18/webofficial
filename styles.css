@@ -1097,21 +1097,24 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   color: #111;
 }
 
-
 .stats-overlay-glow {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), transparent 70%),
-              radial-gradient(circle at center, rgba(56, 93, 198, 0.2), transparent 80%);
+  width: 160%;
+  height: 160%;
+  background: 
+    radial-gradient(circle at 25% 30%, rgba(56, 93, 198, 0.6), transparent 60%),
+    radial-gradient(circle at 75% 70%, rgba(56, 93, 198, 0.5), transparent 70%),
+    radial-gradient(circle at center, rgba(56, 93, 198, 0.4), transparent 80%);
   filter: blur(140px);
   z-index: 0;
   opacity: 1;
   pointer-events: none;
 }
+
+
 
 .stats-header {
   max-width: 800px;
