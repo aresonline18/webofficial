@@ -242,12 +242,14 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
     width: auto;
     font-family: 'Sora', sans-serif;
   
-    display: -webkit-box;
-    -webkit-line-clamp: 3;     /* 👈 max 3 lines */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* Allow full 3 lines without cutting off */
+    display: block;
+    overflow: visible;
+    text-overflow: unset;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
   }
+  
   
 
   .cssbuttons-io-button {
