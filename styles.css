@@ -417,13 +417,9 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
 }
 @media (max-width: 768px) {
   .neumorphic-left h2 {
-    font-size: clamp(22px, 6.5vw, 28px); /* adjust for max visible size */
-    line-height: 1.35;
-    font-family: 'Inter', sans-serif;
-    text-align: left;
-    max-width: 100%;
-    width: 100%;
-
+    font-size: 28px;
+    line-height: 1.3;
+    margin: 16px 0;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -431,12 +427,15 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
     text-overflow: ellipsis;
     white-space: normal;
     word-break: break-word;
+    text-align: left;
+    max-width: 100%;
   }
 
   .neumorphic-left h2 br {
     display: none;
   }
 }
+
 
   
 
