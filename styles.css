@@ -243,6 +243,8 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
     word-break: break-word;
     max-width: 100%;
     width: 100%;
+    font-weight: 900;
+
   
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -408,7 +410,7 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   .neumorphic-container {
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px; /* minimum spacing */
+    gap: 20px;
     padding: 0;
     margin: 0;
   }
@@ -435,6 +437,11 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
     display: none;
   }
 
+  .neumorphic-left .muted {
+    color: white;            /* ✅ make same as rest */
+    font-weight: 700;        /* ✅ same bold style */
+  }
+
   .neumorphic-left p {
     font-size: 15px;
     line-height: 1.6;
@@ -449,22 +456,33 @@ background: linear-gradient(180deg, #050b24 0%, #0e1a3a 100%);
   }
 
   .neumorphic-grid {
-    margin-top: -280px !important;
-
-    margin: 0;
+    margin-top: -220px;        /* ✅ pull cards up gently */
     padding: 0;
     width: 100%;
     grid-template-columns: 1fr;
     gap: 16px;
-    margin-bottom: 40px !important;
-
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;               /* ✅ ensure over shadow */
   }
 
   .neu-card {
-    padding: 16px;
-    margin: 0;
+    background: #0d0d0d;
+    border-radius: 20px;
+    padding: clamp(20px, 2.5vw, 30px);
+    text-align: center;
+    box-shadow:
+      0 12px 28px rgba(56, 93, 198, 0.15),  /* soft outer glow */
+      inset 0 0 8px rgba(56, 93, 198, 0.08); /* inner soft light */
+    transition: all 0.4s ease;
   }
+  
+
+  
+  
+  
 }
+
 
 
 
