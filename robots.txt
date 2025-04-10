@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://shadowpages.netlify.app/sitemap.xml
+
+Sitemap: https://home.shadowpages.io/sitemap.xml
