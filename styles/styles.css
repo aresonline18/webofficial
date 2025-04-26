@@ -395,6 +395,7 @@ header {
   display: flex;
   justify-self: center;
   width: 80%;
+  border: none;
 }
 /* Responsive */
 
