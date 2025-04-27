@@ -391,12 +391,33 @@ header {
   margin: 0;
 }
 
+/* ===== Desktop version ===== */
 .section-students__video {
   display: flex;
   justify-self: center;
   width: 80%;
+  max-width: 960px;
+  aspect-ratio: 16 / 9;
   border: none;
+  border-radius: 2%;
+  box-shadow: 0 0 20px rgba(56, 93, 198, 0.6);
+  overflow: hidden;
+  margin-bottom: 80px;
 }
+
+/* ===== Mobile version ===== */
+@media (max-width: 768px) {
+  .section-students__video {
+    width: 90%;
+    max-width: 100%;
+    height: auto; /* <<< important */
+    border-radius: 4%;
+    box-shadow: 0 0 15px rgba(56, 93, 198, 0.5);
+    margin-bottom: 30px;
+  }
+}
+
+
 /* Responsive */
 
 @media (max-width: 768px) {
