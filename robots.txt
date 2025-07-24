@@ -1,0 +1,9 @@
+# Allow crawling of the blog directory
+User-agent: *
+Allow: /blog/
+
+# Disallow other potential system files if any
+# Disallow: /cgi-bin/
+
+Sitemap: https://start.shadowpages.io/sitemap.xml
+
