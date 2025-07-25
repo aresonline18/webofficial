@@ -6,7 +6,10 @@ export interface Resource {
   description: string;
   buttonText: string;
   buttonUrl: string;
-  templateId?: string;
+  isActive: boolean;
+  templateId: string | null;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export interface ResourceTemplate {
@@ -29,7 +32,10 @@ export const staticResources: Resource[] = [
     description: "Everything YOU need to know about how Shadow Pages work and how you can generate cashflow from them...",
     buttonText: "Learn More",
     buttonUrl: "/free-resources/shadow-pages-playbook",
-    templateId: "shadow-pages-playbook-complete-guide"
+    isActive: true,
+    templateId: "shadow-pages-playbook-complete-guide",
+    createdAt: new Date('2025-01-21T05:37:10.167Z'),
+    updatedAt: new Date('2025-01-24T11:11:01.809Z')
   }
 ];
 
