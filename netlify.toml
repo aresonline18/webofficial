@@ -1,0 +1,12 @@
+[build]
+  publish = "dist/public"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# For full-stack apps, you need Netlify Functions or Edge Functions
+# But this requires restructuring your Express app
+
+# Alternative: Point to a different hosting platform
+# This configuration won't work for your current Express.js backend
