@@ -6,7 +6,7 @@ export default function HeroSection() {
       {/* Shadow Pages Logo */}
       <div className="flex justify-center mb-4">
         <img 
-          src="https://start.shadowpages.io/public/logosp.webp" 
+          src="./public/logosp.webp" 
           alt="Shadow Pages Logo" 
           className="h-16 md:h-20 w-auto"
         />
