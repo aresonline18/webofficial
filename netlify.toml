@@ -5,8 +5,14 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# For full-stack apps, you need Netlify Functions or Edge Functions
-# But this requires restructuring your Express app
+# SPA routing configuration
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
-# Alternative: Point to a different hosting platform
-# This configuration won't work for your current Express.js backend
+# API routes should go to your backend server
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
