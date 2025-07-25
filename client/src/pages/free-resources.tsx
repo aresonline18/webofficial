@@ -30,6 +30,9 @@ export default function FreeResources() {
             margin: 0 !important;
             padding: 0 !important;
           }
+          .shadow-navy-bg {
+            background: rgb(20, 35, 60) !important;
+          }
         `
       }} />
       <div className="min-h-screen">
