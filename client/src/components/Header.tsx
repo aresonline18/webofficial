@@ -18,7 +18,7 @@ export default function Header() {
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer">
               <img 
-                src="https://start.shadowpages.io/public/logosp.webp" 
+                src="./public/logosp.webp" 
                 alt="Shadow Pages Logo" 
                 className="h-8"
               />
