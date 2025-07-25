@@ -6,6 +6,7 @@ import StickyCTA from "@/components/sticky-cta";
 import { SimpleTemplateRenderer } from "@/components/SimpleTemplateRenderer";
 import ResourceApplyNowButton from "@/components/ResourceApplyNowButton";
 import RelatedResources from "@/components/related-resources";
+import { staticResourceTemplates } from "@/data/resources";
 
 // Import specific resource templates
 import ShadowPagesPlaybook from "./templates/shadow-pages-playbook";
@@ -34,7 +35,7 @@ interface ResourceTemplate {
 export default function ResourcePage() {
   const { slug } = useParams<{ slug: string }>();
 
-  const { data: resource, isLoading, isError } = useQuery<ResourceTemplate>({
+  const { data: dbResource, isLoading, isError } = useQuery<ResourceTemplate>({
     queryKey: ['/api/resource-templates', slug],
     queryFn: async () => {
       const response = await fetch(`/api/resource-templates/slug/${slug}`);
@@ -45,6 +46,30 @@ export default function ResourcePage() {
     },
     enabled: !!slug,
   });
+
+  // Use database resource if available, otherwise fall back to static resource
+  const staticResource = slug ? staticResourceTemplates[`${slug}-complete-guide`] : null;
+  const resource = dbResource || (staticResource ? {
+    id: 1,
+    resourceId: staticResource.id,
+    headline: staticResource.headline,
+    subheadline: staticResource.subheadline,
+    body: JSON.stringify({
+      authorName: staticResource.authorName,
+      authorTitle: staticResource.authorTitle,
+      logoUrl: staticResource.logoUrl,
+      bodyContent: staticResource.bodyContent,
+      ctaText: staticResource.ctaText
+    }),
+    template: 'guide',
+    slug: slug || '',
+    metaTitle: `${staticResource.headline} - Complete Guide`,
+    metaDescription: staticResource.subheadline,
+    featuredImage: '/uploads/book_1753355066598.png',
+    isPublished: true,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  } : null);
 
   // Set document title for SEO - MUST be called before any conditional returns
   React.useEffect(() => {
@@ -59,7 +84,7 @@ export default function ResourcePage() {
     }
   }, [resource]);
 
-  if (isLoading) {
+  if (isLoading && !staticResource) {
     return (
       <div className="min-h-screen bg-white">
         <Header />
@@ -79,7 +104,7 @@ export default function ResourcePage() {
     );
   }
 
-  if (isError || !resource) {
+  if (!resource) {
     return (
       <div className="min-h-screen bg-white">
         <Header />
