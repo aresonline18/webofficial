@@ -235,7 +235,8 @@ header {
   }
   
   .team-heading-part2 {
-    font-size: 32px !important;
+    font-size: 28px !important;
+    white-space: nowrap;
   }
 }
 
@@ -274,10 +275,11 @@ header {
     display: inline-block;
   }
   
-  /* Dynamic font sizing for team heading part 2 - optimized for 2-line consistency */
+  /* Dynamic font sizing for team heading part 2 - optimized for single line display */
   .team-heading-part2 {
-    font-size: clamp(21px, 5.9vw, 32px) !important;
+    font-size: clamp(18px, 4.8vw, 28px) !important;
     display: inline-block;
+    white-space: nowrap;
   }
 }
 
