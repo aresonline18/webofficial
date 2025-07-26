@@ -377,13 +377,8 @@ function StaticHomeComplete() {
       <section className="neumorphic-section">
         <div className="neumorphic-container">
           <div className="neumorphic-left">
-            <h2>
-              <span className="muted">Leverage the new way to</span><br />
-              <span className="accent">generate passive income.</span><br />
-              Embrace the <strong>Shadow Pages System.</strong>
-            </h2>
             <div className="mobile-heading">
-              <span className="mobile-highlight">Lower Effort, Higher Leverage</span><br />
+              <span className="mobile-highlight" style={{fontSize: '20px', lineHeight: '1.2'}}>Lower Effort, Higher Leverage</span><br />
               Embrace Shadow Pages
             </div>
             <p>
@@ -455,7 +450,7 @@ function StaticHomeComplete() {
         <div className="stats-overlay-glow"></div>
 
         <div className="stats-header">
-          <h2 style={{ fontWeight: '700' }}>
+          <h2 style={{ fontWeight: '700', fontSize: '28px', lineHeight: '1.3' }}>
             A new era in online income:<br />
             <span className="highlight">Shadow Pages</span> are leading the way
           </h2>
@@ -491,8 +486,8 @@ function StaticHomeComplete() {
           <div className="team-left">
             <div className="team-heading">
               <h2 style={{ 
-                fontSize: 'clamp(1.7rem, 3.5vw, 2.2rem)', 
-                lineHeight: '1.3',
+                fontSize: 'clamp(1.4rem, 3.2vw, 2.2rem)', 
+                lineHeight: '1.2',
                 maxWidth: '100%',
                 wordWrap: 'break-word',
                 hyphens: 'auto'
@@ -752,7 +747,7 @@ function StaticHomeComplete() {
       </section>
       {/* Students Video Section */}
       <section className="section-students">
-        <h4 className="section-students__title testimonial-title">
+        <h4 className="section-students__title testimonial-title" style={{fontSize: '20px', lineHeight: '1.2'}}>
           This is what our <span className="highlight">students</span> have to say…
         </h4>
         <div className="video-wrapper">
