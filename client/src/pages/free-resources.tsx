@@ -16,35 +16,16 @@ export default function FreeResources() {
   const resources = dbResources?.length ? dbResources : staticResources;
 
   return (
-    <>
-      <style dangerouslySetInnerHTML={{
-        __html: `
-          :root {
-            --background: rgb(20, 35, 60) !important;
-          }
-          html, body {
-            background: rgb(20, 35, 60) !important;
-            background-image: radial-gradient(circle at 50% 50%, rgba(56, 93, 198, 0.15) 0%, transparent 70%) !important;
-            background-attachment: fixed !important;
-            min-height: 100vh !important;
-            margin: 0 !important;
-            padding: 0 !important;
-          }
-          .shadow-navy-bg {
-            background: rgb(20, 35, 60) !important;
-          }
-        `
-      }} />
-      <div className="min-h-screen">
-        <Header />
+    <div className="min-h-screen shadow-navy-bg">
+      <Header />
+      
+      {/* Main Content */}
+      <main className="max-w-site mx-auto px-4 md:px-6">
+        {/* Hero Section */}
+        <HeroSection />
         
-        {/* Main Content - exactly like home page */}
-        <main className="max-w-site mx-auto px-4 md:px-6">
-          {/* Hero Section - Gray background, NOT a white card */}
-          <HeroSection />
-          
-          {/* Resource Cards Section - exactly like home page */}
-          <section id="free-resources" className="py-6 md:py-8 space-y-6 md:space-y-8">
+        {/* Resource Cards Section */}
+        <section id="free-resources" className="py-6 md:py-8 space-y-6 md:space-y-8">
             {isLoading ? (
               <div className="text-center py-8">Loading resources...</div>
             ) : (
@@ -65,6 +46,5 @@ export default function FreeResources() {
           </section>
         </main>
       </div>
-    </>
   );
 }
