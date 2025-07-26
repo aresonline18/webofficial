@@ -231,7 +231,7 @@ header {
   
   /* Desktop font size for team heading */
   .team-heading h2 {
-    font-size: 37px !important;
+    font-size: 35px !important;
   }
 }
 
@@ -266,7 +266,7 @@ header {
   
   /* Dynamic font sizing for team heading to maintain 2 lines on mobile */
   .team-heading h2 {
-    font-size: clamp(25px, 7vw, 37px) !important;
+    font-size: clamp(24px, 6.6vw, 35px) !important;
     line-height: 1.3 !important;
   }
 }
