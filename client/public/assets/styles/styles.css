@@ -229,13 +229,13 @@ header {
     font-size: 32px !important;
   }
   
-  /* Desktop font sizes for split team heading */
+  /* Desktop font sizes for split team heading - optimized for 2-line display */
   .team-heading-part1 {
-    font-size: 35px !important;
+    font-size: 30px !important;
   }
   
   .team-heading-part2 {
-    font-size: 33px !important;
+    font-size: 28px !important;
   }
 }
 
@@ -268,15 +268,15 @@ header {
     line-height: 1.2 !important;
   }
   
-  /* Dynamic font sizing for team heading part 1 - keep current size */
+  /* Dynamic font sizing for team heading part 1 - responsive 2-line display */
   .team-heading-part1 {
-    font-size: clamp(24px, 6.6vw, 35px) !important;
+    font-size: clamp(20px, 5.5vw, 30px) !important;
     display: inline-block;
   }
   
-  /* Dynamic font sizing for team heading part 2 - 5% smaller to prevent 3-line wrapping */
+  /* Dynamic font sizing for team heading part 2 - slightly smaller for 2-line consistency */
   .team-heading-part2 {
-    font-size: clamp(23px, 6.3vw, 33px) !important;
+    font-size: clamp(19px, 5.2vw, 28px) !important;
     display: inline-block;
   }
 }
