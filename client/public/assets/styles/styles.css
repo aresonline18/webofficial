@@ -223,6 +223,11 @@ header {
   .button-64 .text {
     font-size: 16px;
   }
+  
+  /* Desktop font size for stats header */
+  .stats-header h2 {
+    font-size: 32px !important;
+  }
 }
 
 /* Mobile responsive adjustments */
@@ -246,6 +251,12 @@ header {
   /* Additional mobile font scaling for very small screens */
   .button-64 .text {
     font-size: clamp(10px, 3.5vw, 14px);
+  }
+  
+  /* Dynamic font sizing for stats header to maintain 3 lines on mobile */
+  .stats-header h2 {
+    font-size: clamp(20px, 5.5vw, 32px) !important;
+    line-height: 1.2 !important;
   }
 }
 
