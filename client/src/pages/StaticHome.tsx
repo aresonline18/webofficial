@@ -219,7 +219,7 @@ export default function StaticHome() {
         <div className="neumorphic-container">
           <div className="neumorphic-left">
             <div className="mobile-heading">
-              <span className="mobile-highlight" style={{fontSize: '20px', lineHeight: '1.2'}}>Lower Effort, Higher Leverage</span><br />
+              <span className="mobile-highlight">Lower Effort, Higher Leverage</span><br />
               Embrace Shadow Pages
             </div>
             <p>
@@ -292,7 +292,7 @@ export default function StaticHome() {
         <div className="stats-overlay-glow"></div>
 
         <div className="stats-header">
-          <h2 style={{fontSize: '28px', lineHeight: '1.3'}}>
+          <h2>
             A new era in online income:<br />
             <span className="highlight">Shadow Pages</span> are leading the way
           </h2>
@@ -328,7 +328,7 @@ export default function StaticHome() {
         <div className="team-container">
           <div className="team-left">
             <div className="team-heading">
-              <h2 style={{fontSize: '24px', lineHeight: '1.2'}}>
+              <h2>
                 <span className="highlighted">Have the opportunity to talk</span> with
                 the <strong>Shadow Pages Team</strong>
               </h2>
