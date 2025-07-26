@@ -219,11 +219,6 @@ function StaticHomeExact() {
       <section className="neumorphic-section">
         <div className="neumorphic-container">
           <div className="neumorphic-left">
-            <h2>
-              <span className="muted">Lower Effort,</span><br />
-              <span className="accent">Higher Leverage</span> Income:<br />
-              Embrace the <strong>Shadow Pages System.</strong>
-            </h2>
             <div className="mobile-heading">
               <span className="mobile-highlight">Lower Effort, Higher Leverage</span><br />
               Embrace Shadow Pages
