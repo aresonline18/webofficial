@@ -491,14 +491,13 @@ function StaticHomeComplete() {
           <div className="team-left">
             <div className="team-heading">
               <h2 style={{ 
-                fontSize: 'clamp(1.7rem, 3.5vw, 2.2rem)', 
                 lineHeight: '1.3',
                 maxWidth: '100%',
                 wordWrap: 'break-word',
                 hyphens: 'auto'
               }}>
-                <span className="highlighted">Have the opportunity to talk</span><br />
-                with the <strong>Shadow Pages Team</strong>
+                <span className="highlighted team-heading-part1">Have the opportunity to talk</span><br />
+                <span className="team-heading-part2">with the <strong>Shadow Pages Team</strong></span>
               </h2>
             </div>
 
@@ -752,7 +751,7 @@ function StaticHomeComplete() {
       </section>
       {/* Students Video Section */}
       <section className="section-students">
-        <h4 className="section-students__title testimonial-title">
+        <h4 className="section-students__title testimonial-title ml-[0px] mr-[0px] pl-[20px] pr-[20px]">
           This is what our <span className="highlight">students</span> have to say…
         </h4>
         <div className="video-wrapper">
