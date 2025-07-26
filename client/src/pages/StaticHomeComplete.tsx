@@ -319,7 +319,7 @@ function StaticHomeComplete() {
                 window.location.href = url;
               }}
             >
-              <span className="text" style={{ fontSize: '15px' }}>Limited Spots · Applications Now Open</span>
+              <span className="text">Limited Spots · Applications Now Open</span>
             </button>
 
             <h1 style={{ fontWeight: '700' }}>
@@ -377,6 +377,11 @@ function StaticHomeComplete() {
       <section className="neumorphic-section">
         <div className="neumorphic-container">
           <div className="neumorphic-left">
+            <h2>
+              <span className="muted">Leverage the new way to</span><br />
+              <span className="accent">generate passive income.</span><br />
+              Embrace the <strong>Shadow Pages System.</strong>
+            </h2>
             <div className="mobile-heading">
               <span className="mobile-highlight">Lower Effort, Higher Leverage</span><br />
               Embrace Shadow Pages
