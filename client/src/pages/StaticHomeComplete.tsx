@@ -147,6 +147,12 @@ function StaticHomeComplete() {
           font-size: 1.5rem !important;
           padding-top: 10px !important;
         }
+        
+        .stats-heading-responsive {
+          word-wrap: break-word !important;
+          max-width: 100% !important;
+          line-height: 1.2 !important;
+        }
       }
       
       @media (max-width: 767px) {
@@ -528,9 +534,8 @@ function StaticHomeComplete() {
         <div className="stats-overlay-glow"></div>
 
         <div className="stats-header">
-          <h2 style={{ fontWeight: '700' }}>
-            A new era in online income:<br />
-            <span className="highlight">Shadow Pages</span> are leading the way
+          <h2 className="stats-heading-responsive" style={{ fontWeight: '700' }}>
+            A new era in online income: Shadow Pages are leading the way
           </h2>
           <p>
             More and more everyday people are leveraging{' '}
