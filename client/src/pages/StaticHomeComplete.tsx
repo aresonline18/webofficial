@@ -124,11 +124,12 @@ function StaticHomeComplete() {
       
       .mobile-heading {
         display: none;
-        font-size: clamp(1.2rem, 4vw, 1.6rem) !important;
+        font-size: clamp(1.5rem, 5vw, 2rem) !important;
         line-height: 1.3 !important;
         text-align: left !important;
         white-space: normal !important;
         word-wrap: break-word !important;
+        max-width: 100% !important;
       }
       
       @media (max-width: 767px) {
@@ -557,13 +558,7 @@ function StaticHomeComplete() {
                 with the <strong>Shadow Pages Team</strong>
               </h2>
               {/* Mobile heading - hidden on desktop */}
-              <h2 className="mobile-heading" style={{ 
-                fontSize: 'clamp(1.7rem, 3.5vw, 2.2rem)', 
-                lineHeight: '1.3',
-                maxWidth: '100%',
-                wordWrap: 'break-word',
-                hyphens: 'auto'
-              }}>
+              <h2 className="mobile-heading">
                 Have the opportunity to talk with the Shadow Pages team
               </h2>
             </div>
