@@ -891,30 +891,25 @@ function StaticHomeComplete() {
 
           <div className="footer-bottom">
             <p>© 2025 – Shadow Pages, All Rights Reserved</p>
-            <div className="footer-links ml-[2px] mr-[2px] text-[13px]" style={{ 
+            <div className="footer-links" style={{ 
               display: 'flex', 
               flexWrap: 'wrap', 
               justifyContent: 'center', 
               alignItems: 'center',
-              gap: '4px',
+              gap: '8px',
               fontSize: '14px'
             }}>
-              <a
-                href="https://www.shadowpages.io/privacypolicy-1"
-                className="ml-[1px] mr-[1px]">
+              <a href="https://www.shadowpages.io/privacypolicy-1">
                 Privacy Policy
               </a>
               <span>|</span>
               <a
                 href="https://www.shadowpages.io/termsofservice-1"
-                style={{ whiteSpace: 'nowrap' }}
-                className="ml-[3px] mr-[3px]">
+                style={{ whiteSpace: 'nowrap' }}>
                 Terms of Service
               </a>
               <span>|</span>
-              <a
-                href="https://www.shadowpages.io/earningsdisclaimer-1"
-                className="mt-[0px] mb-[0px] pt-[0px] pb-[0px] ml-[0px] mr-[0px] pl-[3px] pr-[3px]">
+              <a href="https://www.shadowpages.io/earningsdisclaimer-1">
                 Disclaimer
               </a>
             </div>
