@@ -132,13 +132,8 @@ function StaticHomeComplete() {
         max-width: 100% !important;
       }
       
-      .mobile-heading-responsive-color {
-        background: linear-gradient(to bottom, #385dc6 50%, #000000 50%);
-        background-size: 100% 200%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        background-position: 0% 0%;
+      .mobile-heading-responsive-color::first-line {
+        color: #385dc6 !important;
       }
       
       @media (max-width: 767px) {
