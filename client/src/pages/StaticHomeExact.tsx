@@ -57,10 +57,21 @@ function StaticHomeExact() {
         text-overflow: ellipsis !important;
       }
       
+      /* Dynamic font for "Have the opportunity to talk" */
+      .dynamic-text-opportunity {
+        font-size: clamp(0.9rem, 3vw, 1.2rem) !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+      }
+      
       /* Responsive breakpoints for more precise control */
       @media (max-width: 390px) {
         .dynamic-text {
           font-size: 0.75rem !important;
+        }
+        .dynamic-text-opportunity {
+          font-size: 0.9rem !important;
         }
       }
       
@@ -68,11 +79,17 @@ function StaticHomeExact() {
         .dynamic-text {
           font-size: 0.85rem !important;
         }
+        .dynamic-text-opportunity {
+          font-size: 1rem !important;
+        }
       }
       
       @media (min-width: 429px) {
         .dynamic-text {
           font-size: 1rem !important;
+        }
+        .dynamic-text-opportunity {
+          font-size: 1.2rem !important;
         }
       }
     `;
@@ -364,7 +381,7 @@ function StaticHomeExact() {
           <div className="team-left">
             <div className="team-heading">
               <h2>
-                <span className="highlighted">Have the opportunity to talk</span> with
+                <span className="highlighted dynamic-text-opportunity">Have the opportunity to talk</span> with
                 the <strong>Shadow Pages Team</strong>
               </h2>
             </div>
