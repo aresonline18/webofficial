@@ -91,6 +91,10 @@ function StaticHomeExact() {
         max-width: 100% !important;
       }
       
+      .mobile-heading-first-line {
+        color: #385dc6 !important;
+      }
+      
       @media (max-width: 767px) {
         .desktop-heading {
           display: none !important;
@@ -395,7 +399,7 @@ function StaticHomeExact() {
               </h2>
               {/* Mobile heading - hidden on desktop */}
               <h2 className="mobile-heading">
-                Have the opportunity to talk with the Shadow Pages team
+                <span className="mobile-heading-first-line">Have the opportunity to talk with the</span> Shadow Pages team
               </h2>
             </div>
 
