@@ -44,21 +44,10 @@ export default function StaticHome() {
         text-overflow: ellipsis !important;
       }
       
-      /* Dynamic text for "Have the opportunity to talk" - 5% smaller to fit on one line */
-      .dynamic-text-opportunity {
-        font-size: 0.95em !important; /* 5% smaller than normal text */
-        white-space: nowrap !important;
-        overflow: hidden !important;
-        text-overflow: ellipsis !important;
-      }
-      
       /* Responsive breakpoints for more precise control */
       @media (max-width: 390px) {
         .dynamic-text {
           font-size: 0.75rem !important;
-        }
-        .dynamic-text-opportunity {
-          font-size: 0.9em !important; /* Slightly smaller on mobile */
         }
       }
       
@@ -66,17 +55,30 @@ export default function StaticHome() {
         .dynamic-text {
           font-size: 0.85rem !important;
         }
-        .dynamic-text-opportunity {
-          font-size: 0.93em !important;
-        }
       }
       
       @media (min-width: 429px) {
         .dynamic-text {
           font-size: 1rem !important;
         }
-        .dynamic-text-opportunity {
-          font-size: 0.95em !important;
+      }
+      
+      /* Team heading responsive display */
+      .desktop-heading {
+        display: block;
+      }
+      
+      .mobile-heading {
+        display: none;
+      }
+      
+      @media (max-width: 767px) {
+        .desktop-heading {
+          display: none !important;
+        }
+        
+        .mobile-heading {
+          display: block !important;
         }
       }
     `;
@@ -381,9 +383,15 @@ export default function StaticHome() {
         <div className="team-container">
           <div className="team-left">
             <div className="team-heading">
-              <h2>
-                <span className="highlighted dynamic-text-opportunity">Have the opportunity to talk</span> with
+              {/* Desktop heading - hidden on mobile */}
+              <h2 className="desktop-heading">
+                <span className="highlighted">Have the opportunity to talk</span> with
                 the <strong>Shadow Pages Team</strong>
+              </h2>
+              {/* Mobile heading - hidden on desktop */}
+              <h2 className="mobile-heading">
+                Have the opportunity to talk<br />
+                with the Shadow Pages team
               </h2>
             </div>
 
