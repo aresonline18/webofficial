@@ -28,7 +28,7 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-white hover:text-gray-200 font-medium text-base transition-colors">
-              Home
+              Start
             </Link>
             <Link href="/free-resources" className="text-white hover:text-gray-200 font-medium text-base transition-colors">
               Free Resources
