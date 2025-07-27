@@ -3,14 +3,6 @@ import bookImage from "@assets/Untitled design (10)_1752994221787.png";
 export default function HeroSection() {
   return (
     <section className="py-6 md:py-8 text-center">
-      {/* Shadow Pages Logo */}
-      <div className="flex justify-center mb-4">
-        <img 
-          src="./public/logosp.webp" 
-          alt="Shadow Pages Logo" 
-          className="h-16 md:h-20 w-auto"
-        />
-      </div>
       
       <div className="flex justify-center mb-0 md:mb-1">
         {/* Book Stack Image */}
