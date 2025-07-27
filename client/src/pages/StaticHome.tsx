@@ -70,6 +70,11 @@ export default function StaticHome() {
       
       .mobile-heading {
         display: none;
+        font-size: clamp(1.2rem, 4vw, 1.6rem) !important;
+        line-height: 1.3 !important;
+        text-align: left !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
       }
       
       @media (max-width: 767px) {
@@ -390,8 +395,7 @@ export default function StaticHome() {
               </h2>
               {/* Mobile heading - hidden on desktop */}
               <h2 className="mobile-heading">
-                Have the opportunity to talk<br />
-                with the Shadow Pages team
+                Have the opportunity to talk with the Shadow Pages team
               </h2>
             </div>
 
