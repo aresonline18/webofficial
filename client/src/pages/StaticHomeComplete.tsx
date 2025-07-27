@@ -98,10 +98,21 @@ function StaticHomeComplete() {
         text-overflow: ellipsis !important;
       }
       
+      /* Dynamic text for "Have the opportunity to talk" - 5% smaller to fit on one line */
+      .dynamic-text-opportunity {
+        font-size: 0.95em !important; /* 5% smaller than normal text */
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+      }
+      
       /* Responsive breakpoints for more precise control */
       @media (max-width: 390px) {
         .dynamic-text {
           font-size: 0.75rem !important;
+        }
+        .dynamic-text-opportunity {
+          font-size: 0.9em !important; /* Slightly smaller on mobile */
         }
       }
       
@@ -109,11 +120,17 @@ function StaticHomeComplete() {
         .dynamic-text {
           font-size: 0.85rem !important;
         }
+        .dynamic-text-opportunity {
+          font-size: 0.93em !important;
+        }
       }
       
       @media (min-width: 429px) {
         .dynamic-text {
           font-size: 1rem !important;
+        }
+        .dynamic-text-opportunity {
+          font-size: 0.95em !important;
         }
       }
     `;
@@ -528,7 +545,7 @@ function StaticHomeComplete() {
                 wordWrap: 'break-word',
                 hyphens: 'auto'
               }}>
-                <span className="highlighted">Have the opportunity to talk</span><br />
+                <span className="highlighted dynamic-text-opportunity">Have the opportunity to talk</span><br />
                 with the <strong>Shadow Pages Team</strong>
               </h2>
             </div>
