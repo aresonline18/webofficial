@@ -387,18 +387,13 @@ function StaticHomeComplete() {
             <button
               className="button-64"
               onClick={() => {
-                // Get tracked resources for UTM campaign
                 const trackedResources = JSON.parse(localStorage.getItem('trackedResources') || '[]');
                 const lastResource = trackedResources.length > 0 ? trackedResources[trackedResources.length - 1] : 'no-resource-read';
-                
-                // Create UTM campaign from last read resource
                 const resourceSlug = lastResource === 'no-resource-read' ? 'no-resource-read' : lastResource
                   .toLowerCase()
                   .replace(/[^a-z0-9\s]/g, '')
                   .replace(/\s+/g, '-')
                   .substring(0, 50);
-                
-                // Build URL with home-page UTM source
                 const url = `https://shadowpages.typeform.com/dms-overall?utm_source=home-page&utm_campaign=${resourceSlug}&utm_medium=EricHustls`;
                 window.location.href = url;
               }}
@@ -413,7 +408,8 @@ function StaticHomeComplete() {
             </h1>
 
             <a
-              href="#" onClick={(e) => { e.preventDefault(); handleHomePageApply(); }}
+              href="#" 
+              onClick={(e) => { e.preventDefault(); handleHomePageApply(); }}
               className="cssbuttons-io-button"
             >
               Apply Now
