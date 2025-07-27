@@ -433,19 +433,19 @@ function StaticHomeComplete() {
                 <svg viewBox="0 0 24 24">
                   <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"></path>
                 </svg>
-                1:1 Education Support
+                Personalized Coaching
               </li>
               <li>
                 <svg viewBox="0 0 24 24">
                   <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"></path>
                 </svg>
-                Live Calls
+                Weekly 1/1 Live Calls
               </li>
               <li>
                 <svg viewBox="0 0 24 24">
                   <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"></path>
                 </svg>
-                Learn Whenever
+                24/7 V.I.P. Support
               </li>
             </ul>
 
