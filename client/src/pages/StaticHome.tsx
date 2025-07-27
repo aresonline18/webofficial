@@ -34,6 +34,37 @@ export default function StaticHome() {
     stylesCss.rel = 'stylesheet';
     document.head.appendChild(stylesCss);
 
+    // Add dynamic font sizing for the Limited Spots button
+    const dynamicFontStyle = document.createElement('style');
+    dynamicFontStyle.innerHTML = `
+      .dynamic-text {
+        font-size: clamp(0.75rem, 2.5vw, 1rem) !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+      }
+      
+      /* Responsive breakpoints for more precise control */
+      @media (max-width: 390px) {
+        .dynamic-text {
+          font-size: 0.75rem !important;
+        }
+      }
+      
+      @media (min-width: 391px) and (max-width: 428px) {
+        .dynamic-text {
+          font-size: 0.85rem !important;
+        }
+      }
+      
+      @media (min-width: 429px) {
+        .dynamic-text {
+          font-size: 1rem !important;
+        }
+      }
+    `;
+    document.head.appendChild(dynamicFontStyle);
+
     // Google Tag Manager
     (function(w: any, d: any, s: any, l: any, i: any) {
       w[l] = w[l] || [];
@@ -159,7 +190,7 @@ export default function StaticHome() {
               className="button-64"
               onClick={() => window.location.href = 'https://shadowpages.typeform.com/dms-overall'}
             >
-              <span className="text">Limited Spots · Applications Now Open</span>
+              <span className="text dynamic-text">Limited Spots · Applications Now Open</span>
             </button>
 
             <h1>
@@ -218,6 +249,11 @@ export default function StaticHome() {
       <section className="neumorphic-section">
         <div className="neumorphic-container">
           <div className="neumorphic-left">
+            <h2>
+              <span className="muted">Lower Effort,</span><br />
+              <span className="accent">Higher Leverage</span> Income:<br />
+              Embrace the <strong>Shadow Pages System.</strong>
+            </h2>
             <div className="mobile-heading">
               <span className="mobile-highlight">Lower Effort, Higher Leverage</span><br />
               Embrace Shadow Pages
