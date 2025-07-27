@@ -145,6 +145,7 @@ function StaticHomeComplete() {
         
         .section-students__title {
           font-size: 1.5rem !important;
+          padding-top: 10px !important;
         }
       }
       
@@ -890,7 +891,7 @@ function StaticHomeComplete() {
 
           <div className="footer-bottom">
             <p>© 2025 – Shadow Pages, All Rights Reserved</p>
-            <div className="footer-links" style={{ 
+            <div className="footer-links ml-[2px] mr-[2px] text-[13px]" style={{ 
               display: 'flex', 
               flexWrap: 'wrap', 
               justifyContent: 'center', 
