@@ -136,6 +136,14 @@ function StaticHomeComplete() {
         color: #385dc6 !important;
       }
       
+      /* Mobile padding for students section */
+      @media (max-width: 767px) {
+        .section-students {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+      }
+      
       @media (max-width: 767px) {
         .desktop-heading {
           display: none !important;
