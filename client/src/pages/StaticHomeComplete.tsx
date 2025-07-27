@@ -142,6 +142,10 @@ function StaticHomeComplete() {
           padding-left: 20px !important;
           padding-right: 20px !important;
         }
+        
+        .section-students__title {
+          font-size: calc(var(--base-font-size, 1rem) + 2px) !important;
+        }
       }
       
       @media (max-width: 767px) {
