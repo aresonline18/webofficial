@@ -150,6 +150,7 @@ function StaticHomeComplete() {
         
         .stats-heading-responsive {
           line-height: 1.2 !important;
+          font-size: 1.3rem !important;
         }
         
         .shadow-pages-line {
