@@ -273,7 +273,7 @@ function StaticHomeComplete() {
 
           {/* Desktop Navigation - Hidden on mobile */}
           <nav className="desktop-nav">
-            <a href="/">Home</a>
+            <a href="/">Start</a>
             <a href="/free-resources">Free Resources</a>
             <a href="#" onClick={(e) => { e.preventDefault(); handleHomePageApply(); }}>Apply Now</a>
           </nav>
@@ -293,7 +293,7 @@ function StaticHomeComplete() {
       {/* Mobile Menu Dropdown - Outside header, drops down below */}
       <div className="mobile-menu-dropdown">
         <nav className="pl-[24px] pr-[24px] pt-[5px] pb-[5px]">
-          <a href="/" className="pt-[5px] pb-[5px]">Home</a>
+          <a href="/" className="pt-[5px] pb-[5px]">Start</a>
           <a href="/free-resources" className="pt-[5px] pb-[5px]">Free Resources</a>
           <a href="#" onClick={(e) => { e.preventDefault(); handleHomePageApply(); }} className="pt-[5px] pb-[5px]">Apply Now</a>
         </nav>
