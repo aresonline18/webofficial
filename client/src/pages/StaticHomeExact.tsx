@@ -727,15 +727,21 @@ function StaticHomeExact() {
 
           <div className="footer-bottom">
             <p>© 2025 – Shadow Pages, All Rights Reserved</p>
-            <div className="footer-links">
+            <div className="footer-links" style={{ 
+              display: 'flex', 
+              justifyContent: 'center', 
+              alignItems: 'center',
+              gap: '8px',
+              fontSize: '14px'
+            }}>
               <a href="https://www.shadowpages.io/privacypolicy-1">
                 Privacy Policy
               </a>
-              |
+              <span>|</span>
               <a href="https://www.shadowpages.io/termsofservice-1">
                 Terms of Service
               </a>
-              |
+              <span>|</span>
               <a href="https://www.shadowpages.io/earningsdisclaimer-1">
                 Disclaimer
               </a>
