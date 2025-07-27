@@ -144,7 +144,7 @@ function StaticHomeComplete() {
         }
         
         .section-students__title {
-          font-size: calc(var(--base-font-size, 1rem) + 2px) !important;
+          font-size: 1.5rem !important;
         }
       }
       
