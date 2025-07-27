@@ -285,6 +285,7 @@ export default function ShadowPagesPlaybook() {
                 src={instagramProfilesImage}
                 alt="Instagram profiles of @boysglowup and @glowupacademyy showing follower counts"
                 className="w-full rounded-lg"
+                style={{ paddingTop: '15px' }}
               />
             </div>
           </div>
