@@ -97,10 +97,6 @@ export default function StaticHome() {
         .stats-heading-responsive {
           line-height: 1.2 !important;
         }
-        
-        .stats-heading-responsive br {
-          display: none !important;
-        }
       }
       
       @media (max-width: 767px) {
