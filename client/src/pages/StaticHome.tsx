@@ -97,6 +97,12 @@ export default function StaticHome() {
         .stats-heading-responsive {
           line-height: 1.2 !important;
         }
+        
+        .shadow-pages-line {
+          display: block !important;
+          word-wrap: break-word !important;
+          max-width: 100% !important;
+        }
       }
       
       @media (max-width: 767px) {
@@ -376,7 +382,7 @@ export default function StaticHome() {
         <div className="stats-header">
           <h2 className="stats-heading-responsive">
             A new era in online income:<br />
-            Shadow Pages are leading the way
+            <span className="shadow-pages-line">Shadow Pages are leading the way</span>
           </h2>
           <p>
             More and more everyday people are leveraging
