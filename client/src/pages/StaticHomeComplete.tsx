@@ -149,9 +149,11 @@ function StaticHomeComplete() {
         }
         
         .stats-heading-responsive {
-          word-wrap: break-word !important;
-          max-width: 100% !important;
           line-height: 1.2 !important;
+        }
+        
+        .stats-heading-responsive br {
+          display: none !important;
         }
       }
       
@@ -535,7 +537,8 @@ function StaticHomeComplete() {
 
         <div className="stats-header">
           <h2 className="stats-heading-responsive" style={{ fontWeight: '700' }}>
-            A new era in online income: Shadow Pages are leading the way
+            A new era in online income:<br />
+            Shadow Pages are leading the way
           </h2>
           <p>
             More and more everyday people are leveraging{' '}
