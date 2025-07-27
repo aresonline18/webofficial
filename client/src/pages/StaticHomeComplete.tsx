@@ -88,6 +88,37 @@ function StaticHomeComplete() {
     headerScript.defer = true;
     document.head.appendChild(headerScript);
 
+    // Add dynamic font sizing for the Limited Spots button
+    const dynamicFontStyle = document.createElement('style');
+    dynamicFontStyle.innerHTML = `
+      .dynamic-text {
+        font-size: clamp(0.75rem, 2.5vw, 1rem) !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+      }
+      
+      /* Responsive breakpoints for more precise control */
+      @media (max-width: 390px) {
+        .dynamic-text {
+          font-size: 0.75rem !important;
+        }
+      }
+      
+      @media (min-width: 391px) and (max-width: 428px) {
+        .dynamic-text {
+          font-size: 0.85rem !important;
+        }
+      }
+      
+      @media (min-width: 429px) {
+        .dynamic-text {
+          font-size: 1rem !important;
+        }
+      }
+    `;
+    document.head.appendChild(dynamicFontStyle);
+
     // Add animation script
     const animationScript = document.createElement('script');
     animationScript.innerHTML = `
@@ -319,7 +350,7 @@ function StaticHomeComplete() {
                 window.location.href = url;
               }}
             >
-              <span className="text">Limited Spots · Applications Now Open</span>
+              <span className="text dynamic-text" style={{ fontSize: '15px' }}>Limited Spots · Applications Now Open</span>
             </button>
 
             <h1 style={{ fontWeight: '700' }}>
@@ -491,13 +522,14 @@ function StaticHomeComplete() {
           <div className="team-left">
             <div className="team-heading">
               <h2 style={{ 
+                fontSize: 'clamp(1.7rem, 3.5vw, 2.2rem)', 
                 lineHeight: '1.3',
                 maxWidth: '100%',
                 wordWrap: 'break-word',
                 hyphens: 'auto'
               }}>
-                <span className="highlighted team-heading-part1">Have the opportunity to talk</span><br />
-                <span className="team-heading-part2">with the <strong>Shadow Pages Team</strong></span>
+                <span className="highlighted">Have the opportunity to talk</span><br />
+                with the <strong>Shadow Pages Team</strong>
               </h2>
             </div>
 
@@ -751,7 +783,7 @@ function StaticHomeComplete() {
       </section>
       {/* Students Video Section */}
       <section className="section-students">
-        <h4 className="section-students__title testimonial-title ml-[0px] mr-[0px] pl-[20px] pr-[20px]">
+        <h4 className="section-students__title testimonial-title">
           This is what our <span className="highlight">students</span> have to say…
         </h4>
         <div className="video-wrapper">
