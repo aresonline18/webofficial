@@ -91,6 +91,7 @@ export default function StaticHome() {
         
         .section-students__title {
           font-size: 1.5rem !important;
+          padding-top: 10px !important;
         }
       }
       
