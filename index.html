@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     
     <!-- SEO Meta Tags -->
-    <title>The Shadow Pages Playbook - Complete Guide to Faceless Social Media Monetization</title>
-    <meta name="description" content="Learn everything you need to know about Shadow Pages and how to generate cashflow from faceless social media accounts. Complete step-by-step guide by Eric Cole." />
+    <title>Shadow Pages – Build Faceless Instagram Brands & Generate Passive Income</title>
+    <meta name="description" content="Learn how to build faceless Instagram brands and generate passive income using the Shadow Pages system. Perfect for creators, beginners, and digital rebels looking to earn online without showing their face." />
     <meta name="keywords" content="shadow pages, social media monetization, faceless accounts, instagram business, digital marketing, passive income" />
     <meta name="author" content="Eric Cole" />
     <meta name="robots" content="index, follow" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://shadowpages.io/" />
-    <meta property="og:title" content="The Shadow Pages Playbook - Complete Guide to Faceless Social Media Monetization" />
-    <meta property="og:description" content="Learn everything you need to know about Shadow Pages and how to generate cashflow from faceless social media accounts." />
-    <meta property="og:image" content="https://www.shadowpages.io/hosted/images/90/f5c60bcb03444b83789f63decc55f4/Shadow-Pages-White-Logo.png" />
+    <meta property="og:url" content="https://start.shadowpages.io/" />
+    <meta property="og:title" content="Shadow Pages – Build Faceless Instagram Brands & Generate Passive Income" />
+    <meta property="og:description" content="Learn how to build faceless Instagram brands and generate passive income using the Shadow Pages system." />
+    <meta property="og:image" content="https://start.shadowpages.io/assets/logosp.webp" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://shadowpages.io/" />
-    <meta property="twitter:title" content="The Shadow Pages Playbook - Complete Guide to Faceless Social Media Monetization" />
-    <meta property="twitter:description" content="Learn everything you need to know about Shadow Pages and how to generate cashflow from faceless social media accounts." />
-    <meta property="twitter:image" content="https://www.shadowpages.io/hosted/images/90/f5c60bcb03444b83789f63decc55f4/Shadow-Pages-White-Logo.png" />
+    <meta property="twitter:url" content="https://start.shadowpages.io/" />
+    <meta property="twitter:title" content="Shadow Pages – Build Faceless Instagram Brands & Generate Passive Income" />
+    <meta property="twitter:description" content="Learn how to build faceless Instagram brands and generate passive income using the Shadow Pages system." />
+    <meta property="twitter:image" content="https://start.shadowpages.io/assets/logosp.webp" />
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://www.shadowpages.io/hosted/images/90/f5c60bcb03444b83789f63decc55f4/Shadow-Pages-White-Logo.png" />
-    <link rel="apple-touch-icon" href="https://www.shadowpages.io/hosted/images/90/f5c60bcb03444b83789f63decc55f4/Shadow-Pages-White-Logo.png" />
+    <link rel="icon" type="image/png" href="/assets/logosp.webp" />
+    <link rel="apple-touch-icon" href="/assets/logosp.webp" />
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -37,21 +37,61 @@
     {
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
-      "name": "The Shadow Pages Playbook",
-      "description": "Complete guide to faceless social media monetization strategies",
+      "name": "Shadow Pages",
+      "description": "Build faceless Instagram brands and generate passive income",
       "author": {
         "@type": "Person",
         "name": "Eric Cole"
       },
-      "url": "https://shadowpages.io/"
+      "url": "https://start.shadowpages.io/"
     }
     </script>
+    
+    <!-- Load React Build Assets -->
     <script type="module" crossorigin src="/assets/index-CAwwwYNE.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CIS7ZNq6.css">
+    
+    <!-- Fallback CSS for non-JS users -->
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background: rgb(20, 35, 60);
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-size: 18px;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
-    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
+    <div id="root">
+      <div class="loading">Loading Shadow Pages...</div>
+    </div>
+    
+    <!-- GitHub Pages SPA Support -->
+    <script>
+      // Handle GitHub Pages SPA routing
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?')
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </body>
 </html>
