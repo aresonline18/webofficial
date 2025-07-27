@@ -132,8 +132,13 @@ function StaticHomeComplete() {
         max-width: 100% !important;
       }
       
-      .mobile-heading-first-line {
-        color: #385dc6 !important;
+      .mobile-heading-responsive-color {
+        background: linear-gradient(to bottom, #385dc6 50%, #000000 50%);
+        background-size: 100% 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        background-position: 0% 0%;
       }
       
       @media (max-width: 767px) {
@@ -562,8 +567,8 @@ function StaticHomeComplete() {
                 with the <strong>Shadow Pages Team</strong>
               </h2>
               {/* Mobile heading - hidden on desktop */}
-              <h2 className="mobile-heading">
-                <span className="mobile-heading-first-line">Have the opportunity to talk with the</span> Shadow Pages team
+              <h2 className="mobile-heading mobile-heading-responsive-color">
+                Have the opportunity to talk with the Shadow Pages team
               </h2>
             </div>
 
