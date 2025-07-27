@@ -70,11 +70,12 @@ export default function StaticHome() {
       
       .mobile-heading {
         display: none;
-        font-size: clamp(1.2rem, 4vw, 1.6rem) !important;
+        font-size: clamp(1.5rem, 5vw, 2rem) !important;
         line-height: 1.3 !important;
         text-align: left !important;
         white-space: normal !important;
         word-wrap: break-word !important;
+        max-width: 100% !important;
       }
       
       @media (max-width: 767px) {
