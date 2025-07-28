@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Resources - insider.group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    colors: {
+                        'custom-gray': '#f8f9fa',
+                        'custom-red': '#dc3545',
+                        'custom-blue': '#007bff'
+                    },
+                    maxWidth: {
+                        'content': '960px'
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-custom-gray font-inter text-black">
+    <!-- @COMPONENT: Navigation -->
+    <nav class="bg-custom-gray py-4">
+        <div class="max-w-content mx-auto px-4 flex items-center justify-between">
+            <!-- @COMPONENT: Logo -->
+            <div>
+                <a href="https://insider.group/" class="flex items-center">
+                    <!-- Logo placeholder - would use actual logo in production -->
+                    <span class="text-xl font-bold">insider.group</span>
+                </a>
+            </div>
+            <!-- @END_COMPONENT: Logo -->
+            
+            <!-- @COMPONENT: NavigationMenu -->
+            <div class="flex items-center space-x-6">
+                <a href="https://www.youtube.com/channel/UCi_8StbyQKzIB2wdzNFoVUw/?sub_confirmation=1" class="text-black hover:text-gray-700 font-medium">YouTube</a>
+                <a href="https://insider.group/learn" class="text-black hover:text-gray-700 font-medium">Free Resources</a>
+                <a href="https://insider.group/proof" class="text-black hover:text-gray-700 font-medium">Proof</a>
+                <a href="https://insider.group/customer-results" class="text-black hover:text-gray-700 font-medium">Member Results</a>
+                <a href="https://insider.group/about-jakub" class="text-black hover:text-gray-700 font-medium">About our Founder</a>
+            </div>
+            <!-- @END_COMPONENT: NavigationMenu -->
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- @COMPONENT: MainContent -->
+    <main class="max-w-content mx-auto px-4 py-8">
+        
+        <!-- @COMPONENT: HeaderSection -->
+        <div class="bg-white rounded-lg p-8 mb-6 flex items-center">
+            <div class="flex-shrink-0 mr-6">
+                <!-- Laptop with person illustration for Free Resources -->
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280" alt="Free Resources Illustration" class="w-36 h-36 object-cover rounded-lg" data-mock-image="true" data-implementation="Use actual Bitmoji illustration" />
+            </div>
+            <div>
+                <h1 class="text-4xl font-black text-black mb-2">Free Resources</h1>
+                <p class="text-lg text-black">Materials to help you <strong>grow your online business</strong></p>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: HeaderSection -->
+
+        <!-- @COMPONENT: YouTubeSection -->
+        <div class="bg-white rounded-lg p-8 mb-6 flex items-center">
+            <div class="flex-shrink-0 mr-6">
+                <!-- YouTube thumbnail placeholder -->
+                <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280" alt="YouTube Marketing Content" class="w-36 h-36 object-cover rounded-lg" data-mock-image="true" data-implementation="Use actual YouTube thumbnail" />
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-black text-black mb-2">Watch new videos on YouTube</h2>
+                <p class="text-lg text-black mb-4">Marketing. Business. No BS.</p>
+                <a href="https://www.youtube.com/channel/UCi_8StbyQKzIB2wdzNFoVUw/?sub_confirmation=1" 
+                   class="inline-block bg-custom-red text-white px-4 py-2 rounded font-medium hover:bg-red-600 transition-colors" 
+                   data-event="click:openYouTube">
+                    Watch videos
+                </a>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: YouTubeSection -->
+
+        <!-- @COMPONENT: SevenMillsSection -->
+        <div class="bg-white rounded-lg p-8 mb-6 flex items-center">
+            <div class="flex-shrink-0 mr-6">
+                <!-- Business success illustration -->
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280" alt="Business Growth Charts" class="w-36 h-36 object-cover rounded-lg" data-mock-image="true" data-implementation="Use actual business illustration" />
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-black text-black mb-2">$7.18M+ With Under 7 Clients</h2>
+                <p class="text-lg text-black mb-4">See how I get <strong>$30k to $150k per month</strong> from each client by selling leads</p>
+                <a href="https://join.insidergroup.club/7mills" 
+                   class="inline-block bg-custom-blue text-white px-4 py-2 rounded font-medium hover:bg-blue-600 transition-colors" 
+                   data-event="click:openSevenMills">
+                    Click to see content
+                </a>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: SevenMillsSection -->
+
+        <!-- @COMPONENT: CaseStudySection -->
+        <div class="bg-white rounded-lg p-8 mb-6 flex items-center">
+            <div class="flex-shrink-0 mr-6">
+                <!-- Case study thumbnail -->
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280" alt="Case Study Analysis" class="w-36 h-36 object-cover rounded-lg" data-mock-image="true" data-implementation="Use actual case study thumbnail" />
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-black text-black mb-2">CASE STUDY: $2.67M. 1 Client. 19 months.</h2>
+                <p class="text-lg text-black mb-4">Strategies on acquiring, onboarding and retaining <strong>$1M+/year clients</strong></p>
+                <a href="https://coda.io/@jakubjbln/case-study-1" 
+                   class="inline-block bg-custom-blue text-white px-4 py-2 rounded font-medium hover:bg-blue-600 transition-colors" 
+                   data-event="click:openCaseStudy">
+                    Open case study
+                </a>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: CaseStudySection -->
+
+        <!-- @COMPONENT: BusinessRankingSection -->
+        <div class="bg-white rounded-lg p-8 mb-6 flex items-center">
+            <div class="flex-shrink-0 mr-6">
+                <!-- Business ranking thumbnail -->
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280" alt="Business Rankings Chart" class="w-36 h-36 object-cover rounded-lg" data-mock-image="true" data-implementation="Use actual ranking thumbnail" />
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-black text-black mb-2">Top 8 Online Businesses Ranked (2025)</h2>
+                <p class="text-lg text-black mb-4">I've ranked the top online business models <strong>from best to worst</strong></p>
+                <a href="https://coda.io/@jakubjbln/business-model-comparison" 
+                   class="inline-block bg-custom-blue text-white px-4 py-2 rounded font-medium hover:bg-blue-600 transition-colors" 
+                   data-event="click:openBusinessRanking">
+                    See ranking
+                </a>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: BusinessRankingSection -->
+
+        <!-- @COMPONENT: NicheRankingSection -->
+        <div class="bg-white rounded-lg p-8 mb-6 flex items-center">
+            <div class="flex-shrink-0 mr-6">
+                <!-- Niche ranking thumbnail -->
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280" alt="Lead Generation Niches" class="w-36 h-36 object-cover rounded-lg" data-mock-image="true" data-implementation="Use actual niche ranking thumbnail" />
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-black text-black mb-2">I ranked 40+ lead gen niches (from best to worst)</h2>
+                <p class="text-lg text-black mb-4">See which verticals are <strong>best for pay per lead</strong></p>
+                <a href="https://coda.io/@jakubjbln/niche-ranking" 
+                   class="inline-block bg-custom-blue text-white px-4 py-2 rounded font-medium hover:bg-blue-600 transition-colors" 
+                   data-event="click:openNicheRanking">
+                    See ranking
+                </a>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: NicheRankingSection -->
+
+        <!-- @COMPONENT: LeadGenerationSection -->
+        <div class="bg-white rounded-lg p-8 mb-6 flex items-center">
+            <div class="flex-shrink-0 mr-6">
+                <!-- Lead generation illustration -->
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280" alt="Lead Generation Process" class="w-36 h-36 object-cover rounded-lg" data-mock-image="true" data-implementation="Use actual Bitmoji promotion thumbnail" />
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-black text-black mb-2">Generate 11,000+ Qualified Leads Every Month</h2>
+                <p class="text-lg text-black mb-4">Getting as many leads and clients <strong>as you can possibly handle</strong></p>
+                <a href="https://coda.io/@jakubjbln/generating-leads" 
+                   class="inline-block bg-custom-blue text-white px-4 py-2 rounded font-medium hover:bg-blue-600 transition-colors" 
+                   data-event="click:openLeadGeneration">
+                    Click to see content
+                </a>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: LeadGenerationSection -->
+
+        <!-- @COMPONENT: HighValueClientsSection -->
+        <div class="bg-white rounded-lg p-8 mb-6 flex items-center">
+            <div class="flex-shrink-0 mr-6">
+                <!-- High value clients illustration -->
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280" alt="High Value Client Strategy" class="w-36 h-36 object-cover rounded-lg" data-mock-image="true" data-implementation="Use actual Bitmoji gorilla thumbnail" />
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-black text-black mb-2">How to get $30k-$150k+/m clients</h2>
+                <p class="text-lg text-black mb-4">How I make <strong>$500k+/m with less than 7 clients</strong></p>
+                <a href="https://coda.io/@jakubjbln/150k-m-clients" 
+                   class="inline-block bg-custom-blue text-white px-4 py-2 rounded font-medium hover:bg-blue-600 transition-colors" 
+                   data-event="click:openHighValueClients">
+                    Get 150k/m clients
+                </a>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: HighValueClientsSection -->
+
+        <!-- @COMPONENT: BillionaireMindsetSection -->
+        <div class="bg-white rounded-lg p-8 mb-6 flex items-center">
+            <div class="flex-shrink-0 mr-6">
+                <!-- Billionaire thinking illustration -->
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280" alt="Billionaire Mindset" class="w-36 h-36 object-cover rounded-lg" data-mock-image="true" data-implementation="Use actual thinking Bitmoji thumbnail" />
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-black text-black mb-2">How To Think Like a Billionaire (with Examples)</h2>
+                <p class="text-lg text-black mb-4">Everything I learned by <strong>studying billionaires</strong></p>
+                <a href="https://coda.io/@jakubjbln/think-like-billionaire" 
+                   class="inline-block bg-custom-blue text-white px-4 py-2 rounded font-medium hover:bg-blue-600 transition-colors" 
+                   data-event="click:openBillionaireMindset">
+                    Read now
+                </a>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: BillionaireMindsetSection -->
+
+        <!-- @COMPONENT: MarketingNewsletterSection -->
+        <div class="bg-white rounded-lg p-8 mb-6 flex items-center">
+            <div class="flex-shrink-0 mr-6">
+                <!-- Marketing newsletter illustration -->
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280" alt="Marketing Case Studies" class="w-36 h-36 object-cover rounded-lg" data-mock-image="true" data-implementation="Use actual insider.marketing thumbnail" />
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-black text-black mb-2">3 New Marketing Ideas. 2 Mins. 1x Per Week.</h2>
+                <p class="text-lg text-black mb-4">See the <strong>top ads, copywriting tips and psychology tactics</strong> all in one place</p>
+                <a href="https://www.insider.marketing/?utm_source=insider.group" 
+                   class="inline-block bg-custom-blue text-white px-4 py-2 rounded font-medium hover:bg-blue-600 transition-colors" 
+                   data-event="click:openMarketingNewsletter">
+                    Try it - it's free
+                </a>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: MarketingNewsletterSection -->
+
+        <!-- @COMPONENT: RightFitSection -->
+        <div class="bg-white rounded-lg p-8 mb-6 flex items-center">
+            <div class="flex-shrink-0 mr-6">
+                <!-- Right fit assessment illustration -->
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280" alt="Program Assessment" class="w-36 h-36 object-cover rounded-lg" data-mock-image="true" data-implementation="Use actual Bitmoji ROI thumbnail" />
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-black text-black mb-2">Is Our Program the Right Fit For You?</h2>
+                <p class="text-lg text-black mb-4"><strong>Making a decision</strong> to be working with me and my team</p>
+                <a href="https://coda.io/@jakubjbln/right-fit" 
+                   class="inline-block bg-custom-blue text-white px-4 py-2 rounded font-medium hover:bg-blue-600 transition-colors" 
+                   data-event="click:openRightFit">
+                    Make decision
+                </a>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: RightFitSection -->
+
+        <!-- @COMPONENT: ConstraintsSection -->
+        <div class="bg-white rounded-lg p-8 mb-6 flex items-center">
+            <div class="flex-shrink-0 mr-6">
+                <!-- Business constraints illustration -->
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=280" alt="Business Problem Solving" class="w-36 h-36 object-cover rounded-lg" data-mock-image="true" data-implementation="Use actual constraints pipeline thumbnail" />
+            </div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-black text-black mb-2">Not Making Any Progress With Your Business?</h2>
+                <p class="text-lg text-black mb-4"><strong>Identify the problem, solve it and scale</strong> using our diagram</p>
+                <a href="https://coda.io/@jakubjbln/constraints" 
+                   class="inline-block bg-custom-blue text-white px-4 py-2 rounded font-medium hover:bg-blue-600 transition-colors" 
+                   data-event="click:openConstraints">
+                    Solve your problems
+                </a>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: ConstraintsSection -->
+
+    </main>
+    <!-- @END_COMPONENT: MainContent -->
+
+    <script>
+        // TODO: Implement click tracking and analytics
+        // TODO: Add smooth scrolling behavior
+        // TODO: Implement responsive navigation for mobile
+        
+        (function() {
+            // Simple hover effects and interaction feedback
+            const buttons = document.querySelectorAll('a[class*="bg-"]');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-1px)';
+                    this.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+
+            // Add loading state for external links
+            const externalLinks = document.querySelectorAll('a[href^="http"]');
+            externalLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // TODO: Implement loading state and external link tracking
+                    console.log('External link clicked:', this.href);
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
