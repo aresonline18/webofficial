@@ -51,7 +51,7 @@
     <script type="module" crossorigin src="/assets/index-CAwwwYNE.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CIS7ZNq6.css">
     
-    <!-- Fallback CSS for non-JS users -->
+    <!-- Hero Section Layout CSS -->
     <style>
       body {
         font-family: 'Inter', sans-serif;
@@ -71,6 +71,36 @@
         align-items: center;
         min-height: 100vh;
         font-size: 18px;
+      }
+      
+      /* Ensure proper hero layout */
+      .hero-content {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 2rem !important;
+        align-items: center !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+        padding: 0 2rem !important;
+      }
+      
+      .hero-left {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+      
+      .hero-right {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+      
+      @media (max-width: 768px) {
+        .hero-content {
+          grid-template-columns: 1fr !important;
+          text-align: center !important;
+        }
       }
     </style>
   </head>
