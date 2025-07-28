@@ -1,0 +1,40 @@
+/* Optional: Add specific styles for blog articles */
+.blog-styles article {
+    line-height: 1.6;
+}
+
+.blog-styles h1, .blog-styles h2, .blog-styles h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.blog-styles p {
+    margin-bottom: 1em;
+}
+
+.blog-styles code {
+    background-color: #f0f0f0;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+.blog-styles pre code {
+    display: block;
+    padding: 1em;
+    overflow-x: auto;
+}
+
+.blog-styles ul, .blog-styles ol {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+.blog-styles blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 1em;
+    margin-left: 0;
+    font-style: italic;
+    color: #555;
+}
+
