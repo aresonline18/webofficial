@@ -33,9 +33,18 @@
 - **Duplicate Prevention**: Safeguard system to prevent multiple resource cards for same template
 - **Error Handling**: Comprehensive error handling and validation throughout the system
 
-## Recent Changes (January 27, 2025)
+## Recent Changes (January 29, 2025)
 
-### ✅ HERO FEATURE LIST ENHANCEMENT - Premium Coaching Benefits (Latest)
+### ✅ CONDITIONAL CONTENT SYSTEM - URL Parameter-Based Hiding (Latest)
+- **Smart Content Control**: Implemented conditional rendering based on `utm_campaign` URL parameter
+- **Hidden Mode (Default)**: Shadow Pages Playbook shows only Instagram contact message for organic traffic
+- **CTA Mode (With utm_campaign)**: Full "Click Here To Apply" button and "Book 1:1 Call" functionality for paid traffic
+- **Sticky CTA Control**: Bottom-right call button only appears when utm_campaign parameter is present
+- **Image Optimization**: Replaced book images with smaller, faster-loading optimized versions
+- **URL Detection Hook**: Created reusable useUrlParams hook for parameter-based conditional rendering
+- **GitHub Upload**: Complete project with conditional content system uploaded to repository
+
+### ✅ HERO FEATURE LIST ENHANCEMENT - Premium Coaching Benefits (Previous)
 - **Enhanced Value Proposition**: Updated hero section feature list with premium coaching language
 - **Specific Benefits**: Changed generic terms to specific offerings (Weekly 1/1 Live Calls, 24/7 V.I.P. Support)
 - **Professional Positioning**: Elevated language to match high-value coaching service positioning
