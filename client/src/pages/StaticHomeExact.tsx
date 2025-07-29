@@ -331,7 +331,10 @@ function StaticHomeExact() {
                   />
                 </svg>
               </div>
-              <h3>Our Shadow Pages Framework</h3>
+              <h3>
+                <span className="desktop-text">Our Framework</span>
+                <span className="mobile-text">Our Shadow Pages Framework</span>
+              </h3>
               <p>Built on bulletproof strategies tested and perfected for years</p>
             </div>
 
@@ -359,7 +362,10 @@ function StaticHomeExact() {
                   />
                 </svg>
               </div>
-              <h3>Complete System Access</h3>
+              <h3>
+                <span className="desktop-text">Complete System</span>
+                <span className="mobile-text">Complete System Access</span>
+              </h3>
               <p>Gain access to hours of step-by-step training</p>
             </div>
 
