@@ -1,4 +1,9 @@
+import { useUrlParams } from '@/hooks/useUrlParams';
+
 export default function StickyCTA() {
+  const { hasParam } = useUrlParams();
+  const showCTA = hasParam('utm_campaign');
+
   const handleCallBooking = () => {
     // Check if we're on the home page
     const isHomePage = window.location.pathname === '/' || window.location.pathname === '/home';
@@ -22,6 +27,11 @@ export default function StickyCTA() {
       window.open(url, '_blank');
     }
   };
+
+  // Hide CTA if no utm_campaign parameter
+  if (!showCTA) {
+    return null;
+  }
 
   return (
     <div className="fixed bottom-5 right-5 z-50 md:bottom-5 md:right-5 md:left-auto sticky-cta-mobile">
