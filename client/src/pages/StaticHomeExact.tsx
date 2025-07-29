@@ -502,7 +502,10 @@ function StaticHomeExact() {
 
       <section className="review-section">
         <div className="review-header">
-          <h2>Real results, real feedback from our students</h2>
+          <h2>
+            <span className="desktop-text">Real results, real feedback from our students</span>
+            <span className="mobile-text">Real results, real feedback.</span>
+          </h2>
           <p>
             Read why hundreds of students like Shadow Pages and how it impacted their lifes
           </p>
@@ -674,8 +677,7 @@ function StaticHomeExact() {
 
       <section className="section-students">
         <h4 className="section-students__title testimonial-title">
-          <span className="desktop-text">Real results, real feedback from our students</span>
-          <span className="mobile-text">Real results, real feedback.</span>
+          This is what our <span className="highlight">students</span> have to say…
         </h4>
         <div className="video-wrapper">
           <iframe 
