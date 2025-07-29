@@ -1031,18 +1031,72 @@ function StaticHomeComplete() {
             </a>
           </div>
 
+          <hr />
+
+          <div className="footer-columns">
+            <div className="footer-column">
+              <h4>Shadow Pages</h4>
+              <p>
+                Build faceless brands. Unlock time freedom. Start your journey.
+              </p>
+            </div>
+            <div className="footer-column">
+              <h4>Support</h4>
+              <p>Contact us for questions and community help.</p>
+            </div>
+          </div>
+
+          <hr />
+
           <div className="footer-bottom">
-            <div className="social-links">
-              <a href="https://www.instagram.com/erichustls" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/instagram.svg" alt="Instagram" loading="lazy" />
+            <p>© 2025 – Shadow Pages, All Rights Reserved</p>
+            <div className="footer-links" style={{ 
+              display: 'flex', 
+              justifyContent: 'center', 
+              alignItems: 'center',
+              gap: '8px',
+              fontSize: '14px'
+            }}>
+              <a href="https://www.shadowpages.io/privacypolicy-1">
+                Privacy Policy
               </a>
-              <a href="https://www.youtube.com/@shadowpagesbyeric" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/youtube.svg" alt="YouTube" loading="lazy" />
+              <span>|</span>
+              <a href="https://www.shadowpages.io/termsofservice-1">
+                Terms of Service
+              </a>
+              <span>|</span>
+              <a href="https://www.shadowpages.io/earningsdisclaimer-1">
+                Disclaimer
               </a>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Subtle link to Free Resources - positioned at bottom */}
+      <div style={{ 
+        position: 'fixed', 
+        bottom: '20px', 
+        right: '20px', 
+        zIndex: 1000,
+        background: 'rgba(56, 93, 198, 0.9)',
+        borderRadius: '50px',
+        padding: '12px 20px',
+        backdropFilter: 'blur(10px)'
+      }}>
+        <a 
+          href="/free-resources" 
+          style={{ 
+            color: 'white', 
+            textDecoration: 'none', 
+            fontSize: '14px',
+            fontWeight: '500'
+          }}
+        >
+          Free Resources →
+        </a>
+      </div>
+
     </div>
   );
 }
