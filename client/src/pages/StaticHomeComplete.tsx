@@ -834,7 +834,8 @@ function StaticHomeComplete() {
       {/* Students Video Section */}
       <section className="section-students">
         <h4 className="section-students__title testimonial-title">
-          This is what our <span className="highlight">students</span> have to say…
+          <span className="desktop-text">Real results, real feedback from our students</span>
+          <span className="mobile-text">Real results, real feedback.</span>
         </h4>
         <div className="video-wrapper">
           <iframe 
