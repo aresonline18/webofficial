@@ -239,7 +239,7 @@ function StaticHomeComplete() {
   }, []);
 
   return (
-    <>
+    <div className="static-home-wrapper">
       {/* Google Tag Manager (noscript) */}
       <noscript>
         <iframe 
@@ -1044,7 +1044,6 @@ function StaticHomeComplete() {
         </div>
       </section>
     </div>
-    </>
   );
 }
 
