@@ -331,7 +331,7 @@ export default function StaticHome() {
                 </svg>
               </div>
               <h3>Our Shadow Pages Framework</h3>
-              <p>Built on bulletproof strategies and relentless testing for years</p>
+              <p>Built on bulletproof strategies tested and perfected for years</p>
             </div>
 
             {/* Card 2 */}
@@ -344,8 +344,8 @@ export default function StaticHome() {
                   />
                 </svg>
               </div>
-              <h3>Tailored for you</h3>
-              <p>Our team provides personalized 1/1 coaching for you and your pages.</p>
+              <h3>Personalized for you</h3>
+              <p>Our team provides tailored 1/1 coaching for you and your needs.</p>
             </div>
 
             {/* Card 3 */}
