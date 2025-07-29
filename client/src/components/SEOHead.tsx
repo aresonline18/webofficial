@@ -8,6 +8,8 @@ interface SEOHeadProps {
   ogDescription?: string;
   ogImage?: string;
   canonical?: string;
+  structuredData?: any;
+  contentType?: 'webpage' | 'article' | 'faq' | 'guide';
 }
 
 export default function SEOHead({
@@ -17,7 +19,9 @@ export default function SEOHead({
   ogTitle,
   ogDescription,
   ogImage,
-  canonical
+  canonical,
+  structuredData,
+  contentType = 'webpage'
 }: SEOHeadProps) {
   useEffect(() => {
     // Update document title
@@ -64,13 +68,20 @@ export default function SEOHead({
     }
 
     // Schema.org structured data
-    const structuredData = {
+    const defaultStructuredData = {
       "@context": "https://schema.org",
-      "@type": "WebPage",
+      "@type": contentType === 'faq' ? "FAQPage" : "WebPage",
       "name": title,
       "description": description,
-      "url": canonical || window.location.href
+      "url": canonical || window.location.href,
+      "mainEntity": contentType === 'faq' ? {
+        "@type": "WebPage",
+        "name": title,
+        "description": description
+      } : undefined
     };
+
+    const finalStructuredData = structuredData || defaultStructuredData;
 
     let scriptTag = document.querySelector('script[type="application/ld+json"]') as HTMLScriptElement;
     if (!scriptTag) {
@@ -78,7 +89,7 @@ export default function SEOHead({
       scriptTag.type = 'application/ld+json';
       document.head.appendChild(scriptTag);
     }
-    scriptTag.textContent = JSON.stringify(structuredData);
+    scriptTag.textContent = JSON.stringify(finalStructuredData);
 
   }, [title, description, keywords, ogTitle, ogDescription, ogImage, canonical]);
 
