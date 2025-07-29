@@ -913,36 +913,11 @@ function StaticHomeExact() {
         </div>
       </section>
 
-      {/* Subtle link to Free Resources - positioned at bottom */}
-      <div style={{ 
-        position: 'fixed', 
-        bottom: '20px', 
-        right: '20px', 
-        zIndex: 1000,
-        background: 'rgba(56, 93, 198, 0.9)',
-        borderRadius: '50px',
-        padding: '12px 20px',
-        backdropFilter: 'blur(10px)'
-      }}>
-        <a 
-          href="/free-resources" 
-          style={{ 
-            color: 'white', 
-            textDecoration: 'none', 
-            fontSize: '14px',
-            fontWeight: '500'
-          }}
-        >
-          Free Resources →
-        </a>
-      </div>
-
     </div>
   );
 }
 
 export default StaticHomeExact;
-              background: 'white',
               borderRadius: '16px',
               boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
               border: '1px solid #e2e8f0',
