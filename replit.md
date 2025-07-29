@@ -35,7 +35,13 @@
 
 ## Recent Changes (January 29, 2025)
 
-### ✅ COMPREHENSIVE WEBSITE COPY OPTIMIZATION (Latest)
+### ✅ FREE RESOURCES BOOK COVER FIX (Latest)
+- **Shadow Pages Playbook Image**: Fixed broken book cover image on free resources page
+- **Optimized Image Path**: Updated from uploads directory to `/assets/book-optimized.png`
+- **Better Performance**: Using optimized version for faster loading
+- **Static Fallback**: Ensured resource card displays properly with corrected image path
+
+### ✅ COMPREHENSIVE WEBSITE COPY OPTIMIZATION (Previous)
 - **Premium Feature Language**: Updated hero section features to "1/1 Personalized Coaching" and "24/7 Support"
 - **Enhanced Value Positioning**: Replaced generic terms with specific premium coaching service language
 - **Complete Content Refresh**: Updated all major website sections with conversion-focused copy
