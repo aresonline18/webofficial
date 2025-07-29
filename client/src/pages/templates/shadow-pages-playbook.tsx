@@ -94,30 +94,6 @@ export default function ShadowPagesPlaybook() {
                 "@type": "Answer",
                 "text": "Shadow Pages operate without showing your face or personal brand. They focus on specific niches and use proven content strategies to build engaged audiences that convert into customers."
               }
-            },
-            {
-              "@type": "Question",
-              "name": "Do I need followers to start Shadow Pages?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No you don't need any followers prior at all. Our system shows you how to start & grow your Shadow Page from zero to thousands of followers using proven strategies and system that don't require a prior audience at all."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How long does it take until I can generate cashflow with my Shadow Page?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "With the right systems & strategies in place, our students see their first results already within the first 30-45 days and are able to build a sustainable income within 3-6 months."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What's the biggest mistake people make with Shadow Pages?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Trying to figure it out alone instead of following a proven system. Most people waste months experimenting when they could already generate cashflow in weeks by following our step-by-step system."
-              }
             }
           ],
           "breadcrumb": {
@@ -579,32 +555,7 @@ export default function ShadowPagesPlaybook() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-9" className="border border-gray-200 rounded-lg px-6">
-                <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
-                  Do I need followers to start Shadow Pages?
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-700 pb-6">
-                  No you don't need any followers prior at all. Our system shows you how to start & grow your Shadow Page from zero to thousands of followers using proven strategies and system that don't require a prior audience at all.
-                </AccordionContent>
-              </AccordionItem>
 
-              <AccordionItem value="item-10" className="border border-gray-200 rounded-lg px-6">
-                <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
-                  How long does it take until I can generate cashflow with my Shadow Page?
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-700 pb-6">
-                  With the right systems & strategies in place, our students see their first results already within the first 30-45 days and are able to build a sustainable income within 3-6 months.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-11" className="border border-gray-200 rounded-lg px-6">
-                <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
-                  What's the biggest mistake people make with Shadow Pages?
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-700 pb-6">
-                  Trying to figure it out alone instead of following a proven system. Most people waste months experimenting when they could already generate cashflow in weeks by following our step-by-step system.
-                </AccordionContent>
-              </AccordionItem>
             </Accordion>
 
           </div>
