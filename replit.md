@@ -35,7 +35,14 @@
 
 ## Recent Changes (January 29, 2025)
 
-### ✅ FREE RESOURCES BOOK COVER FIX (Latest)
+### ✅ FAQ SECTION ADDED TO HOME PAGE (Latest)
+- **Complete FAQ Integration**: Added comprehensive FAQ section below video testimonials on all home page variants
+- **9 Essential Questions**: Covers experience requirements, time commitment, support, guarantees, and automation capabilities
+- **Professional Design**: Light gray background with accordions matching Shadow Pages Playbook style
+- **Apply Now Integration**: FAQ answers direct users to "Apply Now" button for qualification process
+- **Consistent Implementation**: Added to StaticHome.tsx, StaticHomeComplete.tsx, and StaticHomeExact.tsx
+
+### ✅ FREE RESOURCES BOOK COVER FIX (Previous)
 - **Shadow Pages Playbook Image**: Fixed broken book cover image on free resources page
 - **Optimized Image Path**: Updated from uploads directory to `/assets/book-optimized.png`
 - **Better Performance**: Using optimized version for faster loading
