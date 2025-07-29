@@ -21,10 +21,59 @@ export default function FreeResources() {
       <SEOHead 
         title="Shadow Pages Free Resources - Start, Run and Profit from Shadow Pages"
         description="Free materials to help you start, run and profit from Shadow Pages"
-        keywords="shadow pages, free resources, social media marketing, instagram business, faceless marketing, digital marketing resources"
+        keywords="shadow pages, free resources, social media marketing, instagram business, faceless marketing, digital marketing resources, Shadow Pages Playbook"
         ogTitle="Shadow Pages Free Resources"
         ogDescription="Free materials to help you start, run and profit from Shadow Pages"
         canonical={`${window.location.origin}/free-resources`}
+        contentType="webpage"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Shadow Pages Free Resources",
+          "description": "Free materials to help you start, run and profit from Shadow Pages",
+          "url": `${window.location.origin}/free-resources`,
+          "mainEntity": {
+            "@type": "ItemList",
+            "name": "Shadow Pages Free Resources",
+            "description": "Comprehensive collection of free resources for Shadow Pages business",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "Guide",
+                  "name": "Shadow Pages Playbook",
+                  "description": "Complete guide to start, run and profit from Shadow Pages",
+                  "url": `${window.location.origin}/free-resources/shadow-pages-playbook`,
+                  "about": [
+                    "Shadow Pages strategy",
+                    "Instagram business growth",
+                    "Faceless marketing techniques",
+                    "Social media monetization",
+                    "Digital marketing automation"
+                  ]
+                }
+              }
+            ]
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": window.location.origin
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Free Resources",
+                "item": `${window.location.origin}/free-resources`
+              }
+            ]
+          }
+        }}
       />
       <style dangerouslySetInnerHTML={{
         __html: `
