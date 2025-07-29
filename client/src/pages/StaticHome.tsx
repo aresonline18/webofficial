@@ -1,4 +1,10 @@
 import { useEffect } from 'react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function StaticHome() {
   useEffect(() => {
@@ -680,6 +686,115 @@ export default function StaticHome() {
             loading="lazy"
           />
         </div> 
+      </section>
+
+      {/* FAQ Section */}
+      <section className="faq-section" style={{ 
+        padding: '60px 20px', 
+        backgroundColor: '#f8fafc',
+        maxWidth: '1200px',
+        margin: '0 auto'
+      }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <h3 style={{ 
+            fontWeight: 900, 
+            fontSize: 'calc(1.5rem + 10px)', 
+            textAlign: 'center',
+            marginBottom: '40px',
+            color: '#1a202c'
+          }}>
+            Frequently Asked Questions
+          </h3>
+          
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            <AccordionItem value="item-1" className="border border-gray-200 rounded-lg px-6">
+              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                Can anyone do this?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-700 pb-6">
+                Yes. You don't need any prior experience to do this. No tech skills, no prior following or anything.<br /><br />
+                If you can just follow some simple steps then starting and running a Shadow Page is simple if you have the right systems in place
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2" className="border border-gray-200 rounded-lg px-6">
+              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                Can I do this next to my job?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-700 pb-6">
+                Absolutely. Most people start their Shadow Pages next to their job as once it's fully set up & automated, the system can run pretty much on it's own.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3" className="border border-gray-200 rounded-lg px-6">
+              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                How can I work with you?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-700 pb-6">
+                Every month we only work with a limited amount of individuals as our #1 priority is for our students to win.<br /><br />
+                That's why our spots are always very limited and we're very picky with who we work with...<br /><br />
+                But if you'd like to learn more and see if you would qualify, click "Apply Now" above to fill out our 2-minute application.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4" className="border border-gray-200 rounded-lg px-6">
+              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                What's your guarantee?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-700 pb-6">
+                Well firstly depends if we can, even work with you, but if you qualify we'll work closely 1-1 together for the next 6-12 months until you hit at least $5K-$10K/mo with your Shadow<br /><br />
+                That way it's almost impossible to fail as we ensure every single student crushes it.<br /><br />
+                We are able to promise this as we go on weekly calls together, provide all of our systems, strategies and support. You'll have everything you need to build your Shadow Page and make $5K-$10K/mo.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5" className="border border-gray-200 rounded-lg px-6">
+              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                What kind of support will I get when working with you?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-700 pb-6">
+                Like I've already mentioned our #1 priority is for our students to win that's why you'll have your own dedicated head coach and be able to ask questions anytime you'd like.<br /><br />
+                Plus you'll have weekly 1-1 calls, where you can ask questions, fix any road blocks and be able to get to the next level.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6" className="border border-gray-200 rounded-lg px-6">
+              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                How long to see results?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-700 pb-6">
+                It completely depends, we've got students that make 4 figures/mo in their first month and others that need longer. A fair and realistic expectation is 3-6 months to hit $2K-$5K/mo with your Shadow Pages, but more is also possible as we've seen in a variety of students.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-7" className="border border-gray-200 rounded-lg px-6">
+              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                Do I need experience?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-700 pb-6">
+                Nope like already mentioned in another FAQ, this system is developed in a way, that you do not need ANY prior experience. You just need the right systems and they'll work for you like clockwork.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-8" className="border border-gray-200 rounded-lg px-6">
+              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                How much time does it take?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-700 pb-6">
+                At the start, it'll be around 1 hour per day, yet after you've automated your page it'll mostly work on it's own - all you have to do is check your page and make sure everything runs smooth. I spend for example 15min a day on my pages to control everything runs the way it should.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-9" className="border border-gray-200 rounded-lg px-6">
+              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                Can I automate everything?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-700 pb-6">
+                Yes. You can close to everything from creating content to scheduling, and even monetization systems using templates and proven systems.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
       </section>
 
       {/* Footer Hero */}
