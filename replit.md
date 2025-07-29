@@ -35,12 +35,12 @@
 
 ## Recent Changes (January 29, 2025)
 
-### ✅ FAQ SECTION ADDED TO HOME PAGE (Latest)
-- **Complete FAQ Integration**: Added comprehensive FAQ section below video testimonials on all home page variants
-- **9 Essential Questions**: Covers experience requirements, time commitment, support, guarantees, and automation capabilities
-- **Professional Design**: Light gray background with accordions matching Shadow Pages Playbook style
-- **Apply Now Integration**: FAQ answers direct users to "Apply Now" button for qualification process
-- **Consistent Implementation**: Added to StaticHome.tsx, StaticHomeComplete.tsx, and StaticHomeExact.tsx
+### ✅ STREAMLINED FAQ SECTION FOR HOME PAGE (Latest)
+- **Focused 6-Question FAQ**: Reduced to essential questions: "What's a Shadow Page?", "Can anyone do this?", "Can I do this next to my job?", "How can I work with you?", "What's your guarantee?", "How long to see results?"
+- **Home Page Style Integration**: FAQ designed specifically for home page conversion flow, distinct from Shadow Pages Playbook comprehensive FAQ
+- **Conversion-Optimized**: Each question addresses core objections and drives users toward "Apply Now" action
+- **Clean Professional Design**: Light gray background with accordion UI matching overall site aesthetic
+- **Consistent Implementation**: Applied to all three home page variants (StaticHome.tsx, StaticHomeComplete.tsx, StaticHomeExact.tsx)
 
 ### ✅ FREE RESOURCES BOOK COVER FIX (Previous)
 - **Shadow Pages Playbook Image**: Fixed broken book cover image on free resources page
