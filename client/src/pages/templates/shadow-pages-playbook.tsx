@@ -360,7 +360,8 @@ export default function ShadowPagesPlaybook() {
                   Can anyone do this?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-700 pb-6">
-                  Yes. You don't need any prior experience to do this. No tech skills, no prior following or anything. If you can just follow the steps then you for sure can build and grow a Shadow Page using our proven systems.
+                  Yes. You don't need any prior experience to do this. No tech skills, no prior following or anything.<br /><br />
+                  If you can just follow some simple steps then starting and running a Shadow Page is simple if you have the right systems in place
                 </AccordionContent>
               </AccordionItem>
 
@@ -401,7 +402,7 @@ export default function ShadowPagesPlaybook() {
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-700 pb-6">
                   Like I've already mentioned our #1 priority is for our students to win that's why you'll have your own dedicated head coach and be able to ask questions anytime you'd like.<br /><br />
-                  Plus you'll have weekly 1-1 calls, where you can ask any questions, fix any road blocks and get to the next level.
+                  Plus you'll have weekly 1-1 calls, where you can ask questions, fix any road blocks and be able to get to the next level.
                 </AccordionContent>
               </AccordionItem>
 
