@@ -518,8 +518,7 @@ export default function StaticHome() {
         <div className="review-header">
           <h2>Real feedback from our students</h2>
           <p>
-            Read why hundreds of students like Shadow Pages and how they reached
-            financial freedom
+            Read why hundreds of students like Shadow Pages and how it changed their lifes
           </p>
         </div>
 
