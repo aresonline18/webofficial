@@ -1,10 +1,4 @@
 import { useEffect } from 'react';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 export default function StaticHome() {
   useEffect(() => {
@@ -688,84 +682,252 @@ export default function StaticHome() {
         </div> 
       </section>
 
-      {/* FAQ Section */}
-      <section className="faq-section" style={{ 
-        padding: '60px 20px', 
-        backgroundColor: '#f8fafc',
-        maxWidth: '1200px',
-        margin: '0 auto'
+      {/* FAQ Section - Home Page Style */}
+      <section style={{ 
+        padding: '80px 20px',
+        background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
+        position: 'relative'
       }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <h3 style={{ 
-            fontWeight: 900, 
-            fontSize: 'calc(1.5rem + 10px)', 
-            textAlign: 'center',
-            marginBottom: '40px',
-            color: '#1a202c'
-          }}>
-            Frequently Asked Questions
-          </h3>
-          
-          <Accordion type="single" collapsible className="w-full space-y-4">
-            <AccordionItem value="item-1" className="border border-gray-200 rounded-lg px-6">
-              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+            <h2 style={{
+              fontFamily: 'Inter, sans-serif',
+              fontWeight: '900',
+              fontSize: 'clamp(2rem, 5vw, 3rem)',
+              color: '#1a202c',
+              marginBottom: '20px',
+              letterSpacing: '-0.02em'
+            }}>
+              Got <span style={{ color: '#385DC6' }}>Questions?</span>
+            </h2>
+            <p style={{
+              fontFamily: 'Inter, sans-serif',
+              fontSize: '1.1rem',
+              color: '#64748b',
+              maxWidth: '600px',
+              margin: '0 auto',
+              lineHeight: '1.6'
+            }}>
+              Everything you need to know about Shadow Pages and how to get started
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gap: '20px' }}>
+            {/* FAQ Item 1 */}
+            <details style={{
+              background: 'white',
+              borderRadius: '16px',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
+              border: '1px solid #e2e8f0',
+              overflow: 'hidden'
+            }}>
+              <summary style={{
+                padding: '24px 28px',
+                cursor: 'pointer',
+                fontFamily: 'Inter, sans-serif',
+                fontWeight: '700',
+                fontSize: '1.1rem',
+                color: '#1a202c',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                borderBottom: '1px solid #f1f5f9'
+              }}>
                 What's a Shadow Page?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-700 pb-6">
+                <span style={{ fontSize: '1.2rem', transform: 'rotate(0deg)', transition: 'transform 0.3s' }}>+</span>
+              </summary>
+              <div style={{
+                padding: '24px 28px',
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '1rem',
+                color: '#475569',
+                lineHeight: '1.7',
+                background: '#fafbfc'
+              }}>
                 A Shadow Page is a faceless Instagram account that generates income through proven systems and automation. You don't need to show your face, have prior experience, or manage it full-time once it's set up properly.
-              </AccordionContent>
-            </AccordionItem>
+              </div>
+            </details>
 
-            <AccordionItem value="item-2" className="border border-gray-200 rounded-lg px-6">
-              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+            {/* FAQ Item 2 */}
+            <details style={{
+              background: 'white',
+              borderRadius: '16px',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
+              border: '1px solid #e2e8f0',
+              overflow: 'hidden'
+            }}>
+              <summary style={{
+                padding: '24px 28px',
+                cursor: 'pointer',
+                fontFamily: 'Inter, sans-serif',
+                fontWeight: '700',
+                fontSize: '1.1rem',
+                color: '#1a202c',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                borderBottom: '1px solid #f1f5f9'
+              }}>
                 Can anyone do this?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-700 pb-6">
+                <span style={{ fontSize: '1.2rem', transform: 'rotate(0deg)', transition: 'transform 0.3s' }}>+</span>
+              </summary>
+              <div style={{
+                padding: '24px 28px',
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '1rem',
+                color: '#475569',
+                lineHeight: '1.7',
+                background: '#fafbfc'
+              }}>
                 Yes. You don't need any prior experience to do this. No tech skills, no prior following or anything.<br /><br />
-                If you can just follow some simple steps then starting and running a Shadow Page is simple if you have the right systems in place
-              </AccordionContent>
-            </AccordionItem>
+                If you can just follow some simple steps then starting and running a Shadow Page is simple if you have the right systems in place.
+              </div>
+            </details>
 
-            <AccordionItem value="item-3" className="border border-gray-200 rounded-lg px-6">
-              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+            {/* FAQ Item 3 */}
+            <details style={{
+              background: 'white',
+              borderRadius: '16px',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
+              border: '1px solid #e2e8f0',
+              overflow: 'hidden'
+            }}>
+              <summary style={{
+                padding: '24px 28px',
+                cursor: 'pointer',
+                fontFamily: 'Inter, sans-serif',
+                fontWeight: '700',
+                fontSize: '1.1rem',
+                color: '#1a202c',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                borderBottom: '1px solid #f1f5f9'
+              }}>
                 Can I do this next to my job?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-700 pb-6">
+                <span style={{ fontSize: '1.2rem', transform: 'rotate(0deg)', transition: 'transform 0.3s' }}>+</span>
+              </summary>
+              <div style={{
+                padding: '24px 28px',
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '1rem',
+                color: '#475569',
+                lineHeight: '1.7',
+                background: '#fafbfc'
+              }}>
                 Absolutely. Most people start their Shadow Pages next to their job as once it's fully set up & automated, the system can run pretty much on it's own.
-              </AccordionContent>
-            </AccordionItem>
+              </div>
+            </details>
 
-            <AccordionItem value="item-4" className="border border-gray-200 rounded-lg px-6">
-              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+            {/* FAQ Item 4 */}
+            <details style={{
+              background: 'white',
+              borderRadius: '16px',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
+              border: '1px solid #e2e8f0',
+              overflow: 'hidden'
+            }}>
+              <summary style={{
+                padding: '24px 28px',
+                cursor: 'pointer',
+                fontFamily: 'Inter, sans-serif',
+                fontWeight: '700',
+                fontSize: '1.1rem',
+                color: '#1a202c',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                borderBottom: '1px solid #f1f5f9'
+              }}>
                 How can I work with you?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-700 pb-6">
+                <span style={{ fontSize: '1.2rem', transform: 'rotate(0deg)', transition: 'transform 0.3s' }}>+</span>
+              </summary>
+              <div style={{
+                padding: '24px 28px',
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '1rem',
+                color: '#475569',
+                lineHeight: '1.7',
+                background: '#fafbfc'
+              }}>
                 Every month we only work with a limited amount of individuals as our #1 priority is for our students to win.<br /><br />
                 That's why our spots are always very limited and we're very picky with who we work with...<br /><br />
                 But if you'd like to learn more and see if you would qualify, click "Apply Now" above to fill out our 2-minute application.
-              </AccordionContent>
-            </AccordionItem>
+              </div>
+            </details>
 
-            <AccordionItem value="item-5" className="border border-gray-200 rounded-lg px-6">
-              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+            {/* FAQ Item 5 */}
+            <details style={{
+              background: 'white',
+              borderRadius: '16px',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
+              border: '1px solid #e2e8f0',
+              overflow: 'hidden'
+            }}>
+              <summary style={{
+                padding: '24px 28px',
+                cursor: 'pointer',
+                fontFamily: 'Inter, sans-serif',
+                fontWeight: '700',
+                fontSize: '1.1rem',
+                color: '#1a202c',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                borderBottom: '1px solid #f1f5f9'
+              }}>
                 What's your guarantee?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-700 pb-6">
-                Well firstly depends if we can, even work with you, but if you qualify we'll work closely 1-1 together for the next 6-12 months until you hit at least $5K-$10K/mo with your Shadow<br /><br />
+                <span style={{ fontSize: '1.2rem', transform: 'rotate(0deg)', transition: 'transform 0.3s' }}>+</span>
+              </summary>
+              <div style={{
+                padding: '24px 28px',
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '1rem',
+                color: '#475569',
+                lineHeight: '1.7',
+                background: '#fafbfc'
+              }}>
+                Well firstly depends if we can, even work with you, but if you qualify we'll work closely 1-1 together for the next 6-12 months until you hit at least $5K-$10K/mo with your Shadow Page.<br /><br />
                 That way it's almost impossible to fail as we ensure every single student crushes it.<br /><br />
                 We are able to promise this as we go on weekly calls together, provide all of our systems, strategies and support. You'll have everything you need to build your Shadow Page and make $5K-$10K/mo.
-              </AccordionContent>
-            </AccordionItem>
+              </div>
+            </details>
 
-            <AccordionItem value="item-6" className="border border-gray-200 rounded-lg px-6">
-              <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+            {/* FAQ Item 6 */}
+            <details style={{
+              background: 'white',
+              borderRadius: '16px',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
+              border: '1px solid #e2e8f0',
+              overflow: 'hidden'
+            }}>
+              <summary style={{
+                padding: '24px 28px',
+                cursor: 'pointer',
+                fontFamily: 'Inter, sans-serif',
+                fontWeight: '700',
+                fontSize: '1.1rem',
+                color: '#1a202c',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                borderBottom: '1px solid #f1f5f9'
+              }}>
                 How long to see results?
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-700 pb-6">
+                <span style={{ fontSize: '1.2rem', transform: 'rotate(0deg)', transition: 'transform 0.3s' }}>+</span>
+              </summary>
+              <div style={{
+                padding: '24px 28px',
+                fontFamily: 'Inter, sans-serif',
+                fontSize: '1rem',
+                color: '#475569',
+                lineHeight: '1.7',
+                background: '#fafbfc'
+              }}>
                 It completely depends, we've got students that make 4 figures/mo in their first month and others that need longer. A fair and realistic expectation is 3-6 months to hit $2K-$5K/mo with your Shadow Pages, but more is also possible as we've seen in a variety of students.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+              </div>
+            </details>
+          </div>
         </div>
       </section>
 
