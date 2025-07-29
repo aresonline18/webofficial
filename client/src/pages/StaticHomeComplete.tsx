@@ -1004,7 +1004,7 @@ function StaticHomeComplete() {
       </section>
 
       {/* Footer Hero Section */}
-      <section className="footer-hero">
+      <section className="footer-hero scroll-animate fade-up visible pt-[150px] pb-[150px]">
         <div className="footer-hero-content">
           <div className="footer-top">
             <h2 style={{ color: 'white' }}>
