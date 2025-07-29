@@ -344,7 +344,7 @@ export default function StaticHome() {
                   />
                 </svg>
               </div>
-              <h3>Personalized for you</h3>
+              <h3>Personalized For YOU</h3>
               <p>Our team provides tailored 1/1 coaching for you and your needs.</p>
             </div>
 
