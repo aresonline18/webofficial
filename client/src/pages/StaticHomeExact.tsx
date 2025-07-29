@@ -331,7 +331,7 @@ function StaticHomeExact() {
                   />
                 </svg>
               </div>
-              <h3>Shadow Page Strategy</h3>
+              <h3>Our Shadow Pages Framework</h3>
               <p>Built on proven faceless brand playbooks</p>
             </div>
 
@@ -359,7 +359,7 @@ function StaticHomeExact() {
                   />
                 </svg>
               </div>
-              <h3>Full System Access</h3>
+              <h3>Complete System Access</h3>
               <p>Gain access to hours of step-by-step training</p>
             </div>
 
@@ -505,10 +505,9 @@ function StaticHomeExact() {
 
       <section className="review-section">
         <div className="review-header">
-          <h2>Real feedback from our students</h2>
+          <h2>Lifes completely transformed...</h2>
           <p>
-            Read why hundreds of students like Shadow Pages and how they reached
-            financial freedom
+            Read what our students write about us...
           </p>
         </div>
 
