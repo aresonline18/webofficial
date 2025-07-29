@@ -1,5 +1,6 @@
 import StickyCTA from '@/components/sticky-cta';
 import RelatedResources from '@/components/related-resources';
+import SEOHead from '@/components/SEOHead';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import ResourceApplyNowButton from '@/components/ResourceApplyNowButton';
 import { useUrlParams } from '@/hooks/useUrlParams';
@@ -17,6 +18,142 @@ export default function ShadowPagesPlaybook() {
 
   return (
     <div className="bg-white min-h-screen">
+      <SEOHead 
+        title="Shadow Pages Playbook - Complete Guide to Start, Run and Profit from Shadow Pages"
+        description="Complete step-by-step guide to start, run and profit from Shadow Pages. Learn Instagram business strategies, faceless marketing, and social media monetization."
+        keywords="Shadow Pages Playbook, shadow pages guide, instagram business, faceless marketing, social media monetization, Shadow Pages strategy, instagram growth, digital marketing guide"
+        ogTitle="Shadow Pages Playbook - Complete Guide"
+        ogDescription="Complete step-by-step guide to start, run and profit from Shadow Pages. Learn Instagram business strategies, faceless marketing, and social media monetization."
+        canonical={`${window.location.origin}/free-resources/shadow-pages-playbook`}
+        contentType="faq"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": ["WebPage", "FAQPage", "Guide"],
+          "name": "Shadow Pages Playbook - Complete Guide",
+          "description": "Complete step-by-step guide to start, run and profit from Shadow Pages",
+          "url": `${window.location.origin}/free-resources/shadow-pages-playbook`,
+          "author": {
+            "@type": "Person",
+            "name": "Eric Cole",
+            "description": "Entrepreneur & Social Media Mastermind"
+          },
+          "about": [
+            "Shadow Pages strategy",
+            "Instagram business growth", 
+            "Faceless marketing techniques",
+            "Social media monetization",
+            "Digital marketing automation",
+            "Instagram content strategy",
+            "Social media business"
+          ],
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Can anyone do this?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You don't need any prior experience to do this. No tech skills, no prior following or anything. If you can just follow some simple steps then starting and running a Shadow Page is simple if you have the right systems in place"
+              }
+            },
+            {
+              "@type": "Question", 
+              "name": "How can I work with you?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We work closely with a select group of people to help them implement Shadow Pages and start generating real revenue. If you're serious about building a successful Shadow Pages business, click the apply button."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What's your guarantee?",
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": "We're so confident in our system that we offer a full money-back guarantee. If you don't see results following our proven Shadow Pages framework, we'll refund every penny."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What kind of support will I get when working with you?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Like I've already mentioned our #1 priority is for our students to win that's why you'll have your own dedicated head coach and be able to ask questions anytime you'd like. Plus you'll have weekly 1-1 calls, where you can ask questions, fix any road blocks and be able to get to the next level."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much time do I need to invest?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Shadow Pages are designed to be efficient. Once set up properly, you can manage multiple Shadow Pages with just 1-2 hours per day. The key is having the right systems and processes in place."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What makes Shadow Pages different from regular Instagram accounts?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Shadow Pages operate without showing your face or personal brand. They focus on specific niches and use proven content strategies to build engaged audiences that convert into customers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need followers to start Shadow Pages?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No you don't need any followers prior at all. Our system shows you how to start & grow your Shadow Page from zero to thousands of followers using proven strategies and system that don't require a prior audience at all."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does it take until I can generate cashflow with my Shadow Page?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With the right systems & strategies in place, our students see their first results already within the first 30-45 days and are able to build a sustainable income within 3-6 months."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What's the biggest mistake people make with Shadow Pages?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Trying to figure it out alone instead of following a proven system. Most people waste months experimenting when they could already generate cashflow in weeks by following our step-by-step system."
+              }
+            }
+          ],
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": window.location.origin
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Free Resources", 
+                "item": `${window.location.origin}/free-resources`
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Shadow Pages Playbook",
+                "item": `${window.location.origin}/free-resources/shadow-pages-playbook`
+              }
+            ]
+          },
+          "teaches": [
+            "How to start Shadow Pages business",
+            "Instagram growth strategies",
+            "Faceless marketing techniques", 
+            "Social media monetization",
+            "Content creation for Shadow Pages",
+            "Audience building strategies",
+            "Revenue generation methods"
+          ]
+        }}
+      />
       <StickyCTA />
       {/* Hero Section */}
       <div className="py-8">
@@ -439,6 +576,33 @@ export default function ShadowPagesPlaybook() {
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-700 pb-6">
                   Yes. You can close to everything from creating content to scheduling, and even monetization systems using templates and proven systems.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-9" className="border border-gray-200 rounded-lg px-6">
+                <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                  Do I need followers to start Shadow Pages?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-700 pb-6">
+                  No you don't need any followers prior at all. Our system shows you how to start & grow your Shadow Page from zero to thousands of followers using proven strategies and system that don't require a prior audience at all.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-10" className="border border-gray-200 rounded-lg px-6">
+                <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                  How long does it take until I can generate cashflow with my Shadow Page?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-700 pb-6">
+                  With the right systems & strategies in place, our students see their first results already within the first 30-45 days and are able to build a sustainable income within 3-6 months.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-11" className="border border-gray-200 rounded-lg px-6">
+                <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                  What's the biggest mistake people make with Shadow Pages?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-700 pb-6">
+                  Trying to figure it out alone instead of following a proven system. Most people waste months experimenting when they could already generate cashflow in weeks by following our step-by-step system.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
