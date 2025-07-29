@@ -1073,29 +1073,7 @@ function StaticHomeComplete() {
         </div>
       </section>
 
-      {/* Subtle link to Free Resources - positioned at bottom */}
-      <div style={{ 
-        position: 'fixed', 
-        bottom: '20px', 
-        right: '20px', 
-        zIndex: 1000,
-        background: 'rgba(56, 93, 198, 0.9)',
-        borderRadius: '50px',
-        padding: '12px 20px',
-        backdropFilter: 'blur(10px)'
-      }}>
-        <a 
-          href="/free-resources" 
-          style={{ 
-            color: 'white', 
-            textDecoration: 'none', 
-            fontSize: '14px',
-            fontWeight: '500'
-          }}
-        >
-          Free Resources →
-        </a>
-      </div>
+
 
     </div>
   );
