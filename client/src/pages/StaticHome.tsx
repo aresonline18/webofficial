@@ -682,252 +682,158 @@ export default function StaticHome() {
         </div> 
       </section>
 
-      {/* FAQ Section - Home Page Style */}
-      <section style={{ 
-        padding: '80px 20px',
-        background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
-        position: 'relative'
-      }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-            <h2 style={{
-              fontFamily: 'Inter, sans-serif',
-              fontWeight: '900',
-              fontSize: 'clamp(2rem, 5vw, 3rem)',
-              color: '#1a202c',
-              marginBottom: '20px',
-              letterSpacing: '-0.02em'
-            }}>
-              Got <span style={{ color: '#385DC6' }}>Questions?</span>
-            </h2>
-            <p style={{
-              fontFamily: 'Inter, sans-serif',
+      {/* FAQ Section */}
+      <section className="review-section">
+        <div className="review-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Everything you need to know about Shadow Pages and how to get started
+          </p>
+        </div>
+
+        <div className="reviews-grid" style={{ gridTemplateColumns: '1fr', gap: '16px', maxWidth: '800px', margin: '0 auto' }}>
+          {/* FAQ Item 1 */}
+          <details className="review-card" style={{ cursor: 'pointer' }}>
+            <summary style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              fontWeight: '700',
               fontSize: '1.1rem',
-              color: '#64748b',
-              maxWidth: '600px',
-              margin: '0 auto',
+              padding: '0',
+              listStyle: 'none'
+            }}>
+              What's a Shadow Page?
+              <span style={{ fontSize: '1.2rem', transition: 'transform 0.3s' }}>+</span>
+            </summary>
+            <p style={{ 
+              marginTop: '16px', 
+              color: 'hsl(0, 0%, 20%)',
               lineHeight: '1.6'
             }}>
-              Everything you need to know about Shadow Pages and how to get started
+              A Shadow Page is a faceless Instagram account that generates income through proven systems and automation. You don't need to show your face, have prior experience, or manage it full-time once it's set up properly.
             </p>
-          </div>
+          </details>
 
-          <div style={{ display: 'grid', gap: '20px' }}>
-            {/* FAQ Item 1 */}
-            <details style={{
-              background: 'white',
-              borderRadius: '16px',
-              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-              border: '1px solid #e2e8f0',
-              overflow: 'hidden'
+          {/* FAQ Item 2 */}
+          <details className="review-card" style={{ cursor: 'pointer' }}>
+            <summary style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              fontWeight: '700',
+              fontSize: '1.1rem',
+              padding: '0',
+              listStyle: 'none'
             }}>
-              <summary style={{
-                padding: '24px 28px',
-                cursor: 'pointer',
-                fontFamily: 'Inter, sans-serif',
-                fontWeight: '700',
-                fontSize: '1.1rem',
-                color: '#1a202c',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                borderBottom: '1px solid #f1f5f9'
-              }}>
-                What's a Shadow Page?
-                <span style={{ fontSize: '1.2rem', transform: 'rotate(0deg)', transition: 'transform 0.3s' }}>+</span>
-              </summary>
-              <div style={{
-                padding: '24px 28px',
-                fontFamily: 'Inter, sans-serif',
-                fontSize: '1rem',
-                color: '#475569',
-                lineHeight: '1.7',
-                background: '#fafbfc'
-              }}>
-                A Shadow Page is a faceless Instagram account that generates income through proven systems and automation. You don't need to show your face, have prior experience, or manage it full-time once it's set up properly.
-              </div>
-            </details>
+              Can anyone do this?
+              <span style={{ fontSize: '1.2rem', transition: 'transform 0.3s' }}>+</span>
+            </summary>
+            <p style={{ 
+              marginTop: '16px', 
+              color: 'hsl(0, 0%, 20%)',
+              lineHeight: '1.6'
+            }}>
+              Yes. You don't need any prior experience to do this. No tech skills, no prior following or anything.<br /><br />
+              If you can just follow some simple steps then starting and running a Shadow Page is simple if you have the right systems in place.
+            </p>
+          </details>
 
-            {/* FAQ Item 2 */}
-            <details style={{
-              background: 'white',
-              borderRadius: '16px',
-              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-              border: '1px solid #e2e8f0',
-              overflow: 'hidden'
+          {/* FAQ Item 3 */}
+          <details className="review-card" style={{ cursor: 'pointer' }}>
+            <summary style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              fontWeight: '700',
+              fontSize: '1.1rem',
+              padding: '0',
+              listStyle: 'none'
             }}>
-              <summary style={{
-                padding: '24px 28px',
-                cursor: 'pointer',
-                fontFamily: 'Inter, sans-serif',
-                fontWeight: '700',
-                fontSize: '1.1rem',
-                color: '#1a202c',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                borderBottom: '1px solid #f1f5f9'
-              }}>
-                Can anyone do this?
-                <span style={{ fontSize: '1.2rem', transform: 'rotate(0deg)', transition: 'transform 0.3s' }}>+</span>
-              </summary>
-              <div style={{
-                padding: '24px 28px',
-                fontFamily: 'Inter, sans-serif',
-                fontSize: '1rem',
-                color: '#475569',
-                lineHeight: '1.7',
-                background: '#fafbfc'
-              }}>
-                Yes. You don't need any prior experience to do this. No tech skills, no prior following or anything.<br /><br />
-                If you can just follow some simple steps then starting and running a Shadow Page is simple if you have the right systems in place.
-              </div>
-            </details>
+              Can I do this next to my job?
+              <span style={{ fontSize: '1.2rem', transition: 'transform 0.3s' }}>+</span>
+            </summary>
+            <p style={{ 
+              marginTop: '16px', 
+              color: 'hsl(0, 0%, 20%)',
+              lineHeight: '1.6'
+            }}>
+              Absolutely. Most people start their Shadow Pages next to their job as once it's fully set up & automated, the system can run pretty much on it's own.
+            </p>
+          </details>
 
-            {/* FAQ Item 3 */}
-            <details style={{
-              background: 'white',
-              borderRadius: '16px',
-              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-              border: '1px solid #e2e8f0',
-              overflow: 'hidden'
+          {/* FAQ Item 4 */}
+          <details className="review-card" style={{ cursor: 'pointer' }}>
+            <summary style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              fontWeight: '700',
+              fontSize: '1.1rem',
+              padding: '0',
+              listStyle: 'none'
             }}>
-              <summary style={{
-                padding: '24px 28px',
-                cursor: 'pointer',
-                fontFamily: 'Inter, sans-serif',
-                fontWeight: '700',
-                fontSize: '1.1rem',
-                color: '#1a202c',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                borderBottom: '1px solid #f1f5f9'
-              }}>
-                Can I do this next to my job?
-                <span style={{ fontSize: '1.2rem', transform: 'rotate(0deg)', transition: 'transform 0.3s' }}>+</span>
-              </summary>
-              <div style={{
-                padding: '24px 28px',
-                fontFamily: 'Inter, sans-serif',
-                fontSize: '1rem',
-                color: '#475569',
-                lineHeight: '1.7',
-                background: '#fafbfc'
-              }}>
-                Absolutely. Most people start their Shadow Pages next to their job as once it's fully set up & automated, the system can run pretty much on it's own.
-              </div>
-            </details>
+              How can I work with you?
+              <span style={{ fontSize: '1.2rem', transition: 'transform 0.3s' }}>+</span>
+            </summary>
+            <p style={{ 
+              marginTop: '16px', 
+              color: 'hsl(0, 0%, 20%)',
+              lineHeight: '1.6'
+            }}>
+              Every month we only work with a limited amount of individuals as our #1 priority is for our students to win.<br /><br />
+              That's why our spots are always very limited and we're very picky with who we work with...<br /><br />
+              But if you'd like to learn more and see if you would qualify, click "Apply Now" above to fill out our 2-minute application.
+            </p>
+          </details>
 
-            {/* FAQ Item 4 */}
-            <details style={{
-              background: 'white',
-              borderRadius: '16px',
-              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-              border: '1px solid #e2e8f0',
-              overflow: 'hidden'
+          {/* FAQ Item 5 */}
+          <details className="review-card" style={{ cursor: 'pointer' }}>
+            <summary style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              fontWeight: '700',
+              fontSize: '1.1rem',
+              padding: '0',
+              listStyle: 'none'
             }}>
-              <summary style={{
-                padding: '24px 28px',
-                cursor: 'pointer',
-                fontFamily: 'Inter, sans-serif',
-                fontWeight: '700',
-                fontSize: '1.1rem',
-                color: '#1a202c',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                borderBottom: '1px solid #f1f5f9'
-              }}>
-                How can I work with you?
-                <span style={{ fontSize: '1.2rem', transform: 'rotate(0deg)', transition: 'transform 0.3s' }}>+</span>
-              </summary>
-              <div style={{
-                padding: '24px 28px',
-                fontFamily: 'Inter, sans-serif',
-                fontSize: '1rem',
-                color: '#475569',
-                lineHeight: '1.7',
-                background: '#fafbfc'
-              }}>
-                Every month we only work with a limited amount of individuals as our #1 priority is for our students to win.<br /><br />
-                That's why our spots are always very limited and we're very picky with who we work with...<br /><br />
-                But if you'd like to learn more and see if you would qualify, click "Apply Now" above to fill out our 2-minute application.
-              </div>
-            </details>
+              What's your guarantee?
+              <span style={{ fontSize: '1.2rem', transition: 'transform 0.3s' }}>+</span>
+            </summary>
+            <p style={{ 
+              marginTop: '16px', 
+              color: 'hsl(0, 0%, 20%)',
+              lineHeight: '1.6'
+            }}>
+              Well firstly depends if we can, even work with you, but if you qualify we'll work closely 1-1 together for the next 6-12 months until you hit at least $5K-$10K/mo with your Shadow Page.<br /><br />
+              That way it's almost impossible to fail as we ensure every single student crushes it.<br /><br />
+              We are able to promise this as we go on weekly calls together, provide all of our systems, strategies and support. You'll have everything you need to build your Shadow Page and make $5K-$10K/mo.
+            </p>
+          </details>
 
-            {/* FAQ Item 5 */}
-            <details style={{
-              background: 'white',
-              borderRadius: '16px',
-              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-              border: '1px solid #e2e8f0',
-              overflow: 'hidden'
+          {/* FAQ Item 6 */}
+          <details className="review-card" style={{ cursor: 'pointer' }}>
+            <summary style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              fontWeight: '700',
+              fontSize: '1.1rem',
+              padding: '0',
+              listStyle: 'none'
             }}>
-              <summary style={{
-                padding: '24px 28px',
-                cursor: 'pointer',
-                fontFamily: 'Inter, sans-serif',
-                fontWeight: '700',
-                fontSize: '1.1rem',
-                color: '#1a202c',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                borderBottom: '1px solid #f1f5f9'
-              }}>
-                What's your guarantee?
-                <span style={{ fontSize: '1.2rem', transform: 'rotate(0deg)', transition: 'transform 0.3s' }}>+</span>
-              </summary>
-              <div style={{
-                padding: '24px 28px',
-                fontFamily: 'Inter, sans-serif',
-                fontSize: '1rem',
-                color: '#475569',
-                lineHeight: '1.7',
-                background: '#fafbfc'
-              }}>
-                Well firstly depends if we can, even work with you, but if you qualify we'll work closely 1-1 together for the next 6-12 months until you hit at least $5K-$10K/mo with your Shadow Page.<br /><br />
-                That way it's almost impossible to fail as we ensure every single student crushes it.<br /><br />
-                We are able to promise this as we go on weekly calls together, provide all of our systems, strategies and support. You'll have everything you need to build your Shadow Page and make $5K-$10K/mo.
-              </div>
-            </details>
-
-            {/* FAQ Item 6 */}
-            <details style={{
-              background: 'white',
-              borderRadius: '16px',
-              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-              border: '1px solid #e2e8f0',
-              overflow: 'hidden'
+              How long to see results?
+              <span style={{ fontSize: '1.2rem', transition: 'transform 0.3s' }}>+</span>
+            </summary>
+            <p style={{ 
+              marginTop: '16px', 
+              color: 'hsl(0, 0%, 20%)',
+              lineHeight: '1.6'
             }}>
-              <summary style={{
-                padding: '24px 28px',
-                cursor: 'pointer',
-                fontFamily: 'Inter, sans-serif',
-                fontWeight: '700',
-                fontSize: '1.1rem',
-                color: '#1a202c',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                borderBottom: '1px solid #f1f5f9'
-              }}>
-                How long to see results?
-                <span style={{ fontSize: '1.2rem', transform: 'rotate(0deg)', transition: 'transform 0.3s' }}>+</span>
-              </summary>
-              <div style={{
-                padding: '24px 28px',
-                fontFamily: 'Inter, sans-serif',
-                fontSize: '1rem',
-                color: '#475569',
-                lineHeight: '1.7',
-                background: '#fafbfc'
-              }}>
-                It completely depends, we've got students that make 4 figures/mo in their first month and others that need longer. A fair and realistic expectation is 3-6 months to hit $2K-$5K/mo with your Shadow Pages, but more is also possible as we've seen in a variety of students.
-              </div>
-            </details>
-          </div>
+              It completely depends, we've got students that make 4 figures/mo in their first month and others that need longer. A fair and realistic expectation is 3-6 months to hit $2K-$5K/mo with your Shadow Pages, but more is also possible as we've seen in a variety of students.
+            </p>
+          </details>
         </div>
       </section>
 
