@@ -330,8 +330,8 @@ export default function StaticHome() {
                   />
                 </svg>
               </div>
-              <h3>Shadow Page Strategy</h3>
-              <p>Built on proven faceless brand playbooks</p>
+              <h3>Our Shadow Pages Framework</h3>
+              <p>Built on bulletproof strategies and relentless testing for years</p>
             </div>
 
             {/* Card 2 */}
@@ -344,8 +344,8 @@ export default function StaticHome() {
                   />
                 </svg>
               </div>
-              <h3>Creator Network</h3>
-              <p>Learn continuously alongside our private community</p>
+              <h3>Tailored for you</h3>
+              <p>Our team provides personalized 1/1 coaching for you and your pages.</p>
             </div>
 
             {/* Card 3 */}
@@ -358,8 +358,8 @@ export default function StaticHome() {
                   />
                 </svg>
               </div>
-              <h3>Full System Access</h3>
-              <p>Gain access to hours of step-by-step training</p>
+              <h3>Complete System Access</h3>
+              <p>Gain access to our systems and hours long step-by-step trainings</p>
             </div>
 
             {/* Card 4 */}
@@ -369,8 +369,8 @@ export default function StaticHome() {
                   <path d="M2 21l21-9L2 3v7l15 2-15 2v7z" fill="currentColor" />
                 </svg>
               </div>
-              <h3>Fast Start Onboarding</h3>
-              <p>Teaching you the tools to achieve success</p>
+              <h3>Fastrack Results</h3>
+              <p>Leverage our tools and crush it in no time with Shadow Pages.</p>
             </div>
           </div>
         </div>
@@ -516,10 +516,9 @@ export default function StaticHome() {
       {/* Reviews Section */}
       <section className="review-section">
         <div className="review-header">
-          <h2>Real feedback from our students</h2>
+          <h2>Lifes completely transformed...</h2>
           <p>
-            Read why hundreds of students like Shadow Pages and how they reached
-            financial freedom
+            Read what our students write about us...
           </p>
         </div>
 
