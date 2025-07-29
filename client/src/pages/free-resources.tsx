@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ResourceCard from "@/components/ResourceCard";
+import SEOHead from "@/components/SEOHead";
 import { useQuery } from "@tanstack/react-query";
 import { type Resource } from "@shared/schema";
 import { staticResources } from "@/data/resources";
@@ -17,6 +18,14 @@ export default function FreeResources() {
 
   return (
     <>
+      <SEOHead 
+        title="Shadow Pages Free Resources - Start, Run and Profit from Shadow Pages"
+        description="Free materials to help you start, run and profit from Shadow Pages"
+        keywords="shadow pages, free resources, social media marketing, instagram business, faceless marketing, digital marketing resources"
+        ogTitle="Shadow Pages Free Resources"
+        ogDescription="Free materials to help you start, run and profit from Shadow Pages"
+        canonical={`${window.location.origin}/free-resources`}
+      />
       <style dangerouslySetInnerHTML={{
         __html: `
           :root {
