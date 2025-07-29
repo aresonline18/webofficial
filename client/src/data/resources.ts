@@ -27,7 +27,7 @@ export const staticResources: Resource[] = [
   {
     id: 17,
     resourceId: "shadow-pages-playbook-complete-guide",
-    imageUrl: "https://f9b4f4e3-15da-4b37-b623-ded936724457.janeway.prod.repl.run/uploads/book_1753355066598.png",
+    imageUrl: "/uploads/book_1753355066598-min_1753701793338.png",
     title: "Shadow Pages Playbook",
     description: "Everything YOU need to know about how Shadow Pages work and how you can generate cashflow from them...",
     buttonText: "Learn More",
