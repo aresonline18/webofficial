@@ -862,7 +862,7 @@ function StaticHomeComplete() {
 
         <div className="reviews-grid" style={{ gridTemplateColumns: '1fr', gap: '16px', maxWidth: '800px', margin: '0 auto' }}>
           {/* FAQ Item 1 */}
-          <details className="review-card" style={{ cursor: 'pointer' }}>
+          <details className="faq-item" style={{ cursor: 'pointer' }}>
             <summary style={{
               display: 'flex',
               justifyContent: 'space-between',
@@ -885,7 +885,7 @@ function StaticHomeComplete() {
           </details>
 
           {/* FAQ Item 2 */}
-          <details className="review-card" style={{ cursor: 'pointer' }}>
+          <details className="faq-item" style={{ cursor: 'pointer' }}>
             <summary style={{
               display: 'flex',
               justifyContent: 'space-between',
@@ -909,7 +909,7 @@ function StaticHomeComplete() {
           </details>
 
           {/* FAQ Item 3 */}
-          <details className="review-card" style={{ cursor: 'pointer' }}>
+          <details className="faq-item" style={{ cursor: 'pointer' }}>
             <summary style={{
               display: 'flex',
               justifyContent: 'space-between',
@@ -932,7 +932,7 @@ function StaticHomeComplete() {
           </details>
 
           {/* FAQ Item 4 */}
-          <details className="review-card" style={{ cursor: 'pointer' }}>
+          <details className="faq-item" style={{ cursor: 'pointer' }}>
             <summary style={{
               display: 'flex',
               justifyContent: 'space-between',
@@ -957,7 +957,7 @@ function StaticHomeComplete() {
           </details>
 
           {/* FAQ Item 5 */}
-          <details className="review-card" style={{ cursor: 'pointer' }}>
+          <details className="faq-item" style={{ cursor: 'pointer' }}>
             <summary style={{
               display: 'flex',
               justifyContent: 'space-between',
@@ -982,7 +982,7 @@ function StaticHomeComplete() {
           </details>
 
           {/* FAQ Item 6 */}
-          <details className="review-card" style={{ cursor: 'pointer' }}>
+          <details className="faq-item" style={{ cursor: 'pointer' }}>
             <summary style={{
               display: 'flex',
               justifyContent: 'space-between',
