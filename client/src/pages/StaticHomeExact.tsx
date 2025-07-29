@@ -332,7 +332,7 @@ function StaticHomeExact() {
                 </svg>
               </div>
               <h3>Our Shadow Pages Framework</h3>
-              <p>Built on proven faceless brand playbooks</p>
+              <p>Built on bulletproof strategies tested and perfected for years</p>
             </div>
 
             {/* Card 2 */}
@@ -345,8 +345,8 @@ function StaticHomeExact() {
                   />
                 </svg>
               </div>
-              <h3>Creator Network</h3>
-              <p>Learn continuously alongside our private community</p>
+              <h3>Personalized for you</h3>
+              <p>Our team provides tailored 1/1 coaching for you and your needs.</p>
             </div>
 
             {/* Card 3 */}
@@ -370,8 +370,8 @@ function StaticHomeExact() {
                   <path d="M2 21l21-9L2 3v7l15 2-15 2v7z" fill="currentColor" />
                 </svg>
               </div>
-              <h3>Fast Start Onboarding</h3>
-              <p>Teaching you the tools to achieve success</p>
+              <h3>Fastrack Results</h3>
+              <p>Leverage our tools and crush it in no time with Shadow Pages.</p>
             </div>
           </div>
         </div>
