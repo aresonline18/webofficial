@@ -429,9 +429,7 @@ export default function StaticHome() {
             </div>
 
             <p>
-              We'll provide the resources, community, and education for you to
-              learn at your own pace. Talk with our team about why our
-              comprehensive education strategy works.
+              We'll provide all the resources, guidance and support for you to learn at your own pace and make your success inevitable. Apply with the button below to book a call with our team.
             </p>
 
             <ul className="team-features">
@@ -445,7 +443,7 @@ export default function StaticHome() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Learn from anywhere & at any time
+                Leverage proven systems and learn from the best
               </li>
               <li>
                 <svg className="check-icon" viewBox="0 0 24 24" fill="none">
@@ -457,8 +455,7 @@ export default function StaticHome() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Master the art of building passive, reliable income through
-                faceless Shadow Pages—no personal brand, no camera, just results.
+                Master the art of building passive, reliable income from social media without having to show your face or have any prior experience
               </li>
             </ul>
 
