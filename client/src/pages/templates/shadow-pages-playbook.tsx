@@ -2,15 +2,19 @@ import StickyCTA from '@/components/sticky-cta';
 import RelatedResources from '@/components/related-resources';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import ResourceApplyNowButton from '@/components/ResourceApplyNowButton';
+import { useUrlParams } from '@/hooks/useUrlParams';
 // Import images exactly as in original WebsiteCloner
 import forbesImage from '@assets/Untitled design (13)_1753161995020.png';
 import daquanImage from '@assets/Untitled design (14)_1753162832761.png';
 import goldmanImage from '@assets/Untitled design (15)_1753164576035.png';
 import shadowPagesExamplesImage from '@assets/Untitled design (22)_1753167318922.png';
 import instagramProfilesImage from '@assets/Untitled design (25)_1753178319307.png';
-import shadowPagesLogo from '@assets/book_1753355066598.png';
+import shadowPagesLogo from '@assets/book_1753355066598-min_1753701793338.png';
 
 export default function ShadowPagesPlaybook() {
+  const { hasParam } = useUrlParams();
+  const showCTAButtons = hasParam('utm_campaign');
+
   return (
     <div className="bg-white min-h-screen">
       <StickyCTA />
@@ -317,27 +321,36 @@ export default function ShadowPagesPlaybook() {
               </div>
             </div>
 
-            <p className="text-gray-800 mt-8 mb-4">
-              If you'd like to learn more how we can help you get started with Shadow Pages - click the button below to book a call with my head coach 👇🏼
-            </p>
+            {showCTAButtons ? (
+              <>
+                <p className="text-gray-800 mt-8 mb-4">
+                  If you'd like to learn more how we can help you get started with Shadow Pages - click the button below to book a call with my head coach 👇🏼
+                </p>
 
-            <div className="text-center mb-6">
-              <ResourceApplyNowButton 
-                resourceName="Shadow Pages Playbook"
-                className="w-full px-8 py-6 text-white rounded-lg hover:opacity-90 transition-opacity flex flex-col items-center justify-center"
-                style={{
-                  background: 'linear-gradient(to bottom, #385DC6, #2C4A9E)'
-                }}
-              >
-                <span className="text-2xl mb-1" style={{ fontWeight: 900, fontSize: 'calc(1.5rem + 2px)' }}>Click Here To Apply</span>
-                <span className="text-sm font-normal opacity-90">Fill in a 2min quiz to see if this is for you</span>
-              </ResourceApplyNowButton>
-            </div>
+                <div className="text-center mb-6">
+                  <ResourceApplyNowButton 
+                    resourceName="Shadow Pages Playbook"
+                    className="w-full px-8 py-6 text-white rounded-lg hover:opacity-90 transition-opacity flex flex-col items-center justify-center"
+                    style={{
+                      background: 'linear-gradient(to bottom, #385DC6, #2C4A9E)'
+                    }}
+                  >
+                    <span className="text-2xl mb-1" style={{ fontWeight: 900, fontSize: 'calc(1.5rem + 2px)' }}>Click Here To Apply</span>
+                    <span className="text-sm font-normal opacity-90">Fill in a 2min quiz to see if this is for you</span>
+                  </ResourceApplyNowButton>
+                </div>
 
-            <p className="text-gray-800 mb-8">
-              Or message me @erichustls on Instagram with "Book a call"<br />
-              <span className="text-sm text-gray-600">(no spam please, only if you're serious)</span>
-            </p>
+                <p className="text-gray-800 mb-8">
+                  Or message me @erichustls on Instagram with "Book a call"<br />
+                  <span className="text-sm text-gray-600">(no spam please, only if you're serious)</span>
+                </p>
+              </>
+            ) : (
+              <p className="text-gray-800 mt-8 mb-8">
+                If you'd like to learn more how we can help you get started with Shadow Pages then message me @erichustls on Instagram with "Book a call".<br /><br />
+                <span className="text-sm text-gray-600">(no spam please, only if you're serious)</span>
+              </p>
+            )}
 
             <h3 className="font-black text-xl md:text-2xl text-black mt-12 md:mt-16 mb-6 md:mb-8 md:pt-2" style={{ fontWeight: 900, fontSize: 'calc(1.25rem + 10px) md:calc(1.5rem + 10px)' }}>Frequently Asked Questions</h3>
             
