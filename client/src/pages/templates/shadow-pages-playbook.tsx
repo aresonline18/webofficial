@@ -375,6 +375,38 @@ export default function ShadowPagesPlaybook() {
 
               <AccordionItem value="item-3" className="border border-gray-200 rounded-lg px-6">
                 <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                  How can I work with you?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-700 pb-6">
+                  Every month we only work with a limited amount of individuals as our #1 priority is for our students to win.<br /><br />
+                  That's why our spots are always very limited and we're very picky with who we work with...<br /><br />
+                  But if you'd like to learn more and see if you would qualify, message me on my Instagram @erichustls the word "Book a call" and talk more if we can help you.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4" className="border border-gray-200 rounded-lg px-6">
+                <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                  What's your guarantee?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-700 pb-6">
+                  Well firstly depends if we can, even work with you, but if you qualify we'll work closely 1-1 together for the next 6-12 months until you hit at least $5K-$10K/mo with your Shadow<br /><br />
+                  That way it's almost impossible to fail as we ensure every single student crushes it.<br /><br />
+                  We are able to promise this as we go on weekly calls together, provide all of our systems, strategies and support. You'll have everything you need to build your Shadow Page and make $5K-$10K/mo.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5" className="border border-gray-200 rounded-lg px-6">
+                <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
+                  What kind of support will I get when working with you?
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-700 pb-6">
+                  Like I've already mentioned our #1 priority is for our students to win that's why you'll have your own dedicated head coach and be able to ask questions anytime you'd like.<br /><br />
+                  Plus you'll have weekly 1-1 calls, where you can ask any questions, fix any road blocks and get to the next level.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-6" className="border border-gray-200 rounded-lg px-6">
+                <AccordionTrigger className="text-left font-bold text-black hover:no-underline">
                   How long to see results?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-700 pb-6">
