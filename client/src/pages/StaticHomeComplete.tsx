@@ -485,7 +485,7 @@ function StaticHomeComplete() {
                   />
                 </svg>
               </div>
-              <h3>Shadow Page Strategy</h3>
+              <h3>Our Shadow Pages Framework</h3>
               <p>Built on proven faceless brand playbooks</p>
             </div>
 
@@ -513,8 +513,8 @@ function StaticHomeComplete() {
                   />
                 </svg>
               </div>
-              <h3>Full System Access</h3>
-              <p>Gain access to hours of step-by-step training</p>
+              <h3>Complete System Access</h3>
+              <p>Gain access to our systems and hours long step-by-step trainings</p>
             </div>
 
             {/* Card 4 */}
@@ -665,10 +665,9 @@ function StaticHomeComplete() {
       {/* Reviews Section */}
       <section className="review-section">
         <div className="review-header">
-          <h2>Real feedback from our students</h2>
+          <h2>Lifes completely transformed...</h2>
           <p>
-            Read why hundreds of students like Shadow Pages and how they reached
-            financial freedom
+            Read what our students write about us...
           </p>
         </div>
 
