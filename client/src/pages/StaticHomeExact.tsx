@@ -688,71 +688,38 @@ function StaticHomeExact() {
         </div> 
       </section>
 
-      {/* FAQ Section - Home Page Style */}
-      <section style={{ 
-        padding: '80px 20px',
-        background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
-        position: 'relative'
-      }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-            <h2 style={{
-              fontFamily: 'Inter, sans-serif',
-              fontWeight: '900',
-              fontSize: 'clamp(2rem, 5vw, 3rem)',
-              color: '#1a202c',
-              marginBottom: '20px',
-              letterSpacing: '-0.02em'
-            }}>
-              Got <span style={{ color: '#385DC6' }}>Questions?</span>
-            </h2>
-            <p style={{
-              fontFamily: 'Inter, sans-serif',
+      {/* FAQ Section */}
+      <section className="review-section">
+        <div className="review-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Everything you need to know about Shadow Pages and how to get started
+          </p>
+        </div>
+
+        <div className="reviews-grid" style={{ gridTemplateColumns: '1fr', gap: '16px', maxWidth: '800px', margin: '0 auto' }}>
+          {/* FAQ Item 1 */}
+          <details className="review-card" style={{ cursor: 'pointer' }}>
+            <summary style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              fontWeight: '700',
               fontSize: '1.1rem',
-              color: '#64748b',
-              maxWidth: '600px',
-              margin: '0 auto',
+              padding: '0',
+              listStyle: 'none'
+            }}>
+              What's a Shadow Page?
+              <span style={{ fontSize: '1.2rem', transition: 'transform 0.3s' }}>+</span>
+            </summary>
+            <p style={{ 
+              marginTop: '16px', 
+              color: 'hsl(0, 0%, 20%)',
               lineHeight: '1.6'
             }}>
-              Everything you need to know about Shadow Pages and how to get started
+              A Shadow Page is a faceless Instagram account that generates income through proven systems and automation. You don't need to show your face, have prior experience, or manage it full-time once it's set up properly.
             </p>
-          </div>
-          
-          <div style={{ display: 'grid', gap: '20px' }}>
-            {/* FAQ Item 1 */}
-            <details style={{
-              background: 'white',
-              borderRadius: '16px',
-              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-              border: '1px solid #e2e8f0',
-              overflow: 'hidden'
-            }}>
-              <summary style={{
-                padding: '24px 28px',
-                cursor: 'pointer',
-                fontFamily: 'Inter, sans-serif',
-                fontWeight: '700',
-                fontSize: '1.1rem',
-                color: '#1a202c',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                borderBottom: '1px solid #f1f5f9'
-              }}>
-                What's a Shadow Page?
-                <span style={{ fontSize: '1.2rem', transform: 'rotate(0deg)', transition: 'transform 0.3s' }}>+</span>
-              </summary>
-              <div style={{
-                padding: '24px 28px',
-                fontFamily: 'Inter, sans-serif',
-                fontSize: '1rem',
-                color: '#475569',
-                lineHeight: '1.7',
-                background: '#fafbfc'
-              }}>
-                A Shadow Page is a faceless Instagram account that generates income through proven systems and automation. You don't need to show your face, have prior experience, or manage it full-time once it's set up properly.
-              </div>
-            </details>
+          </details>
 
             {/* FAQ Item 2 */}
             <details style={{
