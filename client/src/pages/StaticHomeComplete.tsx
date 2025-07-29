@@ -1044,6 +1044,7 @@ function StaticHomeComplete() {
         </div>
       </section>
     </div>
+    </>
   );
 }
 
