@@ -650,7 +650,7 @@ function StaticHomeComplete() {
               alt="Community Icon"
               className="pill-icon"
             />
-            <span>Supportive Network</span>
+            <span>1:1 Personalized Coaching</span>
           </div>
           <div className="pill-feature">
             <img
@@ -658,7 +658,7 @@ function StaticHomeComplete() {
               alt="Flexible Icon"
               className="pill-icon"
             />
-            <span>Learn Anytime</span>
+            <span>24/7 Support</span>
           </div>
         </div>
       </section>
