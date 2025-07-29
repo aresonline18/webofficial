@@ -499,7 +499,7 @@ export default function StaticHome() {
               alt="Community Icon"
               className="pill-icon"
             />
-            <span>1:1 Personalized Coaching</span>
+            <span>1/1 Personalized Coaching</span>
           </div>
           <div className="pill-feature">
             <img
