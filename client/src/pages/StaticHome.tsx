@@ -443,7 +443,7 @@ export default function StaticHome() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Leverage proven systems and learn from the best
+                Leverage proven systems and bulletproof strategies
               </li>
               <li>
                 <svg className="check-icon" viewBox="0 0 24 24" fill="none">
