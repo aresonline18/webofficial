@@ -1,0 +1,18 @@
+[build]
+  publish = "dist/public"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# SPA routing configuration
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# API routes should go to your backend server
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
