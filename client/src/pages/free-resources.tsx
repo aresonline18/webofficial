@@ -2,44 +2,29 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ResourceCard from "@/components/ResourceCard";
 import SEOHead from "@/components/SEOHead";
-import { useQuery } from "@tanstack/react-query";
 import { type Resource } from "@shared/schema";
 
 export default function FreeResources() {
-  // Static Shadow Pages Playbook resource - Always available
-  const staticShadowPagesResource: Resource = {
-    id: 17,
-    resourceId: "shadow-pages-playbook-complete-guide",
-    imageUrl: "/shadow-pages-book-final.png",
-    title: "Shadow Pages Playbook",
-    description: "Everything YOU need to know about how Shadow Pages work and how you can generate cashflow from them...",
-    buttonText: "Learn More",
-    buttonUrl: "/free-resources/shadow-pages-playbook",
-    isActive: true,
-    templateId: "shadow-pages-playbook-complete-guide",
-    createdAt: new Date(),
-    updatedAt: new Date()
-  };
+  // Static Shadow Pages Playbook resource - FOR DEPLOYMENT RELIABILITY
+  const staticResources: Resource[] = [
+    {
+      id: 17,
+      resourceId: "shadow-pages-playbook-complete-guide",
+      imageUrl: "/shadow-pages-book-final.png",
+      title: "Shadow Pages Playbook",
+      description: "Everything YOU need to know about how Shadow Pages work and how you can generate cashflow from them...",
+      buttonText: "Learn More",
+      buttonUrl: "/free-resources/shadow-pages-playbook",
+      isActive: true,
+      templateId: "shadow-pages-playbook-complete-guide",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    }
+  ];
 
-  // Try to get resources from API, but always show at least the static resource
-  const { data: apiResources = [], isLoading, error } = useQuery<Resource[]>({
-    queryKey: ['/api/resources'],
-    retry: false, // Don't retry failed API calls
-    refetchOnWindowFocus: false, // Don't refetch on window focus
-  });
-
-  // Always show the static resource, plus any additional API resources
-  const resources = apiResources.length > 0 ? apiResources : [staticShadowPagesResource];
-  
-  // Debug logging for deployment
-  console.log('Free Resources Debug:', {
-    isLoading,
-    error,
-    apiResourcesLength: apiResources.length,
-    resourcesLength: resources.length,
-    apiResources,
-    resources
-  });
+  // Use static resources for reliable deployment
+  const resources = staticResources;
+  const isLoading = false;
 
   return (
     <>
