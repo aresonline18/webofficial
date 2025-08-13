@@ -25,6 +25,9 @@ export default function FreeResources() {
   // Use static resources for reliable deployment
   const resources = staticResources;
   const isLoading = false;
+  
+  // Force resources to always appear - no conditions
+  console.log('FORCE RESOURCES DISPLAY:', { resources: resources.length });
 
   return (
     <>
@@ -93,25 +96,20 @@ export default function FreeResources() {
           {/* Hero Section - Gray background, NOT a white card */}
           <HeroSection />
           
-          {/* Resource Cards Section - exactly like home page */}
+          {/* Resource Cards Section - ALWAYS SHOW SHADOW PAGES PLAYBOOK */}
           <section id="free-resources" className="py-6 md:py-8 space-y-6 md:space-y-8">
-            {isLoading ? (
-              <div className="text-center py-8">Loading resources...</div>
-            ) : (
-              resources.map((resource: Resource) => (
-                <ResourceCard
-                  key={resource.id}
-                  imageUrl={resource.imageUrl}
-                  imageAlt={resource.title}
-                  title={resource.title}
-                  description={resource.description}
-                  buttonText={resource.buttonText}
-                  buttonUrl={resource.buttonUrl}
-                  buttonColor="blue"
-                  resourceId={resource.resourceId}
-                />
-              ))
-            )}
+            {/* Static Shadow Pages Playbook - GUARANTEED DISPLAY */}
+            <ResourceCard
+              key="shadow-pages-playbook"
+              imageUrl="/shadow-pages-book-final.png"
+              imageAlt="Shadow Pages Playbook"
+              title="Shadow Pages Playbook"
+              description="Everything YOU need to know about how Shadow Pages work and how you can generate cashflow from them..."
+              buttonText="Learn More"
+              buttonUrl="/free-resources/shadow-pages-playbook"
+              buttonColor="blue"
+              resourceId="shadow-pages-playbook-complete-guide"
+            />
           </section>
         </main>
       </div>
