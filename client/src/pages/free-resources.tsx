@@ -6,12 +6,7 @@ import { useQuery } from "@tanstack/react-query";
 import { type Resource } from "@shared/schema";
 
 export default function FreeResources() {
-  // Get resources from database API with fallback to static data
-  const { data: apiResources = [], isLoading, error } = useQuery<Resource[]>({
-    queryKey: ['/api/resources'],
-  });
-
-  // Static fallback for the Shadow Pages Playbook when API fails
+  // Static Shadow Pages Playbook resource - Always available
   const staticShadowPagesResource: Resource = {
     id: 17,
     resourceId: "shadow-pages-playbook-complete-guide",
@@ -22,12 +17,29 @@ export default function FreeResources() {
     buttonUrl: "/free-resources/shadow-pages-playbook",
     isActive: true,
     templateId: "shadow-pages-playbook-complete-guide",
-    createdAt: new Date().toISOString(),
-    updatedAt: new Date().toISOString()
+    createdAt: new Date(),
+    updatedAt: new Date()
   };
 
-  // Use API data if available, otherwise use static fallback
-  const resources = error || apiResources.length === 0 ? [staticShadowPagesResource] : apiResources;
+  // Try to get resources from API, but always show at least the static resource
+  const { data: apiResources = [], isLoading, error } = useQuery<Resource[]>({
+    queryKey: ['/api/resources'],
+    retry: false, // Don't retry failed API calls
+    refetchOnWindowFocus: false, // Don't refetch on window focus
+  });
+
+  // Always show the static resource, plus any additional API resources
+  const resources = apiResources.length > 0 ? apiResources : [staticShadowPagesResource];
+  
+  // Debug logging for deployment
+  console.log('Free Resources Debug:', {
+    isLoading,
+    error,
+    apiResourcesLength: apiResources.length,
+    resourcesLength: resources.length,
+    apiResources,
+    resources
+  });
 
   return (
     <>
