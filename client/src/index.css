@@ -16,6 +16,34 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+  
+  /* Resource card hover effects */
+  .resource-card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  }
+  
+  .view-all-resources-btn:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    transform: translateY(-2px);
+  }
+  
+  /* Fix image display in resource cards */
+  .resource-card-glow img {
+    display: block !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+  }
+  
+  /* Ensure Shadow Pages background displays correctly */
+  .shadow-navy-bg {
+    background: var(--shadow-navy) !important;
+  }
 }
 
 :root {
@@ -39,6 +67,10 @@
   --destructive-foreground: hsl(60, 9.1%, 97.8%);
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
+  
+  /* Shadow Pages custom colors */
+  --shadow-navy: rgb(20, 35, 60);
+  --gray-600: hsl(0, 0%, 40%);
 }
 
 .dark {

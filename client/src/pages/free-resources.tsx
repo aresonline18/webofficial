@@ -4,17 +4,12 @@ import ResourceCard from "@/components/ResourceCard";
 import SEOHead from "@/components/SEOHead";
 import { useQuery } from "@tanstack/react-query";
 import { type Resource } from "@shared/schema";
-import { staticResources } from "@/data/resources";
 
 export default function FreeResources() {
-  // Get resources from database API with static fallback
-  const { data: dbResources, isLoading, error } = useQuery<Resource[]>({
+  // Get resources from database API
+  const { data: resources = [], isLoading } = useQuery<Resource[]>({
     queryKey: ['/api/resources'],
-    refetchInterval: 10000, // Refetch every 10 seconds to ensure fresh data
   });
-
-  // Use database resources if available, otherwise fall back to static resources
-  const resources = dbResources?.length ? dbResources : staticResources;
 
   return (
     <>
@@ -75,23 +70,7 @@ export default function FreeResources() {
           }
         }}
       />
-      <style dangerouslySetInnerHTML={{
-        __html: `
-          :root {
-            --background: rgb(20, 35, 60) !important;
-          }
-          html, body {
-            background: rgb(20, 35, 60) !important;
-            min-height: 100vh !important;
-            margin: 0 !important;
-            padding: 0 !important;
-          }
-          .shadow-navy-bg {
-            background: rgb(20, 35, 60) !important;
-          }
-        `
-      }} />
-      <div className="min-h-screen">
+      <div className="min-h-screen shadow-navy-bg">
         <Header />
         
         {/* Main Content - exactly like home page */}
