@@ -10,6 +10,7 @@
   from = "/free-resources"
   to = "/free-resources.html"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/*"
