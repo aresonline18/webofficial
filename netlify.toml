@@ -1,18 +1,12 @@
 [build]
   publish = "dist/public"
-  command = "npm run build"
+  command = "./build-with-assets.sh"
 
 [build.environment]
   NODE_VERSION = "18"
 
-# SPA routing configuration
+# SPA routing configuration - serve the React app for all routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200
-
-# API routes should go to your backend server
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api/:splat"
   status = 200

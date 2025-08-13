@@ -6,10 +6,28 @@ import { useQuery } from "@tanstack/react-query";
 import { type Resource } from "@shared/schema";
 
 export default function FreeResources() {
-  // Get resources from database API
-  const { data: resources = [], isLoading } = useQuery<Resource[]>({
+  // Get resources from database API with fallback to static data
+  const { data: apiResources = [], isLoading, error } = useQuery<Resource[]>({
     queryKey: ['/api/resources'],
   });
+
+  // Static fallback for the Shadow Pages Playbook when API fails
+  const staticShadowPagesResource: Resource = {
+    id: 17,
+    resourceId: "shadow-pages-playbook-complete-guide",
+    imageUrl: "/shadow-pages-book-final.png",
+    title: "Shadow Pages Playbook",
+    description: "Everything YOU need to know about how Shadow Pages work and how you can generate cashflow from them...",
+    buttonText: "Learn More",
+    buttonUrl: "/free-resources/shadow-pages-playbook",
+    isActive: true,
+    templateId: "shadow-pages-playbook-complete-guide",
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  };
+
+  // Use API data if available, otherwise use static fallback
+  const resources = error || apiResources.length === 0 ? [staticShadowPagesResource] : apiResources;
 
   return (
     <>
