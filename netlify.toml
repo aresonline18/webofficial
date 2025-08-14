@@ -1,19 +1,19 @@
 [build]
+  command = "npm run build"
   publish = "dist/public"
-  command = "./build-with-assets.sh"
 
 [build.environment]
   NODE_VERSION = "18"
 
-# SPA routing configuration - serve the React app for all routes
+# Force cache clearing
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# SPA routing
 [[redirects]]
   from = "/free-resources"
-  to = "/free-resources.html"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/free-resources/*"
   to = "/index.html"
   status = 200
 
@@ -21,8 +21,3 @@
   from = "/*"
   to = "/index.html"
   status = 200
-
-[[headers]]
-  for = "/free-resources.html"
-  [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
