@@ -1,126 +1,46 @@
-import React from 'react';
+import bookImage from "@assets/book (2)_1755008404700.png";
 
 export default function FreeResources() {
   return (
-    <div style={{
-      fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
-      background: "rgb(20, 35, 60)",
-      color: "white",
-      minHeight: "100vh",
-      margin: 0,
-      padding: 0
-    }}>
-      <div style={{
-        maxWidth: "1200px",
-        margin: "0 auto",
-        padding: "40px 20px"
-      }}>
+    <div className="min-h-screen bg-[rgb(20,35,60)] text-white">
+      <div className="container mx-auto px-4 py-16 max-w-6xl">
         {/* Hero Section */}
-        <div style={{
-          textAlign: "center",
-          padding: "60px 20px",
-          marginBottom: "60px"
-        }}>
-          <div style={{
-            width: "120px",
-            height: "120px",
-            margin: "0 auto 30px",
-            borderRadius: "12px",
-            overflow: "hidden"
-          }}>
+        <div className="text-center mb-16">
+          <div className="w-32 h-32 mx-auto mb-8 rounded-xl overflow-hidden">
             <img 
-              src="/Untitled%20design%20(10)_1752994221787-CDzxwOeS.png" 
-              alt="Book Stack"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover"
-              }}
+              src="/Untitled%20design%20(10)_1752994221787.png" 
+              alt="Book Stack" 
+              className="w-full h-full object-cover"
             />
           </div>
-          <h1 style={{
-            fontSize: "48px",
-            fontWeight: "900",
-            marginBottom: "20px",
-            color: "white"
-          }}>
-            Free Resources
-          </h1>
-          <p style={{
-            fontSize: "20px",
-            color: "rgba(255, 255, 255, 0.8)",
-            maxWidth: "600px",
-            margin: "0 auto",
-            lineHeight: "1.6"
-          }}>
+          <h1 className="text-5xl font-black mb-6">Free Resources</h1>
+          <p className="text-xl text-white/80 max-w-2xl mx-auto">
             Free materials to help you <strong>start, run and profit</strong> from Shadow Pages
           </p>
         </div>
-        
-        {/* Shadow Pages Playbook Resource */}
-        <div style={{
-          background: "white",
-          borderRadius: "16px",
-          padding: "40px",
-          display: "flex",
-          alignItems: "center",
-          gap: "40px",
-          boxShadow: "0 20px 60px rgba(0, 0, 0, 0.2)",
-          margin: "40px 0"
-        }}>
-          <div style={{
-            width: "200px",
-            height: "200px",
-            background: "#f8f9fa",
-            borderRadius: "12px",
-            flexShrink: 0,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            overflow: "hidden"
-          }}>
+
+        {/* Shadow Pages Playbook Resource Card */}
+        <div className="bg-white rounded-2xl p-8 flex flex-col md:flex-row items-center gap-8 max-w-4xl mx-auto shadow-2xl">
+          {/* Book Image */}
+          <div className="flex-shrink-0">
             <img 
-              src="/shadow-pages-book-final.png" 
-              alt="Shadow Pages Playbook"
-              style={{
-                maxWidth: "100%",
-                maxHeight: "100%",
-                objectFit: "contain"
-              }}
+              src={bookImage}
+              alt="Shadow Pages Playbook" 
+              className="w-48 h-48 object-contain rounded-lg"
             />
           </div>
-          <div style={{
-            flex: 1
-          }}>
-            <h2 style={{
-              fontSize: "36px",
-              fontWeight: "900",
-              marginBottom: "20px",
-              color: "rgb(20, 35, 60)"
-            }}>
+          
+          {/* Content */}
+          <div className="text-center md:text-left">
+            <h2 className="text-4xl font-black text-[rgb(20,35,60)] mb-4">
               Shadow Pages Playbook
             </h2>
-            <p style={{
-              fontSize: "18px",
-              color: "#64748b",
-              marginBottom: "30px",
-              lineHeight: "1.6"
-            }}>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               Everything YOU need to know about how Shadow Pages work and how you can generate cashflow from them...
             </p>
             <a 
               href="/free-resources/shadow-pages-playbook" 
-              style={{
-                background: "linear-gradient(to bottom, rgb(56, 93, 198), rgb(44, 74, 158))",
-                color: "white",
-                padding: "16px 32px",
-                borderRadius: "25px",
-                textDecoration: "none",
-                fontWeight: "600",
-                fontSize: "16px",
-                display: "inline-block",
-                transition: "all 0.3s ease"
-              }}
+              className="inline-block bg-gradient-to-b from-[rgb(56,93,198)] to-[rgb(44,74,158)] text-white px-8 py-4 rounded-full font-semibold text-lg hover:transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
             >
               Learn More
             </a>
