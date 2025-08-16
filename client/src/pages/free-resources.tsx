@@ -65,7 +65,7 @@ export default function FreeResources() {
               </div>
             ))
           ) : (
-            {/* Fallback to Static Shadow Pages Playbook if no database resources */}
+            /* Fallback to Static Shadow Pages Playbook if no database resources */
             <div className="bg-white rounded-2xl p-8 flex flex-col md:flex-row items-center gap-8 max-w-4xl mx-auto shadow-2xl">
               {/* Book Image */}
               <div className="flex-shrink-0">
