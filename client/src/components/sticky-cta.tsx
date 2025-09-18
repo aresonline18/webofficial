@@ -40,7 +40,7 @@ export default function StickyCTA() {
         onClick={handleCallBooking}
         className="text-white px-6 py-3 rounded-lg text-sm transition-colors duration-200 shadow-lg hover:shadow-xl w-full md:w-auto hover:opacity-90"
         style={{
-          background: 'linear-gradient(to bottom, #EC4899, #BE185D)',
+          background: '#385dc6',
           fontWeight: 900
         }}
       >
