@@ -1,0 +1,63 @@
+/* CSS Isolation for Static Home Page */
+/* This ensures the static home page styles don't interfere with React app styles */
+
+.static-home-wrapper {
+  /* Ensure this wrapper takes full page without interfering with original styles */
+  width: 100% !important;
+  min-height: 100vh !important;
+  
+  /* Black background like original */
+  background: black !important;
+  color: white !important;
+  
+  /* Ensure proper overflow handling */
+  overflow-x: hidden !important;
+  
+  /* Remove any margin/padding that might interfere */
+  margin: 0 !important;
+  padding: 0 !important;
+  
+  /* Ensure font loads properly */
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Ensure all child elements use the static home styles */
+.static-home-wrapper * {
+  box-sizing: border-box;
+}
+
+/* Remove navigation styles since original has no navigation */
+
+/* Override any potential Tailwind or React app CSS resets */
+.static-home-wrapper h1,
+.static-home-wrapper h2,
+.static-home-wrapper h3,
+.static-home-wrapper h4,
+.static-home-wrapper p,
+.static-home-wrapper ul,
+.static-home-wrapper li {
+  margin: revert;
+  padding: revert;
+  font-size: revert;
+  font-weight: revert;
+  line-height: revert;
+  color: revert;
+}
+
+/* Ensure images load properly */
+.static-home-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure buttons and links work properly */
+.static-home-wrapper button,
+.static-home-wrapper a {
+  cursor: pointer;
+}
+
+/* Reset any z-index conflicts */
+.static-home-wrapper {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Pages Free Resources</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: rgb(20, 35, 60);
+            color: white;
+            min-height: 100vh;
+        }
+        
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .hero-section {
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 60px;
+        }
+        
+        .hero-image {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .hero-title {
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .hero-description {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .resource-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            margin: 40px 0;
+        }
+        
+        .resource-image {
+            width: 200px;
+            height: 200px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .resource-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .resource-content {
+            flex: 1;
+        }
+        
+        .resource-title {
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: rgb(20, 35, 60);
+        }
+        
+        .resource-description {
+            font-size: 18px;
+            color: #64748b;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .resource-button {
+            background: linear-gradient(to bottom, rgb(56, 93, 198), rgb(44, 74, 158));
+            color: white;
+            padding: 16px 32px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(56, 93, 198, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 36px;
+            }
+            
+            .hero-description {
+                font-size: 18px;
+            }
+            
+            .resource-card {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+                padding: 30px 20px;
+            }
+            
+            .resource-image {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .resource-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-image">
+                <img src="/Untitled%20design%20(10)_1752994221787-CDzxwOeS.png" alt="Book Stack" />
+            </div>
+            <h1 class="hero-title">Free Resources</h1>
+            <p class="hero-description">Free materials to help you <strong>start, run and profit</strong> from Shadow Pages</p>
+        </div>
+        
+        <!-- Shadow Pages Playbook Resource -->
+        <div class="resource-card">
+            <div class="resource-image">
+                <img src="/shadow-pages-book-final.png" alt="Shadow Pages Playbook" />
+            </div>
+            <div class="resource-content">
+                <h2 class="resource-title">Shadow Pages Playbook</h2>
+                <p class="resource-description">Everything YOU need to know about how Shadow Pages work and how you can generate cashflow from them...</p>
+                <a href="/free-resources/shadow-pages-playbook" class="resource-button">Learn More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

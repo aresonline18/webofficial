@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /free-resources
+Allow: /free-resources/*
+
+Sitemap: https://start.shadowpages.io/sitemap.xml
+
+# Disallow admin and API routes
+Disallow: /admin
+Disallow: /api/

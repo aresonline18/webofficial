@@ -1,0 +1,42 @@
+/* Free Resources Page Specific Styles */
+/* This file prevents CSS conflicts between home page and free resources page */
+
+.free-resources-container {
+  min-height: 100vh;
+  background: rgb(20, 35, 60) !important;
+}
+
+.free-resources-container .resource-card-glow {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.free-resources-container img {
+  display: block !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* Ensure book image displays correctly */
+.free-resources-container .resource-card-glow img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* Override any global styles that might interfere */
+.free-resources-container .w-40 img,
+.free-resources-container .w-44 img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: unset !important;
+  max-height: unset !important;
+  object-fit: contain !important;
+}

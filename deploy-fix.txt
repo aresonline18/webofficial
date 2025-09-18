@@ -1,0 +1,8 @@
+Deployment fix for Shadow Pages book image:
+
+1. Added shadow-pages-book-final.png to both client/public and root public
+2. Created build-with-assets.sh script to copy public assets during build
+3. Updated netlify.toml to use new build script
+4. Switched free-resources page to use static resources (no API dependency)
+
+Image should now display properly on deployed site.

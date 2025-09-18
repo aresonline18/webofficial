@@ -1,0 +1,508 @@
+# Complete Shadow Pages Playbook Style Guide
+
+This is the exact breakdown of every container, headline, spacing, and styling rule used in the Shadow Pages Playbook. Follow this precisely to replicate the layout.
+
+## Container System
+
+### Base Layout Container
+```css
+.bg-white.min-h-screen {
+  background-color: white;
+  min-height: 100vh;
+}
+```
+
+### Standard Container (Used for most sections)
+```css
+.container.mx-auto.px-4 {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem; /* 16px */
+  padding-right: 1rem; /* 16px */
+}
+
+/* Responsive breakpoints: */
+@media (min-width: 640px) { max-width: 640px; }
+@media (min-width: 768px) { max-width: 768px; }
+@media (min-width: 1024px) { max-width: 1024px; }
+@media (min-width: 1280px) { max-width: 1280px; }
+@media (min-width: 1536px) { max-width: 1536px; }
+```
+
+### Content Width Containers
+
+#### Main Content Area (Body Text)
+```css
+.max-w-3xl.mx-auto {
+  max-width: 48rem; /* 768px */
+  margin-left: auto;
+  margin-right: auto;
+}
+```
+
+#### Subheadline Container
+```css
+.max-w-5xl.mx-auto {
+  max-width: 64rem; /* 1024px */
+  margin-left: auto;
+  margin-right: auto;
+}
+```
+
+## Typography System
+
+### Primary Headline (Main Title)
+```css
+.text-4xl.md:text-6xl.font-black.text-center.mb-6.md:mb-8.leading-tight {
+  font-size: 2.25rem; /* 36px mobile */
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1.5rem; /* 24px mobile */
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  font-size: 3.75rem; /* 60px desktop */
+  margin-bottom: 2rem; /* 32px desktop */
+}
+```
+
+### Secondary Headline (Subheadline)
+```css
+.text-xl.md:text-3xl.text-center.mb-8.md:mb-10.leading-relaxed {
+  font-size: 1.25rem; /* 20px mobile */
+  text-align: center;
+  margin-bottom: 2rem; /* 32px mobile */
+  line-height: 1.625;
+}
+
+@media (min-width: 768px) {
+  font-size: 1.875rem; /* 30px desktop */
+  margin-bottom: 2.5rem; /* 40px desktop */
+}
+```
+
+### Author Info
+```css
+.text-gray-600.text-base.md:text-lg.mb-12.text-center {
+  color: rgb(75 85 99); /* gray-600 */
+  font-size: 1rem; /* 16px mobile */
+  margin-bottom: 3rem; /* 48px */
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  font-size: 1.125rem; /* 18px desktop */
+}
+```
+
+### Section Headlines (H3 style)
+```css
+.font-black.text-xl.md:text-2xl.text-black.mt-12.md:mt-16.mb-6.md:mb-8.md:pt-2 {
+  font-weight: 900;
+  font-size: 1.25rem; /* 20px mobile */
+  color: rgb(0 0 0);
+  margin-top: 3rem; /* 48px mobile */
+  margin-bottom: 1.5rem; /* 24px mobile */
+}
+
+@media (min-width: 768px) {
+  font-size: 1.5rem; /* 24px desktop */
+  margin-top: 4rem; /* 64px desktop */
+  margin-bottom: 2rem; /* 32px desktop */
+  padding-top: 0.5rem; /* 8px desktop */
+}
+```
+
+### Large Section Headlines
+```css
+.font-black.text-xl.md:text-4xl.text-black.mt-12.md:mt-16.mb-6.md:mb-8.md:pt-1.md:pb-1 {
+  font-weight: 900;
+  font-size: 1.25rem; /* 20px mobile */
+  color: rgb(0 0 0);
+  margin-top: 3rem; /* 48px mobile */
+  margin-bottom: 1.5rem; /* 24px mobile */
+}
+
+@media (min-width: 768px) {
+  font-size: 2.25rem; /* 36px desktop */
+  margin-top: 4rem; /* 64px desktop */
+  margin-bottom: 2rem; /* 32px desktop */
+  padding-top: 0.25rem; /* 4px desktop */
+  padding-bottom: 0.25rem; /* 4px desktop */
+}
+```
+
+### Body Text Paragraphs
+```css
+.text-gray-800 {
+  color: rgb(31 41 55); /* gray-800 */
+  margin-bottom: 1rem; /* 16px - default paragraph spacing */
+}
+
+/* For spaced paragraphs: */
+.space-y-6 > * + * {
+  margin-top: 1.5rem; /* 24px between paragraphs */
+}
+```
+
+## Image System
+
+### Logo Section
+```css
+.h-24.w-auto.mb-2.mx-auto {
+  height: 6rem; /* 96px */
+  width: auto;
+  margin-bottom: 0.5rem; /* 8px */
+  margin-left: auto;
+  margin-right: auto;
+}
+```
+
+### Standard Large Images
+```css
+.w-full.max-w-2xl.md:max-w-4xl.mx-auto.rounded-lg.shadow-2xl.mb-6.md:mb-10 {
+  width: 100%;
+  max-width: 42rem; /* 672px mobile */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem; /* 8px */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1.5rem; /* 24px mobile */
+}
+
+@media (min-width: 768px) {
+  max-width: 56rem; /* 896px desktop */
+  margin-bottom: 2.5rem; /* 40px desktop */
+}
+```
+
+### Instagram Profiles Image (Extra Wide)
+```css
+.w-full.max-w-4xl.md:max-w-6xl.mx-auto.rounded-lg {
+  width: 100%;
+  max-width: 56rem; /* 896px mobile */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem; /* 8px */
+}
+
+@media (min-width: 768px) {
+  max-width: 72rem; /* 1152px desktop */
+}
+```
+
+### Image Spacing Containers
+```css
+.my-8.md:my-12 {
+  margin-top: 2rem; /* 32px mobile */
+  margin-bottom: 2rem; /* 32px mobile */
+}
+
+@media (min-width: 768px) {
+  margin-top: 3rem; /* 48px desktop */
+  margin-bottom: 3rem; /* 48px desktop */
+}
+```
+
+## Section Spacing System
+
+### Hero Section
+```css
+.py-8 {
+  padding-top: 2rem; /* 32px */
+  padding-bottom: 2rem; /* 32px */
+}
+```
+
+### Logo Section Spacing
+```css
+.pt-1.pb-1 {
+  padding-top: 0.25rem; /* 4px */
+  padding-bottom: 0.25rem; /* 4px */
+}
+```
+
+### Main Content Section Spacing
+```css
+.mb-12 {
+  margin-bottom: 3rem; /* 48px */
+}
+```
+
+### Standard Paragraph Spacing
+```css
+.space-y-6 > * + * {
+  margin-top: 1.5rem; /* 24px between elements */
+}
+```
+
+## Button System
+
+### Primary CTA Button
+```css
+.w-full.px-8.py-6.text-white.font-semibold.rounded-lg.hover:opacity-90.transition-opacity.flex.flex-col.items-center.justify-center {
+  width: 100%;
+  padding-left: 2rem; /* 32px */
+  padding-right: 2rem; /* 32px */
+  padding-top: 1.5rem; /* 24px */
+  padding-bottom: 1.5rem; /* 24px */
+  color: white;
+  font-weight: 600;
+  border-radius: 0.5rem; /* 8px */
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #385DC6, #2C4A9E);
+}
+
+.hover:opacity-90:hover {
+  opacity: 0.9;
+}
+```
+
+### Button Text Styling
+```css
+/* Main button text */
+.text-2xl.md:text-[2rem].font-black.mb-2 {
+  font-size: 1.5rem; /* 24px mobile */
+  font-weight: 900;
+  margin-bottom: 0.5rem; /* 8px */
+  font-family: 'Inter', sans-serif;
+}
+
+@media (min-width: 768px) {
+  font-size: 2rem; /* 32px desktop */
+}
+
+/* Button subtext */
+.text-sm.md:text-base.font-normal.opacity-90 {
+  font-size: 0.875rem; /* 14px mobile */
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  font-size: 1rem; /* 16px desktop */
+}
+```
+
+## FAQ Section System
+
+### FAQ Container
+```css
+.space-y-4 {
+  /* Each child element gets 1rem (16px) top margin except first */
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem; /* 16px between FAQ items */
+}
+```
+
+### FAQ Item
+```css
+.border.border-gray-200.rounded-lg.p-4 {
+  border: 1px solid rgb(229 231 235); /* gray-200 */
+  border-radius: 0.5rem; /* 8px */
+  padding: 1rem; /* 16px all sides */
+}
+```
+
+### FAQ Question
+```css
+.font-bold.mb-2 {
+  font-weight: 700;
+  margin-bottom: 0.5rem; /* 8px */
+}
+```
+
+### FAQ Answer
+```css
+.text-gray-700 {
+  color: rgb(55 65 81); /* gray-700 */
+}
+```
+
+## Step-by-Step Section System
+
+### Steps Container
+```css
+.space-y-6 {
+  /* Each child element gets 1.5rem (24px) top margin except first */
+}
+
+.space-y-6 > * + * {
+  margin-top: 1.5rem; /* 24px between steps */
+}
+```
+
+### Individual Step
+```css
+.border-l-4.border-green-500.pl-4 {
+  border-left: 4px solid rgb(34 197 94); /* green-500 */
+  padding-left: 1rem; /* 16px */
+}
+```
+
+### Step Title
+```css
+.font-bold.text-lg.mb-2 {
+  font-weight: 700;
+  font-size: 1.125rem; /* 18px */
+  margin-bottom: 0.5rem; /* 8px */
+}
+```
+
+### Step Content
+```css
+.text-gray-700 {
+  color: rgb(55 65 81); /* gray-700 */
+}
+```
+
+## Video Embed System
+
+### Video Container (16:9 Aspect Ratio)
+```css
+.relative.w-full {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+```
+
+### Video Iframe
+```css
+.absolute.top-0.left-0.w-full.h-full.rounded-lg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem; /* 8px */
+  border: 0;
+}
+```
+
+## Sticky CTA System
+
+### Fixed Position Button
+```css
+.fixed.bottom-5.right-5.z-50.md:bottom-5.md:right-5.md:left-auto {
+  position: fixed;
+  bottom: 1.25rem; /* 20px */
+  right: 1.25rem; /* 20px */
+  z-index: 50;
+}
+
+@media (min-width: 768px) {
+  bottom: 1.25rem; /* 20px */
+  right: 1.25rem; /* 20px */
+  left: auto;
+}
+```
+
+### Sticky Button Styling
+```css
+.text-white.px-6.py-3.rounded-lg.font-semibold.text-sm.transition-opacity.duration-200.shadow-lg.hover:shadow-xl.w-full.md:w-auto.hover:opacity-90 {
+  color: white;
+  padding-left: 1.5rem; /* 24px */
+  padding-right: 1.5rem; /* 24px */
+  padding-top: 0.75rem; /* 12px */
+  padding-bottom: 0.75rem; /* 12px */
+  border-radius: 0.5rem; /* 8px */
+  font-weight: 600;
+  font-size: 0.875rem; /* 14px */
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  background: linear-gradient(to bottom, #385DC6, #2C4A9E);
+  transform: scale(1.08);
+}
+
+@media (min-width: 768px) {
+  width: auto;
+}
+
+.hover:shadow-xl:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.hover:opacity-90:hover {
+  opacity: 0.9;
+}
+```
+
+## Complete HTML Structure Template
+
+```html
+<div className="bg-white min-h-screen">
+  {/* Fixed CTA Button */}
+  <div className="fixed bottom-5 right-5 z-50 md:bottom-5 md:right-5 md:left-auto sticky-cta-mobile">
+    <button className="text-white px-6 py-3 rounded-lg font-semibold text-sm transition-opacity duration-200 shadow-lg hover:shadow-xl w-full md:w-auto hover:opacity-90"
+            style={{ background: 'linear-gradient(to bottom, #385DC6, #2C4A9E)', transform: 'scale(1.08)' }}>
+      Button Text
+    </button>
+  </div>
+  
+  {/* Hero Section */}
+  <div className="py-8">
+    {/* Logo Section */}
+    <div className="container mx-auto px-4 pt-1 pb-1">
+      <img src="logo-url" alt="Logo" className="h-24 w-auto mb-2 mx-auto" />
+    </div>
+
+    {/* Headline and Author Info */}
+    <div className="container mx-auto px-4 mb-12">
+      <h1 className="text-4xl md:text-6xl font-black text-center mb-6 md:mb-8 leading-tight">
+        Main Headline
+      </h1>
+      
+      <h2 className="text-xl md:text-3xl text-center mb-8 md:mb-10 max-w-5xl mx-auto leading-relaxed">
+        Subheadline text
+      </h2>
+      
+      <p className="text-gray-600 text-base md:text-lg mb-12 text-center">
+        Author info
+      </p>
+    </div>
+
+    {/* Main Content */}
+    <div className="container mx-auto px-4 mb-12">
+      <div className="max-w-3xl mx-auto space-y-6">
+        <p className="text-gray-800">Body paragraph</p>
+        
+        <div className="my-8 md:my-12">
+          <img src="image-url" alt="Description" 
+               className="w-full max-w-2xl md:max-w-4xl mx-auto rounded-lg shadow-2xl mb-6 md:mb-10"
+               style={{ boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)' }} />
+        </div>
+        
+        <h3 className="font-black text-xl md:text-2xl text-black mt-12 md:mt-16 mb-6 md:mb-8 md:pt-2">
+          Section Headline
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+## Critical Implementation Notes
+
+1. **Always use `container mx-auto px-4`** for the base container
+2. **Content width is `max-w-3xl mx-auto`** (768px)
+3. **Images use responsive max-widths** with specific breakpoints
+4. **Spacing follows the exact margin/padding values** shown above
+5. **All colors use exact RGB values** from Tailwind classes
+6. **Font weights**: 900 for headlines, 700 for bold, 600 for semibold, 400 for normal
+7. **Border radius is consistently 0.5rem** (8px) for all rounded elements
+8. **Gradients use exact hex values**: #385DC6 to #2C4A9E
+
+This guide contains every single styling rule used in the Shadow Pages Playbook. Copy these exact classes and values to replicate the layout perfectly.
