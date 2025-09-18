@@ -25,7 +25,7 @@ export default function FreeResources() {
               className="w-full h-full object-cover"
             />
           </div>
-          <h1 className="text-5xl font-black mb-6">Free Resources</h1>
+          <h1 className="text-5xl font-black mb-6">Shadow Pages Playbook</h1>
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
             {isFemaleVersion ? (
               <>Free materials to help you <strong>build your empire and achieve financial independence</strong> through Shadow Pages</>

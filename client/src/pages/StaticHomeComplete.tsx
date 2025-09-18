@@ -283,7 +283,7 @@ function StaticHomeComplete() {
           {/* Desktop Navigation - Hidden on mobile */}
           <nav className="desktop-nav">
             <a href="/">Start</a>
-            <a href="/free-resources">Free Resources</a>
+            <a href="/free-resources/shadow-pages-playbook">Shadow Pages Playbook</a>
             <a href="#" onClick={(e) => { e.preventDefault(); handleHomePageApply(); }}>Apply Now</a>
           </nav>
 
@@ -303,7 +303,7 @@ function StaticHomeComplete() {
       <div className="mobile-menu-dropdown">
         <nav className="pl-[24px] pr-[24px] pt-[5px] pb-[5px]">
           <a href="/" className="pt-[5px] pb-[5px]">Start</a>
-          <a href="/free-resources" className="pt-[5px] pb-[5px]">Free Resources</a>
+          <a href="/free-resources/shadow-pages-playbook" className="pt-[5px] pb-[5px]">Shadow Pages Playbook</a>
           <a href="#" onClick={(e) => { e.preventDefault(); handleHomePageApply(); }} className="pt-[5px] pb-[5px]">Apply Now</a>
         </nav>
       </div>
@@ -616,7 +616,7 @@ function StaticHomeComplete() {
               marginBottom: '20px',
               lineHeight: '1.2'
             }}>
-              Free Resources to Get You Started
+              Shadow Pages Resources to Get You Started
             </h2>
             <p style={{
               fontSize: '1.1rem',
@@ -688,7 +688,7 @@ function StaticHomeComplete() {
               }}
               className="view-all-resources-btn"
             >
-              View All Free Resources →
+              View All Shadow Pages Resources →
             </a>
           </div>
         </div>

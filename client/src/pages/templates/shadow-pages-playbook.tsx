@@ -565,7 +565,7 @@ export default function ShadowPagesPlaybook() {
         <RelatedResources 
           currentResourceSlug="shadow-pages-playbook"
           colorScheme="purple"
-          title="More Free Resources ↓"
+          title="More Shadow Pages Resources ↓"
         />
 
       </div>

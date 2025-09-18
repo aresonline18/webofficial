@@ -1176,7 +1176,7 @@ export default StaticHomeExact;
         </div>
       </section>
 
-      {/* Subtle link to Free Resources - positioned at bottom */}
+      {/* Subtle link to Shadow Pages Playbook - positioned at bottom */}
       <div style={{ 
         position: 'fixed', 
         bottom: '20px', 
@@ -1188,7 +1188,7 @@ export default StaticHomeExact;
         backdropFilter: 'blur(10px)'
       }}>
         <a 
-          href="/free-resources" 
+          href="/free-resources/shadow-pages-playbook" 
           style={{ 
             color: 'white', 
             textDecoration: 'none', 
@@ -1196,7 +1196,7 @@ export default StaticHomeExact;
             fontWeight: '500'
           }}
         >
-          Free Resources →
+          Shadow Pages Playbook →
         </a>
       </div>
     </>
