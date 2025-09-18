@@ -185,8 +185,8 @@ export default function ResourcePage() {
                   background: 'linear-gradient(to bottom, #385DC6, #2C4A9E)'
                 }}
               >
-                <span className="text-2xl mb-1" style={{ fontWeight: 900, fontSize: 'calc(1.5rem + 2px)' }}>Click Here To Apply</span>
-                <span className="text-sm font-normal opacity-90">Fill in a 2min quiz to see if this is for you</span>
+                <span className="text-2xl mb-1" style={{ fontWeight: 900, fontSize: 'calc(1.5rem + 2px)' }}>Click Here To Book Your 1/1 Call With My Team</span>
+                <span className="text-sm font-normal opacity-90">And see if you qualify to work with us</span>
               </ResourceApplyNowButton>
             </div>
             
