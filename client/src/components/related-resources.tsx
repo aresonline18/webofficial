@@ -59,7 +59,7 @@ export default function RelatedResources({
   currentResourceId, 
   currentResourceSlug,
   colorScheme = 'blue',
-  title = "Read More Free Resources↓"
+  title = "More Shadow Pages Resources↓"
 }: RelatedResourcesProps) {
   const [mounted, setMounted] = useState(false);
 
@@ -130,7 +130,7 @@ export default function RelatedResources({
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-[44px] font-black text-black mb-4">
-              More Free Resources ↓
+              More Shadow Pages Resources ↓
             </h2>
             <p className="text-black text-lg max-w-3xl mx-auto -mt-[7px]">
               Read more about how <strong>Shadow Pages</strong> work and how to profit from them...
@@ -175,7 +175,7 @@ export default function RelatedResources({
           onClick={() => window.location.href = '/free-resources'}
           className="inline-flex items-center px-6 py-3 border-2 border-[var(--shadow-navy)] text-[var(--shadow-navy)] rounded-lg font-semibold hover:bg-gray-50 transition-colors"
         >
-          View All Free Resources
+          View All Shadow Pages Resources
           <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>

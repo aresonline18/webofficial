@@ -105,8 +105,8 @@ export default function ShadowPagesPlaybookFemale() {
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Free Resources", 
-                "item": `${window.location.origin}/free-resources`
+                "name": "Shadow Pages Playbook", 
+                "item": `${window.location.origin}/free-resources/shadow-pages-playbook`
               },
               {
                 "@type": "ListItem",

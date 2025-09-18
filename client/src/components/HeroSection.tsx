@@ -13,7 +13,7 @@ export default function HeroSection() {
         />
       </div>
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white md:mb-3 px-4 mt-[6px] mb-[6px]">
-        Free Resources
+        Shadow Pages Playbook
       </h1>
       <p className="md:text-xl text-gray-300 max-w-2xl mx-auto px-6 text-[16px]">
         Free materials to help you{" "}
