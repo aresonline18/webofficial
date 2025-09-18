@@ -4,6 +4,15 @@ export default function StickyCTA() {
   const { hasParam, getParam } = useUrlParams();
   const showCTA = hasParam('utm_campaign');
   const utmMedium = getParam('utm_medium') || 'EricHustls';
+  const utmCampaign = getParam('utm_campaign');
+  
+  // Determine if this is the female version
+  const isFemaleVersion = utmCampaign === 'playbook-f';
+  
+  // Set color based on version
+  const buttonColor = isFemaleVersion 
+    ? 'linear-gradient(to bottom, #EC4899, #BE185D)' // Female version - pink gradient
+    : '#385dc6'; // Normal version - blue
 
   const handleCallBooking = () => {
     // Check if we're on the home page
@@ -40,7 +49,7 @@ export default function StickyCTA() {
         onClick={handleCallBooking}
         className="text-white px-6 py-3 rounded-lg text-sm transition-colors duration-200 shadow-lg hover:shadow-xl w-full md:w-auto hover:opacity-90"
         style={{
-          background: '#385dc6',
+          background: buttonColor,
           fontWeight: 900
         }}
       >
