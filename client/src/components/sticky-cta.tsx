@@ -3,7 +3,7 @@ import { useUrlParams } from '@/hooks/useUrlParams';
 export default function StickyCTA() {
   const { hasParam, getParam } = useUrlParams();
   const showCTA = hasParam('utm_campaign');
-  const utmMedium = getParam('utm_medium') || 'EricHustls';
+  const utmMedium = getParam('utm_medium');
   const utmCampaign = getParam('utm_campaign');
   
   // Determine if this is the female version
@@ -29,11 +29,17 @@ export default function StickyCTA() {
         .replace(/\s+/g, '-')
         .substring(0, 50);
       
-      const url = `https://shadowpages.typeform.com/dms-overall?utm_source=home-page&utm_campaign=${resourceSlug}&utm_medium=${encodeURIComponent(utmMedium)}`;
+      let url = `https://calendly.com/shadow-pages/booking-a?utm_source=home-page&utm_campaign=${resourceSlug}`;
+      if (utmMedium) {
+        url += `&utm_medium=${encodeURIComponent(utmMedium)}`;
+      }
       window.open(url, '_blank');
     } else {
-      // Other pages - use existing free-resource UTM source
-      const url = `https://shadowpages.typeform.com/dms-overall?utm_source=free-resource&utm_campaign=shadow-pages-playbook&utm_medium=${encodeURIComponent(utmMedium)}`;
+      // Other pages - use same Calendly URL as ResourceApplyNowButton
+      let url = `https://calendly.com/shadow-pages/booking-a?utm_source=free-resource&utm_campaign=shadow-pages-playbook`;
+      if (utmMedium) {
+        url += `&utm_medium=${encodeURIComponent(utmMedium)}`;
+      }
       window.open(url, '_blank');
     }
   };

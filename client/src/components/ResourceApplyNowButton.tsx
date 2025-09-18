@@ -19,7 +19,7 @@ export default function ResourceApplyNowButton({
   utmTerm 
 }: ResourceApplyNowButtonProps) {
   const { getParam } = useUrlParams();
-  const utmMedium = getParam('utm_medium') || 'EricHustls';
+  const utmMedium = getParam('utm_medium');
   
   const handleClick = () => {
     // Create resource-specific UTM campaign from resource name
@@ -30,7 +30,10 @@ export default function ResourceApplyNowButton({
       .substring(0, 50);
     
     // Build URL with UTM parameters, including utm_term if provided
-    let url = `https://calendly.com/shadow-pages/booking-a?utm_source=free-resource&utm_campaign=${resourceSlug}&utm_medium=${encodeURIComponent(utmMedium)}`;
+    let url = `https://calendly.com/shadow-pages/booking-a?utm_source=free-resource&utm_campaign=${resourceSlug}`;
+    if (utmMedium) {
+      url += `&utm_medium=${encodeURIComponent(utmMedium)}`;
+    }
     if (utmTerm) {
       url += `&utm_term=${encodeURIComponent(utmTerm)}`;
     }
