@@ -30,8 +30,8 @@ export default function Header() {
             <Link href="/" className="text-white hover:text-gray-200 font-medium text-base transition-colors">
               Start
             </Link>
-            <Link href="/free-resources" className="text-white hover:text-gray-200 font-medium text-base transition-colors">
-              Free Resources
+            <Link href="/free-resources/shadow-pages-playbook" className="text-white hover:text-gray-200 font-medium text-base transition-colors">
+              Shadow Pages Playbook
             </Link>
             <ApplyNowButton className="text-white hover:text-gray-200 font-medium text-base transition-colors" />
           </nav>

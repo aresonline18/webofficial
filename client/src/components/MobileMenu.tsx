@@ -20,11 +20,11 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           Start
         </Link>
         <Link 
-          href="/free-resources" 
+          href="/free-resources/shadow-pages-playbook" 
           className="block text-white hover:text-gray-200 font-medium transition-colors"
           onClick={onClose}
         >
-          Free Resources
+          Shadow Pages Playbook
         </Link>
         <ApplyNowButton 
           className="block text-white hover:text-gray-200 font-medium transition-colors"
