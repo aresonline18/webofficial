@@ -1196,7 +1196,7 @@ export default StaticHomeExact;
             fontWeight: '500'
           }}
         >
-          Playbook →
+          Free Playbook →
         </a>
       </div>
     </>

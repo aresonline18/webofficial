@@ -17,7 +17,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           className="block text-white hover:text-gray-200 font-medium transition-colors"
           onClick={onClose}
         >
-          Playbook
+          Free Playbook
         </Link>
         <ApplyNowButton 
           className="block text-white hover:text-gray-200 font-medium transition-colors"
