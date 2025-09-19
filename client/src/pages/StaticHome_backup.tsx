@@ -927,7 +927,7 @@ export default function StaticHome() {
             fontWeight: '500'
           }}
         >
-          Shadow Pages Playbook →
+          Playbook →
         </a>
       </div>
 

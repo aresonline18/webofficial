@@ -17,7 +17,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           className="block text-white hover:text-gray-200 font-medium transition-colors"
           onClick={onClose}
         >
-          Shadow Pages Playbook
+          Playbook
         </Link>
         <ApplyNowButton 
           className="block text-white hover:text-gray-200 font-medium transition-colors"

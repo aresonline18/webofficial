@@ -1196,7 +1196,7 @@ export default StaticHomeExact;
             fontWeight: '500'
           }}
         >
-          Shadow Pages Playbook →
+          Playbook →
         </a>
       </div>
     </>

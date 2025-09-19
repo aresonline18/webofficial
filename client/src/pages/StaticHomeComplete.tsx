@@ -282,7 +282,7 @@ function StaticHomeComplete() {
 
           {/* Desktop Navigation - Hidden on mobile */}
           <nav className="desktop-nav">
-            <a href="/free-resources/shadow-pages-playbook">Shadow Pages Playbook</a>
+            <a href="/free-resources/shadow-pages-playbook">Playbook</a>
             <a href="#" onClick={(e) => { e.preventDefault(); handleHomePageApply(); }}>Apply Now</a>
           </nav>
 
@@ -301,7 +301,7 @@ function StaticHomeComplete() {
       {/* Mobile Menu Dropdown - Outside header, drops down below */}
       <div className="mobile-menu-dropdown">
         <nav className="pl-[24px] pr-[24px] pt-[5px] pb-[5px]">
-          <a href="/free-resources/shadow-pages-playbook" className="pt-[5px] pb-[5px]">Shadow Pages Playbook</a>
+          <a href="/free-resources/shadow-pages-playbook" className="pt-[5px] pb-[5px]">Playbook</a>
           <a href="#" onClick={(e) => { e.preventDefault(); handleHomePageApply(); }} className="pt-[5px] pb-[5px]">Apply Now</a>
         </nav>
       </div>
