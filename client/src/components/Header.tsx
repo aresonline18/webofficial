@@ -27,9 +27,6 @@ export default function Header() {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-white hover:text-gray-200 font-medium text-base transition-colors">
-              Start
-            </Link>
             <Link href="/free-resources/shadow-pages-playbook" className="text-white hover:text-gray-200 font-medium text-base transition-colors">
               Shadow Pages Playbook
             </Link>
