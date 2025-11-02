@@ -1,28 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
 
-        <!DOCTYPE html>
-        <html lang="en">
-          <head>
-            <meta charset="UTF-8" />
-            <title>Error</title>
-            <script type="module">
-              const error = {"message":"Failed to resolve import \"express\" from \"server/vite.ts\". Does the file exist?","stack":"    at TransformPluginContext._formatError (file:///dev-server/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:49258:41)\n    at TransformPluginContext.error (file:///dev-server/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:49253:16)\n    at normalizeUrl (file:///dev-server/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:64291:23)\n    at async file:///dev-server/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:64423:39\n    at async Promise.all (index 0)\n    at async TransformPluginContext.transform (file:///dev-server/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:64350:7)\n    at async PluginContainer.transform (file:///dev-server/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:49099:18)\n    at async loadAndTransform (file:///dev-server/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:51977:27)\n    at async viteTransformMiddleware (file:///dev-server/node_modules/vite/dist/node/chunks/dep-C6uTJdX2.js:62105:24)","id":"/dev-server/server/vite.ts","frame":"1  |  import express from \"express\";\n   |                       ^\n2  |  import fs from \"fs\";\n3  |  import path from \"path\";","plugin":"vite:import-analysis","pluginCode":"import express from \"express\";\nimport fs from \"fs\";\nimport path from \"path\";\nimport { createServer as createViteServer, createLogger } from \"vite\";\nimport viteConfig from \"../vite.config\";\nimport { nanoid } from \"nanoid\";\nconst viteLogger = createLogger();\nexport function log(message, source = \"express\") {\n    const formattedTime = new Date().toLocaleTimeString(\"en-US\", {\n        hour: \"numeric\",\n        minute: \"2-digit\",\n        second: \"2-digit\",\n        hour12: true\n    });\n    console.log(`${formattedTime} [${source}] ${message}`);\n}\nexport async function setupVite(app, server) {\n    const serverOptions = {\n        middlewareMode: true,\n        hmr: {\n            server\n        },\n        allowedHosts: true\n    };\n    const vite = await createViteServer({\n        ...viteConfig,\n        configFile: false,\n        customLogger: {\n            ...viteLogger,\n            error: (msg, options)=>{\n                viteLogger.error(msg, options);\n                process.exit(1);\n            }\n        },\n        server: serverOptions,\n        appType: \"custom\"\n    });\n    app.use(vite.middlewares);\n    app.use(\"*\", async (req, res, next)=>{\n        const url = req.originalUrl;\n        try {\n            const clientTemplate = path.resolve(import.meta.dirname, \"..\", \"client\", \"index.html\");\n            // always reload the index.html file from disk incase it changes\n            let template = await fs.promises.readFile(clientTemplate, \"utf-8\");\n            template = template.replace(`src=\"/src/main.tsx\"`, `src=\"/src/main.tsx?v=${nanoid()}\"`);\n            const page = await vite.transformIndexHtml(url, template);\n            res.status(200).set({\n                \"Content-Type\": \"text/html\"\n            }).end(page);\n        } catch (e) {\n            vite.ssrFixStacktrace(e);\n            next(e);\n        }\n    });\n}\nexport function serveStatic(app) {\n    // FIXED: Point to client/dist where the React app actually builds to\n    const distPath = path.resolve(import.meta.dirname, \"..\", \"client\", \"dist\");\n    if (!fs.existsSync(distPath)) {\n        throw new Error(`Could not find the build directory: ${distPath}, make sure to build the client first`);\n    }\n    app.use(express.static(distPath));\n    // Serve static HTML files from public folder\n    app.use('/free-resources', express.static(path.resolve(distPath, 'free-resources')));\n    // fall through to index.html if the file doesn't exist (SPA fallback)\n    app.use(\"*\", (_req, res)=>{\n        res.sendFile(path.resolve(distPath, \"index.html\"));\n    });\n}\n","loc":{"file":"/dev-server/server/vite.ts","line":1,"column":38}}
-              try {
-                const { ErrorOverlay } = await import("/@vite/client")
-                document.body.appendChild(new ErrorOverlay(error))
-              } catch {
-                const h = (tag, text) => {
-                  const el = document.createElement(tag)
-                  el.textContent = text
-                  return el
-                }
-                document.body.appendChild(h('h1', 'Internal Server Error'))
-                document.body.appendChild(h('h2', error.message))
-                document.body.appendChild(h('pre', error.stack))
-                document.body.appendChild(h('p', '(Error overlay failed to load)'))
-              }
-            </script>
-          </head>
-          <body>
-          </body>
-        </html>
-      
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Preconnects help Ivy load faster -->
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+    <link rel="preconnect" href="https://p.typekit.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Ivy Presto stylesheet FIRST so it starts downloading ASAP -->
+    <link rel="stylesheet" href="https://use.typekit.net/alr3dcc.css" fetchpriority="high">
+    
+    <title>The Shadow Pages Playbook</title>
+    <meta name="description" content="Everything YOU need to know about how Shadow Pages work and how you can generate cashflow from them...">
+    <meta name="author" content="Eric Cole" />
+
+    
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/w8kiyk38xURKnBjodXhozaTZdjD3/social-images/social-1762107861279-Congratulations - Complete your Application! (1).png">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/w8kiyk38xURKnBjodXhozaTZdjD3/social-images/social-1762107861279-Congratulations - Complete your Application! (1).png">
+    <meta property="og:title" content="The Shadow Pages Playbook">
+  <meta name="twitter:title" content="The Shadow Pages Playbook">
+  <meta property="og:description" content="Everything YOU need to know about how Shadow Pages work and how you can generate cashflow from them...">
+  <meta name="twitter:description" content="Everything YOU need to know about how Shadow Pages work and how you can generate cashflow from them...">
+  <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/gpt-engineer-file-uploads/w8kiyk38xURKnBjodXhozaTZdjD3/uploads/1762107841979-Shadow-Pages-White-Logo (2).png">
+</head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx?t=1762116419219"></script>
+  </body>
+</html>
