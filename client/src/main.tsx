@@ -1,11 +1,5 @@
-import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=31a0896c"; const _jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
-import __vite__cjsImport1_reactDom_client from "/node_modules/.vite/deps/react-dom_client.js?v=149e3655"; const createRoot = __vite__cjsImport1_reactDom_client["createRoot"];
-import App from "/src/App.tsx?t=1762108436332";
-import "/src/index.css?t=1762108436332";
-createRoot(document.getElementById("root")).render(/*#__PURE__*/ _jsxDEV(App, {}, void 0, false, {
-    fileName: "/dev-server/src/main.tsx",
-    lineNumber: 5,
-    columnNumber: 53
-}, this));
+import { createRoot } from "react-dom/client";
+import App from "./App.tsx";
+import "./index.css";
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4udHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNyZWF0ZVJvb3QgfSBmcm9tIFwicmVhY3QtZG9tL2NsaWVudFwiO1xuaW1wb3J0IEFwcCBmcm9tIFwiLi9BcHAudHN4XCI7XG5pbXBvcnQgXCIuL2luZGV4LmNzc1wiO1xuXG5jcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFwicm9vdFwiKSEpLnJlbmRlcig8QXBwIC8+KTtcbiJdLCJuYW1lcyI6WyJjcmVhdGVSb290IiwiQXBwIiwiZG9jdW1lbnQiLCJnZXRFbGVtZW50QnlJZCIsInJlbmRlciJdLCJtYXBwaW5ncyI6IjtBQUFBLFNBQVNBLFVBQVUsUUFBUSxtQkFBbUI7QUFDOUMsT0FBT0MsU0FBUyxZQUFZO0FBQzVCLE9BQU8sY0FBYztBQUVyQkQsV0FBV0UsU0FBU0MsY0FBYyxDQUFDLFNBQVVDLE1BQU0sZUFBQyxRQUFDSCJ9
+createRoot(document.getElementById("root")!).render(<App />);
