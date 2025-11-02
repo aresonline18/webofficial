@@ -27,7 +27,7 @@ import forbesImage from "/src/assets/forbes.png?import";
 import daquanImage from "/src/assets/daquan.png?import";
 import goldmanImage from "/src/assets/goldman-sachs.png?import";
 import shadowPagesExamplesImage from "/src/assets/shadow-page-examples.png?import";
-import ericRevenueImage from "/src/assets/eric-revenue-new.png?import";
+import ericRevenueImage from "/src/assets/eric-revenue-chart.png?t=1762108436332&import";
 import glowupAcademyProfile from "/src/assets/glowup-academy-profile.png?import";
 import boysGlowupProfile from "/src/assets/boys-glowup-profile.png?import";
 import amelieProfileImage from "/src/assets/amelie-profile-new.png?import";
@@ -143,4 +143,4 @@ export default function PlaybookV2() {
                                     }, this)
                                 ]
                             }, void 0, true, {
-                                fileName: "/dev-server/sr
+                                fileNam
