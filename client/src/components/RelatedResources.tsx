@@ -1,20 +1,3 @@
-interface RelatedResourcesProps {
-  currentResourceSlug: string;
-  colorScheme?: string;
-  title?: string;
-}
+export default "interface RelatedResourcesProps {\n  currentResourceSlug: string;\n  colorScheme?: string;\n  title?: string;\n}\n\nexport default function RelatedResources({\n  currentResourceSlug,\n  colorScheme = \"purple\",\n  title = \"More Resources ↓\"\n}: RelatedResourcesProps) {\n  return (\n    <div className=\"container mx-auto px-4 py-12\">\n      <h3 className=\"text-2xl font-bold text-center mb-8\">{title}</h3>\n      <div className=\"text-center text-gray-600\">\n        <p>Explore more free resources to grow your Shadow Pages business</p>\n      </div>\n    </div>\n  );\n}\n";
 
-export default function RelatedResources({
-  currentResourceSlug,
-  colorScheme = "purple",
-  title = "More Resources ↓"
-}: RelatedResourcesProps) {
-  return (
-    <div className="container mx-auto px-4 py-12">
-      <h3 className="text-2xl font-bold text-center mb-8">{title}</h3>
-      <div className="text-center text-gray-600">
-        <p>Explore more free resources to grow your Shadow Pages business</p>
-      </div>
-    </div>
-  );
-}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlJlbGF0ZWRSZXNvdXJjZXMudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IFwiaW50ZXJmYWNlIFJlbGF0ZWRSZXNvdXJjZXNQcm9wcyB7XFxuICBjdXJyZW50UmVzb3VyY2VTbHVnOiBzdHJpbmc7XFxuICBjb2xvclNjaGVtZT86IHN0cmluZztcXG4gIHRpdGxlPzogc3RyaW5nO1xcbn1cXG5cXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBSZWxhdGVkUmVzb3VyY2VzKHtcXG4gIGN1cnJlbnRSZXNvdXJjZVNsdWcsXFxuICBjb2xvclNjaGVtZSA9IFxcXCJwdXJwbGVcXFwiLFxcbiAgdGl0bGUgPSBcXFwiTW9yZSBSZXNvdXJjZXMg4oaTXFxcIlxcbn06IFJlbGF0ZWRSZXNvdXJjZXNQcm9wcykge1xcbiAgcmV0dXJuIChcXG4gICAgPGRpdiBjbGFzc05hbWU9XFxcImNvbnRhaW5lciBteC1hdXRvIHB4LTQgcHktMTJcXFwiPlxcbiAgICAgIDxoMyBjbGFzc05hbWU9XFxcInRleHQtMnhsIGZvbnQtYm9sZCB0ZXh0LWNlbnRlciBtYi04XFxcIj57dGl0bGV9PC9oMz5cXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cXFwidGV4dC1jZW50ZXIgdGV4dC1ncmF5LTYwMFxcXCI+XFxuICAgICAgICA8cD5FeHBsb3JlIG1vcmUgZnJlZSByZXNvdXJjZXMgdG8gZ3JvdyB5b3VyIFNoYWRvdyBQYWdlcyBidXNpbmVzczwvcD5cXG4gICAgICA8L2Rpdj5cXG4gICAgPC9kaXY+XFxuICApO1xcbn1cXG5cIiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxlQUFlLHdrQkFBdWtCIn0=

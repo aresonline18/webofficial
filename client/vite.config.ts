@@ -1,17 +1,3 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import path from "path";
+export default "import { defineConfig } from \"vite\";\nimport react from \"@vitejs/plugin-react-swc\";\nimport path from \"path\";\n\n// https://vitejs.dev/config/\nexport default defineConfig(() => ({\n  server: {\n    host: \"::\",\n    port: 8080,\n  },\n  plugins: [react()],\n  resolve: {\n    alias: {\n      \"@\": path.resolve(__dirname, \"./src\"),\n    },\n  },\n}));\n";
 
-// https://vitejs.dev/config/
-export default defineConfig(() => ({
-  server: {
-    host: "::",
-    port: 8080,
-  },
-  plugins: [react()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
-}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInZpdGUuY29uZmlnLnRzIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IFwiaW1wb3J0IHsgZGVmaW5lQ29uZmlnIH0gZnJvbSBcXFwidml0ZVxcXCI7XFxuaW1wb3J0IHJlYWN0IGZyb20gXFxcIkB2aXRlanMvcGx1Z2luLXJlYWN0LXN3Y1xcXCI7XFxuaW1wb3J0IHBhdGggZnJvbSBcXFwicGF0aFxcXCI7XFxuXFxuLy8gaHR0cHM6Ly92aXRlanMuZGV2L2NvbmZpZy9cXG5leHBvcnQgZGVmYXVsdCBkZWZpbmVDb25maWcoKCkgPT4gKHtcXG4gIHNlcnZlcjoge1xcbiAgICBob3N0OiBcXFwiOjpcXFwiLFxcbiAgICBwb3J0OiA4MDgwLFxcbiAgfSxcXG4gIHBsdWdpbnM6IFtyZWFjdCgpXSxcXG4gIHJlc29sdmU6IHtcXG4gICAgYWxpYXM6IHtcXG4gICAgICBcXFwiQFxcXCI6IHBhdGgucmVzb2x2ZShfX2Rpcm5hbWUsIFxcXCIuL3NyY1xcXCIpLFxcbiAgICB9LFxcbiAgfSxcXG59KSk7XFxuXCIiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsZUFBZSwrV0FBOFcifQ==
