@@ -17,7 +17,7 @@ if (import.meta.hot && !inWebWorker) {
   window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
 }
 
-import __vite__cjsImport2_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=7cbad96a"; const _jsxDEV = __vite__cjsImport2_react_jsxDevRuntime["jsxDEV"];
+import __vite__cjsImport2_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=31a0896c"; const _jsxDEV = __vite__cjsImport2_react_jsxDevRuntime["jsxDEV"];
 var _s = $RefreshSig$();
 import { useUrlParams } from "/src/hooks/useUrlParams.ts";
 export default function ResourceApplyNowButton({ resourceName, className, children, style, onClick, utmTerm }) {

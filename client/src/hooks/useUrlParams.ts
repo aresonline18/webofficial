@@ -1,4 +1,4 @@
-import { useLocation } from "/node_modules/.vite/deps/react-router-dom.js?v=7cbad96a";
+import { useLocation } from "/node_modules/.vite/deps/react-router-dom.js?v=79f3595c";
 export const useUrlParams = ()=>{
     const location = useLocation();
     const getParam = (param)=>{

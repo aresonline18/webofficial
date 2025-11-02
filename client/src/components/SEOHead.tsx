@@ -18,7 +18,7 @@ if (import.meta.hot && !inWebWorker) {
 }
 
 var _s = $RefreshSig$();
-import __vite__cjsImport2_react from "/node_modules/.vite/deps/react.js?v=7cbad96a"; const useEffect = __vite__cjsImport2_react["useEffect"];
+import __vite__cjsImport2_react from "/node_modules/.vite/deps/react.js?v=6ef5583b"; const useEffect = __vite__cjsImport2_react["useEffect"];
 export default function SEOHead({ title, description, keywords, ogTitle, ogDescription, canonical, structuredData }) {
     _s();
     useEffect(()=>{
