@@ -1,3 +1,1 @@
-export default "import { createRoot } from \"react-dom/client\";\nimport App from \"./App.tsx\";\nimport \"./index.css\";\n\ncreateRoot(document.getElementById(\"root\")!).render(<App />);\n";
-
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4udHN4Il0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IFwiaW1wb3J0IHsgY3JlYXRlUm9vdCB9IGZyb20gXFxcInJlYWN0LWRvbS9jbGllbnRcXFwiO1xcbmltcG9ydCBBcHAgZnJvbSBcXFwiLi9BcHAudHN4XFxcIjtcXG5pbXBvcnQgXFxcIi4vaW5kZXguY3NzXFxcIjtcXG5cXG5jcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFxcXCJyb290XFxcIikhKS5yZW5kZXIoPEFwcCAvPik7XFxuXCIiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsZUFBZSxpTEFBZ0wifQ==
+Preview has not been built yet. Either your project has an error or the preview is currently being built.

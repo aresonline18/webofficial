@@ -1,10 +1,1 @@
-{
-  "buildCommand": "cd client && npm run build",
-  "outputDirectory": "client/dist",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
-}
+Preview has not been built yet. Either your project has an error or the preview is currently being built.
