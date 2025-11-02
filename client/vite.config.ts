@@ -1,5 +1,5 @@
-import { defineConfig } from "/node_modules/.vite/deps/vite.js?v=c804ee64";
-import react from "/node_modules/.vite/deps/@vitejs_plugin-react-swc.js?v=d2c8ffb4";
+import { defineConfig } from "/node_modules/.vite/deps/vite.js?v=05bfcbca";
+import react from "/node_modules/.vite/deps/@vitejs_plugin-react-swc.js?v=7cebf121";
 import path from "/@id/__vite-browser-external:path";
 // https://vitejs.dev/config/
 export default defineConfig(()=>({

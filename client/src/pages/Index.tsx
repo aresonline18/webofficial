@@ -17,7 +17,7 @@ if (import.meta.hot && !inWebWorker) {
   window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
 }
 
-import __vite__cjsImport2_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=2bc9136f"; const _jsxDEV = __vite__cjsImport2_react_jsxDevRuntime["jsxDEV"];
+import __vite__cjsImport2_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=05bfcbca"; const _jsxDEV = __vite__cjsImport2_react_jsxDevRuntime["jsxDEV"];
 var _s = $RefreshSig$();
 import StickyCTA from "/src/components/StickyCTA.tsx";
 import SEOHead from "/src/components/SEOHead.tsx";

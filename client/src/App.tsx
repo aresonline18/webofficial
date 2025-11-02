@@ -17,12 +17,12 @@ if (import.meta.hot && !inWebWorker) {
   window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
 }
 
-import __vite__cjsImport2_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=2bc9136f"; const _jsxDEV = __vite__cjsImport2_react_jsxDevRuntime["jsxDEV"];
+import __vite__cjsImport2_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=05bfcbca"; const _jsxDEV = __vite__cjsImport2_react_jsxDevRuntime["jsxDEV"];
 import { Toaster } from "/src/components/ui/toaster.tsx";
 import { Toaster as Sonner } from "/src/components/ui/sonner.tsx";
 import { TooltipProvider } from "/src/components/ui/tooltip.tsx";
-import { QueryClient, QueryClientProvider } from "/node_modules/.vite/deps/@tanstack_react-query.js?v=9a4065dc";
-import { BrowserRouter, Routes, Route } from "/node_modules/.vite/deps/react-router-dom.js?v=da29f722";
+import { QueryClient, QueryClientProvider } from "/node_modules/.vite/deps/@tanstack_react-query.js?v=05bfcbca";
+import { BrowserRouter, Routes, Route } from "/node_modules/.vite/deps/react-router-dom.js?v=05bfcbca";
 import Index from "/src/pages/Index.tsx";
 import PlaybookV2 from "/src/pages/PlaybookV2.tsx";
 import NotFound from "/src/pages/NotFound.tsx";
