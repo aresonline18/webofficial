@@ -26,7 +26,7 @@ import { BrowserRouter, Routes, Route } from "/node_modules/.vite/deps/react-rou
 import Index from "/src/pages/Index.tsx?t=1762102646243";
 import PlaybookV2 from "/src/pages/PlaybookV2.tsx?t=1762102646244";
 import NotFound from "/src/pages/NotFound.tsx";
-import GitHubSync from "/src/pages/GitHubSync.tsx";
+import GitHubSync from "/src/pages/GitHubSync.tsx?t=1762103270265";
 const queryClient = new QueryClient();
 const App = ()=>/*#__PURE__*/ _jsxDEV(QueryClientProvider, {
         client: queryClient,
