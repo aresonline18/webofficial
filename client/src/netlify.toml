@@ -3,6 +3,13 @@
   command = "npm run build"
   publish = "dist"
 
+# Playbook static fallback - serves static HTML if React app fails
+[[redirects]]
+  from = "/free-resources/shadow-pages-playbook-v2/static"
+  to = "/playbook-fallback.html"
+  status = 200
+
+# Default SPA fallback
 [[redirects]]
   from = "/*"
   to = "/index.html"
