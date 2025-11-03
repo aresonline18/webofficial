@@ -1,45 +1,70 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
-injectIntoGlobalHook(window);
-window.$RefreshReg$ = () => {};
-window.$RefreshSig$ = () => (type) => type;</script>
+import express from "express";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import type { Express } from "express";
+import type { Server } from "http";
 
-    <script type="module" src="/@vite/client"></script>
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Preconnects help Ivy load faster -->
-    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
-    <link rel="preconnect" href="https://p.typekit.net" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Ivy Presto stylesheet FIRST so it starts downloading ASAP -->
-    <link rel="stylesheet" href="https://use.typekit.net/alr3dcc.css" fetchpriority="high">
-    
-    <title>The Shadow Pages Playbook</title>
-    <meta name="description" content="Everything YOU need to know about how Shadow Pages work and how you can generate cashflow from them...">
-    <meta name="author" content="Eric Cole" />
+export function log(message: string) {
+  const formattedTime = new Date().toLocaleTimeString("en-US", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true,
+  });
 
-    
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/w8kiyk38xURKnBjodXhozaTZdjD3/social-images/social-1762107861279-Congratulations - Complete your Application! (1).png">
+  console.log(`${formattedTime} [express] ${message}`);
+}
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/w8kiyk38xURKnBjodXhozaTZdjD3/social-images/social-1762107861279-Congratulations - Complete your Application! (1).png">
-    <meta property="og:title" content="The Shadow Pages Playbook">
-  <meta name="twitter:title" content="The Shadow Pages Playbook">
-  <meta property="og:description" content="Everything YOU need to know about how Shadow Pages work and how you can generate cashflow from them...">
-  <meta name="twitter:description" content="Everything YOU need to know about how Shadow Pages work and how you can generate cashflow from them...">
-  <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/gpt-engineer-file-uploads/w8kiyk38xURKnBjodXhozaTZdjD3/uploads/1762107841979-Shadow-Pages-White-Logo (2).png">
-</head>
+export async function setupVite(app: Express, server: Server) {
+  const vite = await (await import("vite")).createServer({
+    server: {
+      middlewareMode: true,
+      hmr: { server },
+    },
+    appType: "custom",
+  });
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx?t=1762116419219"></script>
-  </body>
-</html>
+  app.use(vite.middlewares);
+
+  app.use("*", async (req, res, next) => {
+    const url = req.originalUrl;
+
+    try {
+      const clientPath = path.resolve(__dirname, "..", "client");
+      let template = fs.readFileSync(
+        path.resolve(clientPath, "index.html"),
+        "utf-8",
+      );
+
+      template = await vite.transformIndexHtml(url, template);
+      res.status(200).set({ "Content-Type": "text/html" }).end(template);
+    } catch (e) {
+      vite.ssrFixStacktrace(e as Error);
+      next(e);
+    }
+  });
+}
+
+export function serveStatic(app: Express) {
+  const distPath = path.resolve(__dirname, "..", "client", "dist");
+
+  if (!fs.existsSync(distPath)) {
+    throw new Error(
+      `Could not find the build directory: ${distPath}, make sure to build the client first`,
+    );
+  }
+
+  // Serve static files with proper caching
+  app.use(express.static(distPath, {
+    maxAge: '1y',
+    etag: true,
+  }));
+
+  // Critical: SPA fallback - serve index.html for all non-API routes
+  app.get("*", (_req, res) => {
+    res.sendFile(path.resolve(distPath, "index.html"));
+  });
+}
